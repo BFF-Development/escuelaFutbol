@@ -1,0 +1,113 @@
+.container_Faqs {
+    margin: 0 auto;
+    padding: 4rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.container_Faqs h2{
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+  
+.box_faq .box_faq-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box_faq .box_faq-item button[aria-expanded=true] {
+  border-bottom: 1px solid #03b5d2;
+}
+
+
+.box_faq button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 2.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.box_faq button:hover, .box_faq button:focus {
+  cursor: pointer;
+  color: #03b5d2;
+}
+
+.box_faq button:hover::after, .box_faq button:focus::after {
+  cursor: pointer;
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+
+.box_faq button .box_faq-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.box_faq button .icon {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box_faq button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.box_faq button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.box_faq button[aria-expanded=true] {
+  color: #03b5d2;
+}
+
+.box_faq button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+
+.box_faq button[aria-expanded=true] + .box_faq-content {
+  opacity: 1;
+  max-height: 15rem;
+  transition: all 200ms linear;
+}
+
+.box_faq .box_faq-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+}
+
+.box_faq .box_faq-content p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
