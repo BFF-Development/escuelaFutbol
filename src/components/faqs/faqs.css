@@ -1,7 +1,7 @@
 .container_Faqs {
     margin: 0 auto;
     padding: 4rem;
-    width: 40%;
+    width: 80rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -12,6 +12,7 @@
 .container_Faqs h2{
     font-size: 3rem;
     letter-spacing: 1px;
+    font-family: ArticulatCF-bold;
 }
   
 .box_faq .box_faq-item {
@@ -29,13 +30,25 @@
   text-align: left;
   width: 100%;
   padding: 1em 0;
-  color: #7288a2;
+  color: #495768;
   font-size: 2.15rem;
-  font-weight: 400;
+  font-weight: 900;
+  font-family: "montserrat";
+  letter-spacing: 1px;
   border: none;
   background: none;
   outline: none;
 }
+
+
+.box_faq .box_faq-content p {
+    margin: 2em 0;
+    font-family: "montserrat";
+    letter-spacing: .5px;
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
 
 .box_faq button:hover, .box_faq button:focus {
   cursor: pointer;
@@ -95,7 +108,7 @@
 
 .box_faq button[aria-expanded=true] + .box_faq-content {
   opacity: 1;
-  max-height: 15rem;
+  max-height: 20rem;
   transition: all 200ms linear;
 }
 
@@ -106,8 +119,39 @@
   transition: opacity 200ms linear, max-height 200ms linear;
 }
 
-.box_faq .box_faq-content p {
-  font-size: 1.8rem;
-  font-weight: 300;
-  margin: 2em 0;
+
+@media screen and (max-width:700px) {
+    .container_Faqs {
+        width: 60rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container_Faqs {
+        width: 50rem;
+    }
+}
+
+
+@media screen and (max-width:390px) {
+    .container_Faqs {
+        width: 35rem;
+    }
+
+    
+    .box_faq button {
+        font-size: 1.6rem;
+    }
+  
+    .box_faq button[aria-expanded=true] + .box_faq-content {
+        opacity: 1;
+        max-height: 25rem;
+        transition: all 200ms linear;
+    }
+
+    .box_faq .box_faq-content p {
+        margin: 2em 0;
+        line-height: 2rem;
+        font-size: 1.3rem;
+    }
 }
