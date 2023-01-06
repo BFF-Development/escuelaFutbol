@@ -51,7 +51,7 @@ const Faqs = () => {
 
   return (
     <div className="container_Faqs">
-        <h2>FAQ's</h2>
+        <h2>Preguntas Frecuentes</h2>
 
         <div className="box_faq">
             {faqs.map((index, key) => {

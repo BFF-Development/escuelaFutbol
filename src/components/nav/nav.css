@@ -5,10 +5,10 @@ header{
 }
 
 .nav{
-    position: relative;
+    position: fixed;
     width: 100%;
     height: 8rem;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(10, 10, 10);
     backdrop-filter: blur(5px);
     transition: all .4s ease-in-out;
     z-index: 99999 !important;
@@ -19,7 +19,7 @@ header{
 
 .titleNav_desktop{
     font-size: 2rem;
-    color: rgba(255, 255, 255, 0.959);
+    color: rgb(255, 255, 255);
     letter-spacing: 1px;
     font-family: bulevar;
     outline: none;
@@ -49,10 +49,10 @@ header{
 
 .list_nav_desktop li{
     position: relative;
-    font-size: 1.8rem;
-    color: rgba(255, 255, 255, 0.959);
-    letter-spacing: -.5px;
-    font-family: bulevar;
+    font-size: 1.6rem;
+    color: rgb(248, 248, 248);
+    letter-spacing: 1px;
+    font-family: "montserrat-bold";
     outline: none;
     text-transform: uppercase;
     top:2rem;
@@ -76,29 +76,31 @@ header{
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: rgba(3, 3, 3, 0.925);
+    background-color: rgba(0, 0, 0, 0.938);
     backdrop-filter: blur(5px);
-    border-bottom: 2px solid rgb(161, 225, 255);
+/*     border-bottom: 2px solid rgb(161, 225, 255); */
     transition: all 255ms ease-in-out;
     z-index: 99999 !important;
     display: flex;
     justify-content: center;
+
 }
 
 
 
 .titleNav_mobile{
     font-size: 2rem;
-    color: rgba(255, 255, 255, 0.959);
+    color: rgb(255, 255, 255);
     letter-spacing: 1px;
     font-family: bulevar;
     outline: none;
     text-transform: uppercase;
     margin-left: 4rem;
-    top:2.8rem;
+    top:2.5rem;
     position: absolute;
     left: 0;
     font-family: "ArticulatCF-bold";
+    font-weight: bold;
 }
 
 .toggle{
@@ -121,7 +123,7 @@ header{
 .line{
     width: 70%;
     height: .3rem;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     transition: all .3s ease;
 }
 
@@ -151,8 +153,10 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 5rem;
-    position: relative;
+    gap: 4.5rem;
+    position: fixed;
+    top: 50%;
+    transform: translate(0 , -50%);
     transition: all 1s ease;
 }
 
@@ -163,7 +167,8 @@ header{
 .list_nav_mobile li{
     position: relative;
     font-size: 2.5rem;
-    color: rgba(255, 255, 255, 0.959);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
     letter-spacing: 1.5px;
     font-family: bulevar;
     outline: none;
@@ -177,6 +182,33 @@ header{
     text-shadow:  0 0 1rem rgb(207, 207, 207);
     transition: all .4s ease;
 }
+
+
+.nav_degree{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgb(5,194,254);
+    background: linear-gradient(90deg, rgba(5,194,254,1) 0%, rgba(146,245,255,1) 14%, rgba(254,255,255,1) 16%, rgba(249,254,255,1) 30%, rgba(138,236,255,1) 32%, rgba(0,212,255,1) 43%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 52%, rgba(236,255,0,1) 56%, rgba(255,252,0,1) 69%, rgba(0,26,255,1) 70%, rgba(7,32,191,1) 86%, rgba(255,0,0,1) 87%);
+    height: .3rem;
+}
+
+
+@media screen and (max-width:950px) {
+
+
+    /* desktop */
+
+    .titleNav_desktop{
+        left: 5rem;
+    }
+
+    .list_nav_desktop{
+        right: 5rem;
+    }
+    
+}
+
 
 @media screen and (max-width:380px) {
 

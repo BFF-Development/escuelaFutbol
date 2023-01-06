@@ -36,9 +36,13 @@ const Nav = () => {
               <a href="# " > <li >Servicios      </li> </a>
               <a href="# " > <li >Contacto       </li> </a>
             </ul>
+
+            <div className="nav_degree"></div>
           </div>
+
         </header>
         : 
+
         <header>
           <div className={isActive ? "nav_active_mobile" : "nav"}>
             <a href="/"> <p className='titleNav_mobile'>NAME</p> </a>
@@ -58,6 +62,7 @@ const Nav = () => {
               </ul>
             }
 
+            <div className="nav_degree"></div>
           </div>
         </header>
       }

@@ -1,5 +1,5 @@
 .container_Faqs {
-    margin: 0 auto;
+    margin: 8rem auto;
     padding: 4rem;
     width: 80rem;
     display: flex;
@@ -13,6 +13,7 @@
     font-size: 3rem;
     letter-spacing: 1px;
     font-family: ArticulatCF-bold;
+    color: white;
 }
   
 .box_faq .box_faq-item {
@@ -30,7 +31,7 @@
   text-align: left;
   width: 100%;
   padding: 1em 0;
-  color: #495768;
+  color: #c6e0ff;
   font-size: 2.15rem;
   font-weight: 900;
   font-family: "montserrat";
@@ -47,7 +48,8 @@
     letter-spacing: .5px;
     line-height: 2.5rem;
     font-size: 1.6rem;
-    font-weight: 700;
+    font-weight: 500;
+    color: white;
 }
 
 .box_faq button:hover, .box_faq button:focus {
@@ -101,7 +103,7 @@
 }
 
 .box_faq button[aria-expanded=true] {
-  color: #03b5d2;
+  color: #5fe8fd;
 }
 
 .box_faq button[aria-expanded=true] .icon::after {
