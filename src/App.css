@@ -33,6 +33,21 @@ html{
 }
 
 
+@font-face {
+  font-family: 'montserrat-bold';
+  src: url('./components/assets/fonts/Montserrat-Bold.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat-semiBold';
+  src: url('./components/assets/fonts/Montserrat-SemiBold.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 ::-webkit-scrollbar {
   width: 7px;
   border: 3px groove rgb(7, 7, 7);
