@@ -37,7 +37,7 @@ const Footer = () => {
           <ul>
             <li><img className='icon_footer' src={telIcon} alt="tel icon" />:  000-000-000</li>
             <li><img className='icon_footer' src={emailIcon} alt="email icon" />: emailExample@gmail.com</li>
-            <li><img className='icon_footer' src={ubiIcon} alt="ubicacion icopn" />: ubicacion example</li>
+            <li><img className='icon_footer' src={ubiIcon} alt="ubicacion icon" />: ubicacion example</li>
           </ul>
 
         </div>
