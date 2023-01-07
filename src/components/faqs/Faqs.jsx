@@ -20,6 +20,10 @@ const Faqs = () => {
         }
     
         items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+        return () => {
+            items.forEach(item => item.addEventListener('click', toggleAccordion));
+        }
     },[])
 
 

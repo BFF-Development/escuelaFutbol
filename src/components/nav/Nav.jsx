@@ -17,8 +17,19 @@ const Nav = () => {
   };
 
   useEffect(() => {
-    setIsMobile(isMobileOrTablet());
-  },[setIsMobile])
+    
+
+    function handleResize() {
+      setIsMobile(isMobileOrTablet());
+    }
+  
+    window.addEventListener("resize", handleResize);
+  
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    }
+
+  },[])
 
 
   return (
