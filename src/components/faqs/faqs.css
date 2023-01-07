@@ -21,7 +21,7 @@
 }
 
 .box_faq .box_faq-item button[aria-expanded=true] {
-  border-bottom: 1px solid #03b5d2;
+  border-bottom: 1px solid #81e1f0;
 }
 
 
@@ -54,13 +54,13 @@
 
 .box_faq button:hover, .box_faq button:focus {
   cursor: pointer;
-  color: #03b5d2;
+  color: #4eddf3;
 }
 
 .box_faq button:hover::after, .box_faq button:focus::after {
   cursor: pointer;
-  color: #03b5d2;
-  border: 1px solid #03b5d2;
+  color: #24c0d8;
+  border: 1px solid #24c0d8;
 }
 
 .box_faq button .box_faq-title {

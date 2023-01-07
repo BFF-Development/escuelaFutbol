@@ -2,11 +2,7 @@
     position: relative;
     width: 100%;
     min-height: 40vh;
-    background-color: rgb(0, 0, 0);
-    border-top: 1px solid rgb(19, 22, 24);
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    box-shadow: 0px -2px 5px 0px #a6bfdf;
+    background-color: rgb(10, 10, 10);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -15,32 +11,350 @@
     padding: 4rem;
     padding-top: 6rem;
     gap: 3rem;
+    border-top: 1px solid rgb(41, 41, 41);
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
 }
 
-.title_footer h2{
-    color: white;
+
+
+.box_contains_footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+
+/* list footer */
+
+.box_list_footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
     gap: 2rem;
+}
+
+.title_footer p{
+    color: white;
     list-style: none;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-family: "ArticulatCF-bold";
     letter-spacing: 1px ;
     text-transform: uppercase;
+    position: relative;
 }
 
 .list_Footer{
     color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    align-items: flex-start;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1.5rem;
     list-style: none;
+    position: relative;
 }
 
-.list_Footer li{
-    font-size: 1.3rem;
-    letter-spacing: 1px;
+.list_Footer li , .list_contact li{
+    font-size: 1.2rem;
+    letter-spacing: .5px;
     text-transform: uppercase;
     font-family: "montserrat";
+    color: white;
+}
+
+
+
+
+/* container contact */
+
+.list_contact{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.list_contact p{
+    color: white;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-family: "montserrat-bold";
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.list_contact ul{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.list_contact li{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-left: -.3rem;
+}
+
+.icon_footer{
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    border-radius: 100%;
+    border: 1px solid rgb(82, 82, 82);
+    padding: .5rem;
+    filter: sepia(100%);
+}
+
+
+
+/* box email */
+
+.box_email{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30rem;
+    position: relative;
+}
+
+.box_email p{
+    color: white;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-family: "montserrat-bold";
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.box_email form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.box_email input{
+    padding: 0 1rem;
+    width: 80%;
+    height: 3rem;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    font-family: "montserrat-bold" ;
+    font-size: 1.3rem;
+    background-color: #fdfdfd;
+}
+
+
+.box_email button{
+    background-image: radial-gradient(100% 100% at 100% 0, #fcfeff 0, #ffde83 100%);
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    overflow: hidden;
+    padding: 1rem ;
+    font-family: "montserrat-bold";
+    font-weight: bold;
+    letter-spacing: .5px;
+    position: relative;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-size: 1.4rem;
+    margin-right: 15rem;
+}
+
+
+.box_email button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #fbfbff77 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.box_email button:active {
+    box-shadow: #ffe498 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+
+/* box copy */
+
+.box_copyRight{
+    position: relative;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.hr_footer{
+    width: 65%;
+    border-color: rgb(39, 39, 39);
+    border-width: .2rem;
+    border-left: none;
+    border-right: none;
+}
+
+.copyright{
+    font-size: 1.5rem;
+    color: rgb(194, 194, 194);
+    font-family: "montserrat";
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+@media screen and (max-width:1100px){
+    .box_contains_footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 98%;
+        padding: 2rem 1rem;
+        gap: 5rem;
+    }
+
+}
+
+
+
+@media screen and (max-width:884px){
+    .box_email {
+        width: 20rem;
+    }
+    .list_contact li , .list_Footer li {
+        font-size: 1.1rem;
+        letter-spacing: .5px;
+    }
+
+    .box_email input {
+        padding: 0 1rem;
+        width: 90%;
+        height: 3rem;
+        border-radius: 3px;
+        outline: none;
+        border: none;
+        font-family: "montserrat-bold";
+        font-size: 1.1rem;
+        background-color: #fdfdfd;
+    }
+}
+
+
+
+@media screen and (max-width:734px){
+    .box_contains_footer {
+        flex-direction: column;
+        width: 98%;
+        padding: 2rem ;
+    }
+
+    .title_footer p{
+        font-size: 1.6rem;
+    }
+    
+    .list_Footer{
+        color: white;
+        gap: 1.5rem;
+    }
+    
+    .list_Footer li , .list_contact li{
+        font-size: 1.6rem;
+    }
+    
+    .box_email input {
+        padding: 0 1rem;
+        width: 100%;
+        height: 3.5rem;
+        font-size: 1.2rem;
+    }
+
+    .box_email {
+        width: 28rem;
+    }
+
+}
+
+
+@media screen and (max-width:607px){
+    .hr_footer{
+        width: 40rem;
+    }
+
+    .footer{
+        padding: 4rem 2rem;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    
+}
+
+
+@media screen and (max-width:410px){
+    .hr_footer{
+        width: 25rem;
+    }
+
+    .box_email {
+        width: 20rem;
+    }
+
+    .footer {
+        padding: 4rem 1rem;
+    }
+
+    .copyright{
+        line-height: 2.5rem;
+    }
+
+    .box_contains_footer {
+        width: 98%;
+        padding: 2rem 3rem;
+        gap: 5rem;
+    }
+
+    .title_footer p{
+        font-size: 1.6rem;
+    }
+    
+    
+    .list_Footer li , .list_contact li{
+        font-size: 1.2rem;
+    }
+    
+    .box_email input {
+        font-size: 1.1rem;
+    }
+
+}
+
+
+@media screen and (max-width:340px){
+
+    .list_Footer li , .list_contact li{
+        font-size: 1.1rem;
+    }
 }
