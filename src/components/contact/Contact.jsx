@@ -8,7 +8,7 @@ import ubiIcon from "../assets/src/icons/ubi.png"
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact" id='contact'>
         <div className="box_contact">
 
             <div className="cont tel">

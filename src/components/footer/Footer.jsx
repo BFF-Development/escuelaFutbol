@@ -1,17 +1,14 @@
-import React from 'react'
+import React  from 'react'
 import "./footer.css"
 import telIcon from "../assets/src/icons/tel.png"
 import emailIcon from "../assets/src/icons/email.png"
 import ubiIcon from "../assets/src/icons/ubi.png"
 
 
-
-
 const Footer = () => {
 
   const submitHandler= e =>{
     e.preventDefault()
-
   }
 
   return (
@@ -22,11 +19,13 @@ const Footer = () => {
           <div className="title_footer"> <p>Name</p> </div>
 
           <ul className="list_Footer">
-            <li>Inicio</li>
-            <li>Quiene Somos</li>
-            <li>Servicios</li>
-            <li>Blog</li> 
-            <li>Contacto</li>  
+              <a href="# " > <li >Inicio         </li> </a>
+              <a href="# " > <li >Quienes somos  </li> </a>
+              <a href="# " > <li >Servicios      </li> </a>
+              <a href="# " > <li >Blog           </li> </a>
+              <a href="#contact " > <li >Contacto       </li> </a>
+              <a href="#faqs " > <li >FAQ's       </li> </a>
+
           </ul>     
         </div>
    

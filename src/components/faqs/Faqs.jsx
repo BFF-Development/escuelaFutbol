@@ -50,7 +50,7 @@ const Faqs = () => {
     ]
 
   return (
-    <div className="container_Faqs">
+    <div className="container_Faqs" id='faqs'>
         <h2>Preguntas Frecuentes</h2>
 
         <div className="box_faq">

@@ -70,6 +70,9 @@
     color: white;
 }
 
+.list_Footer a{
+    text-decoration: none;
+}
 
 
 
@@ -159,7 +162,7 @@
     border: none;
     font-family: "montserrat-bold" ;
     font-size: 1.3rem;
-    background-color: #fdfdfd;
+    background-color: #f3f3f3;
 }
 
 

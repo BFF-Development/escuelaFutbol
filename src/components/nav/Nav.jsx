@@ -34,8 +34,8 @@ const Nav = () => {
               <a href="# " > <li >Inicio         </li> </a>
               <a href="# " > <li >Quienes somos  </li> </a>
               <a href="# " > <li >Servicios      </li> </a>
-              <a href="# " > <li >Blog      </li> </a>
-              <a href="# " > <li >Contacto       </li> </a>
+              <a href="# " > <li >Blog           </li> </a>
+              <a href="#contact " > <li >Contacto       </li> </a>
             </ul>
 
             <div className="nav_degree"></div>
@@ -59,8 +59,8 @@ const Nav = () => {
                 <a href="# " >  <li onClick={() => handleToggle()}>Inicio         </li> </a>
                 <a href="# " >  <li onClick={() => handleToggle()}>Quienes somos  </li> </a>
                 <a href="# " >  <li onClick={() => handleToggle()}>Servicios      </li> </a>
-                <a href="# " >  <li onClick={() => handleToggle()}>Blog      </li> </a>
-                <a href="# " >  <li onClick={() => handleToggle()}>Contacto       </li> </a>
+                <a href="# " >  <li onClick={() => handleToggle()}>Blog           </li> </a>
+                <a href="#contact " >  <li onClick={() => handleToggle()}>Contacto       </li> </a>
               </ul>
             }
 
