@@ -67,7 +67,7 @@
     border: none;
     border: 8px ridge rgb(37, 37, 37);
     border-radius: 10px;
-    filter:drop-shadow(0 0 5px rgb(255, 239, 92));
+    filter:drop-shadow(0 0 5px rgba(255, 244, 141, 0.788));
 }
 
 @media screen and (max-width:1170px) {
@@ -86,12 +86,8 @@
 @media screen and (max-width:910px) {
     
     .map{
-        width: 90%;
-        height: 40rem;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 85%;
+        height: 35rem;
     }
 
 }
