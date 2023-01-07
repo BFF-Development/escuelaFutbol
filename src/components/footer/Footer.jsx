@@ -43,7 +43,7 @@ const Footer = () => {
 
 
         <div className="box_email">
-          <p>Suscribete</p>
+          <p>Suscribete </p>
 
           <form onSubmit={(submitHandler)}>
             <input type="email" placeholder='Email' required/>
