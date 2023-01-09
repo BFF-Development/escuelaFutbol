@@ -13,7 +13,7 @@
     font-size: 3rem;
     letter-spacing: 1px;
     font-family: ArticulatCF-bold;
-    color: white;
+    color: rgb(0, 0, 0);
 }
   
 .box_faq .box_faq-item {
@@ -31,7 +31,7 @@
   text-align: left;
   width: 100%;
   padding: 1em 0;
-  color: #c6e0ff;
+  color: #000000;
   font-size: 2.15rem;
   font-weight: 900;
   font-family: "montserrat";
@@ -47,9 +47,9 @@
     font-family: "montserrat";
     letter-spacing: .5px;
     line-height: 2.5rem;
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: white;
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: rgb(5, 5, 5);
 }
 
 .box_faq button:hover, .box_faq button:focus {
