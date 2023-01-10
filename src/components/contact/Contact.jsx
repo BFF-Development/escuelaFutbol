@@ -9,9 +9,9 @@ import ubiIcon from "../assets/src/icons/ubi.png"
 const Contact = () => {
 
   return (
-    <div className="contact" id='contact'>
+    <div className="contact" id='contact'>  
+        <h2 className="contactTitle">Contacto</h2>
         <div className="box_contact">
-
             <div className="cont tel">
                 <img className='iconContact' src={telIcon} alt="icon Telefono" />
                 <p>000-000-000</p>

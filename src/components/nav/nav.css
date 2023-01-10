@@ -1,33 +1,39 @@
-header{
-    position: relative;
-    width: 100%;
-    height: 8rem;
-}
+
 
 .nav{
     position: fixed;
     width: 100%;
-    height: 8rem;
-    background-color: rgb(10, 10, 10);
+    height: 7rem;
+    background-color: rgb(255, 255, 255);
     backdrop-filter: blur(5px);
     transition: all .4s ease-in-out;
     z-index: 99999 !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 4px solid black;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
 }
 
 
+
 /* desktop */
+a{
+    text-decoration: none;
+}
 
 .titleNav_desktop{
-    font-size: 2rem;
-    color: rgb(255, 255, 255);
+    font-size: 2.6rem;
+    color: rgb(0, 0, 0);
     font-family: bulevar;
     outline: none;
     text-transform: uppercase;
-    left: 10rem;
-    top:2.8rem;
-    position: absolute;
+    position: relative;
     font-family: "shentox-bold";
     letter-spacing: 2.4px;
+    left: 10rem;
 }
 
 .list_nav_desktop{
@@ -36,11 +42,11 @@ header{
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    gap: 3rem;
-    position: fixed;
+    gap: 0rem;
+    position: relative;
     transition: all 1s ease;
-    right: 10rem;
-    top: 1rem;
+    top: 0rem;
+    right: 5rem;
 }
 
 .list_nav_desktop a{
@@ -50,23 +56,39 @@ header{
 .list_nav_desktop li{
     position: relative;
     font-size: 1.4rem;
-    color: rgb(248, 248, 248);
-    letter-spacing: 1px;
-    font-family: "benton-bold";
+    color: rgb(29, 29, 29);
+    letter-spacing: .5px;
+    font-family: "benton-black";
     outline: none;
     text-transform: uppercase;
-    top:2rem;
+    top:0rem;
     transition: all .4s ease;
     cursor: pointer;
-}
-
-.list_nav_desktop li:hover{
-    text-shadow:  0 0 7px rgb(150, 225, 255);
-    transition: all .4s ease;
+    padding:2rem 1rem;
 }
 
 
-
+.list_nav_desktop a li:after {
+  content: '';
+  position: absolute;
+  top: -.9rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #3498db;
+  z-index: -1;
+  transform: skewX(-30deg);
+  opacity: 0;
+  height: 7rem;
+  transition: opacity 0.3s;
+}
+.list_nav_desktop a:hover li{
+  color: #fff;
+}
+.list_nav_desktop a:hover li:after{
+  opacity: 1;
+}
+  
 
 /* mobile */
 
@@ -76,27 +98,26 @@ header{
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.938);
+    background-color: rgba(255, 255, 255, 0.938);
     backdrop-filter: blur(5px);
 /*     border-bottom: 2px solid rgb(161, 225, 255); */
     transition: all 255ms ease-in-out;
     z-index: 99999 !important;
     display: flex;
     justify-content: center;
-
 }
 
 
 
 .titleNav_mobile{
     font-size: 2rem;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     letter-spacing: 1px;
     font-family: bulevar;
     outline: none;
     text-transform: uppercase;
     margin-left: 4rem;
-    top:2.5rem;
+    top:2.2rem;
     position: absolute;
     left: 0;
     font-family: "ArticulatCF-bold";
@@ -108,7 +129,7 @@ header{
     width: 5rem;
     height: 5rem;
     right: 3rem;
-    top: 1.5rem;
+    top: .9rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -123,7 +144,7 @@ header{
 .line{
     width: 70%;
     height: .3rem;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     transition: all .3s ease;
 }
 
@@ -166,20 +187,20 @@ header{
 
 .list_nav_mobile li{
     position: relative;
-    font-size: 2.5rem;
-    color: rgb(255, 255, 255);
     font-weight: bold;
-    letter-spacing: 1.5px;
+    transition: all .4s ease;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
     font-family: bulevar;
     outline: none;
     text-transform: uppercase;
-    transition: all .4s ease;
-    font-family: "ArticulatCF-bold";
+    font-family: "shentox-bold";
+    letter-spacing: 2.4px;
 }
 
 
 .list_nav_mobile li:hover{
-    text-shadow:  0 0 1rem rgb(207, 207, 207);
+    text-shadow:  0 0 1rem rgb(0, 0, 0);
     transition: all .4s ease;
 }
 
@@ -206,6 +227,15 @@ header{
     .list_nav_desktop{
         right: 5rem;
     }
+    
+}
+
+@media screen and (max-width:600px) {
+    .nav{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    
     
 }
 

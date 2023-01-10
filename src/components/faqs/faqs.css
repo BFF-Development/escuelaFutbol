@@ -6,7 +6,8 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    gap: 4rem;
+    gap: 7rem;
+    position: relative;
 }
 
 .container_Faqs h2{
@@ -15,7 +16,22 @@
     letter-spacing: 2.6px;
     text-transform: uppercase;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: #000000;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container_Faqs h2::after{
+  content: "";
+  position: absolute;
+  width: 28rem;
+  top: 5.4rem;
+  left: .7rem;
+  height: 1rem;
+  background: #6CAAE4;
+  transform: skew(40deg);
+  
 }
   
 .box_faq .box_faq-item {
@@ -33,7 +49,7 @@
   text-align: left;
   width: 100%;
   padding: 1em 0;
-  color: #000000;
+  color: #020303;
   font-size: 2.15rem;
   font-weight: 900;
   font-family: "benton-bold";
@@ -41,6 +57,8 @@
   border: none;
   background: none;
   outline: none;
+  transition: all .2s ease;
+
 }
 
 
@@ -56,13 +74,14 @@
 
 .box_faq button:hover, .box_faq button:focus {
   cursor: pointer;
-  color: #4eddf3;
+  color: #6CAAE4;
 }
 
 .box_faq button:hover::after, .box_faq button:focus::after {
   cursor: pointer;
   color: #24c0d8;
   border: 1px solid #24c0d8;
+  transition: all .4s ease;
 }
 
 .box_faq button .box_faq-title {
@@ -105,7 +124,8 @@
 }
 
 .box_faq button[aria-expanded=true] {
-  color: #5fe8fd;
+  color: #6CAAE4;
+  transition: all .4s ease;
 }
 
 .box_faq button[aria-expanded=true] .icon::after {
@@ -130,12 +150,37 @@
   .container_Faqs {
       width: 60rem;
   }
+
+    
+  .container_Faqs h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .container_Faqs h2::after{
+    width: 26rem;
+    top: 5rem;
+    left: 0;
+    height: .9rem;
+  }
 }
 
 
 @media screen and (max-width:600px) {
     .container_Faqs {
         width: 95%;
+    }
+
+    .container_Faqs h2{
+      font-size: 2.6rem;
+      letter-spacing: 1.7px;
+    }
+  
+    .container_Faqs h2::after{
+      width: 24rem;
+      top: 4.4rem;
+      left: 0;
+      height: .9rem;
     }
 }
 
@@ -151,12 +196,23 @@
   }
   .container_Faqs {
     padding: 2rem;
-    gap: 4rem;
+  }
+
+  
+  .container_Faqs h2{
+    font-size: 2.2rem;
+    letter-spacing: .5px;
+  }
+
+  .container_Faqs h2::after{
+    width: 18rem;
+    top: 4rem;
+    height: .8rem;
   }
 }
 
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:370px) {
 
     
     .box_faq button {
@@ -175,5 +231,36 @@
         font-size: 1.3rem;
     }
 
+   
+    .container_Faqs h2{
+      font-size:1.9rem;
+      letter-spacing: .5px;
+    }
+  
+    .container_Faqs h2::after{
+      width: 15rem;
+      top: 3rem;
+      height: .8rem;
+    }
+}
+
+
+
+@media screen and (max-width:340px) {
+
  
+  .container_Faqs h2{
+    font-size:1.6rem;
+    letter-spacing: 0px;
+  }
+
+  .container_Faqs h2::after{
+    width: 15rem;
+    top: 2.8rem;
+    height: .7rem;
+  }
+
+  .container_Faqs {
+    gap: 4rem;
+  }
 }

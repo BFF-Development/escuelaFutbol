@@ -52,7 +52,7 @@ const Nav = () => {
                 <a href="#contact " > <li >Contacto </li> </a>
               </ul>
 
-              <div className="nav_degree"></div>
+             {/*  <div className="nav_degree"></div> */}
             </div>
 
           </header>
@@ -61,7 +61,7 @@ const Nav = () => {
 
           <header>
             <div className={isActive ? "nav_active_mobile" : "nav"}>
-              <a href="/"> <p className='titleNav_mobile'>NAME</p> </a>
+              <a href="/"> <p className='titleNav_mobile'>ARCO</p> </a>
 
               <div className="toggle" onClick={handleToggle}>
                   <div className={ isActive ? "line line1_active" : "line line1"}></div>
@@ -79,7 +79,7 @@ const Nav = () => {
                 </ul>
               }
 
-              <div className="nav_degree"></div>
+    {/*           <div className="nav_degree"></div> */}
             </div>
           </header>
       }
