@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import "./nav.css"
 
+
 const Nav = () => {
 
   function isMobileOrTablet() {
@@ -20,7 +21,6 @@ const Nav = () => {
     
     setIsMobile(isMobileOrTablet());
 
-    
     function handleResize() {
       setIsMobile(isMobileOrTablet());
     }
@@ -41,7 +41,7 @@ const Nav = () => {
       {
         !isMobile ? 
           <header>
-            <div className={isActive ? "nav_active" : "nav"}>
+            <div className= "nav" >
               <a href="/"> <p className='titleNav_desktop'>ARCO</p> </a>
 
               <ul className='list_nav_desktop'>
@@ -68,18 +68,17 @@ const Nav = () => {
                   <div className={ isActive ? "line line2_active" : "line line2"}></div>
                   <div className={ isActive ? "line line3_active" : "line line3"}></div>
               </div>
-
+              
               {isActive && 
                 <ul className='list_nav_mobile' >
-                  <a href="# " >  <li onClick={() => handleToggle()}>Inicio         </li> </a>
-                  <a href="# " >  <li onClick={() => handleToggle()}>Quienes somos  </li> </a>
-                  <a href="# " >  <li onClick={() => handleToggle()}>Servicios      </li> </a>
-                  <a href="# " >  <li onClick={() => handleToggle()}>Blog           </li> </a>
-                  <a href="#contact " >  <li onClick={() => handleToggle()}>Contacto       </li> </a>
+                  <a href="# " >  <li className='list_mobile' onClick={() => handleToggle()}>Inicio         </li> </a>
+                  <a href="# " >  <li className='list_mobile' onClick={() => handleToggle()}>Quienes somos  </li> </a>
+                  <a href="# " >  <li className='list_mobile' onClick={() => handleToggle()}>Servicios      </li> </a>
+                  <a href="# " >  <li className='list_mobile' onClick={() => handleToggle()}>Blog           </li> </a>
+                  <a href="#contact " > <li className='list_mobile' onClick={() => handleToggle()}>Contacto </li> </a>
                 </ul>
               }
 
-    {/*           <div className="nav_degree"></div> */}
             </div>
           </header>
       }

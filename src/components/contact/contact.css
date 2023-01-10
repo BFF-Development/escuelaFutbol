@@ -9,6 +9,8 @@
     flex-direction: column;
     padding: 10rem 0;
     gap: 10rem;
+    border-top: 4px solid black;
+
 }
 
 .contactTitle{
@@ -33,8 +35,7 @@
     height: 1rem;
     background: #6CAAE4;
     transform: skew(40deg);
-    
-  }
+}
 
 .box_contact{
     display: flex;
@@ -129,4 +130,19 @@
         gap: 10rem;
     }
 
+
+}
+
+@media screen and (max-width:550px) {
+
+    .contactTitle {
+        font-size: 2.5rem;
+        letter-spacing: .5px;
+        margin-bottom: 1rem;
+    }
+    
+    .contactTitle::after{
+        top: 3.8rem;
+        width: 11rem;
+    }
 }
