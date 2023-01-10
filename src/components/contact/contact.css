@@ -29,7 +29,7 @@
 .contactTitle::after{
     content: "";
     position: absolute;
-    width: 17rem;
+    width: 18rem;
     top: 5.4rem;
     left: .7rem;
     height: 1rem;

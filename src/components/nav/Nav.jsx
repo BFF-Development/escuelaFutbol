@@ -61,7 +61,7 @@ const Nav = () => {
 
           <header>
             <div className={isActive ? "nav_active_mobile" : "nav"}>
-              <a href="/"> <p className='titleNav_mobile'>ARCO</p> </a>
+              <a href="/"> <p className={isActive ? "titleNav_mobile-active" : "titleNav_mobile"}>ARCO</p> </a>
 
               <div className="toggle" onClick={handleToggle}>
                   <div className={ isActive ? "line line1_active" : "line line1"}></div>
