@@ -43,8 +43,8 @@
 .title_footer p{
     color: white;
     list-style: none;
-    font-size: 1.4rem;
-    font-family: "ArticulatCF-bold";
+    font-size: 2rem;
+    font-family: "shentox-bold";
     letter-spacing: 1px ;
     text-transform: uppercase;
     position: relative;
@@ -88,11 +88,10 @@
 
 .list_contact p{
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: rgb(255, 255, 255);
-    font-family: "montserrat-bold";
+    font-family: "shentox-bold";
     letter-spacing: 1px;
-    font-size: 1.4rem;
     text-transform: uppercase;
 }
 
@@ -136,11 +135,10 @@
 
 .box_email p{
     color: white;
-    font-size: 1.5rem;
     color: rgb(255, 255, 255);
-    font-family: "montserrat-bold";
+    font-family: "shentox-bold";
     letter-spacing: 1px;
-    font-size: 1.4rem;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
@@ -160,7 +158,7 @@
     border-radius: 3px;
     outline: none;
     border: none;
-    font-family: "montserrat-bold" ;
+    font-family: "shentox-bold" ;
     font-size: 1.3rem;
     background-color: #f3f3f3;
 }
@@ -174,7 +172,7 @@
     cursor: pointer;
     overflow: hidden;
     padding: 1rem ;
-    font-family: "montserrat-bold";
+    font-family: "shentox-bold";
     font-weight: bold;
     letter-spacing: .5px;
     position: relative;
@@ -182,7 +180,7 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     margin-right: 15rem;
 }
 
@@ -220,11 +218,12 @@
 }
 
 .copyright{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: rgb(194, 194, 194);
-    font-family: "montserrat";
-    letter-spacing: 1px;
+    font-family: "benton-black";
+    letter-spacing: 2.6px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 

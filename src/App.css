@@ -9,12 +9,9 @@
 
 html{
   font-size: 62.5%;
-  background-color: rgb(10, 10, 10);
   background-image: url("./components/assets/src/backgrounds/rough.jpg");
   background-size: cover;
   background-attachment: fixed;
-
-
 }
 
 
@@ -50,10 +47,50 @@ html{
 }
 
 
+@font-face {
+  font-family: 'benton-light';
+  src: url('./components/assets/fonts/benton/bentonsanslight.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'benton-bold';
+  src: url('./components/assets/fonts/benton/bentonsansbold.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'benton-medium';
+  src: url('./components/assets/fonts/benton/bentonsansmedium.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'benton-black';
+  src: url('./components/assets/fonts/benton/BentonSans-Black.otf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'shentox-bold';
+  src: url('./components/assets/fonts/benton/Shentox-bold.otf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 13px;
   border: 3px groove rgb(7, 7, 7);
   background-position: top;
+  background-color: black;
 }
 ::-webkit-scrollbar-button {
   width: 0px;
@@ -61,6 +98,10 @@ html{
 }
 ::-webkit-scrollbar-thumb {
   background: #383838;
+  border-radius: 18px;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #6CAAE4;
   border-radius: 18px;
 }
 

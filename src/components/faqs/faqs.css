@@ -10,9 +10,11 @@
 }
 
 .container_Faqs h2{
-    font-size: 3rem;
-    letter-spacing: 1px;
-    font-family: ArticulatCF-bold;
+    font-size: 3.6rem;
+    font-family: "benton-black";
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    font-weight: bold;
     color: rgb(0, 0, 0);
 }
   
@@ -34,7 +36,7 @@
   color: #000000;
   font-size: 2.15rem;
   font-weight: 900;
-  font-family: "montserrat";
+  font-family: "benton-bold";
   letter-spacing: 1px;
   border: none;
   background: none;
@@ -48,7 +50,7 @@
     letter-spacing: .5px;
     line-height: 2.5rem;
     font-size: 1.65rem;
-    font-weight: 700;
+    font-weight: 600;
     color: rgb(5, 5, 5);
 }
 

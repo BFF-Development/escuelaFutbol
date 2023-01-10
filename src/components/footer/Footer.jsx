@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="box_contains_footer">
 
         <div className="box_list_footer">
-          <div className="title_footer"> <p>Name</p> </div>
+          <div className="title_footer"> <p>ARCO</p> </div>
 
           <ul className="list_Footer">
               <a href="# " > <li >Inicio         </li> </a>
@@ -57,7 +57,7 @@ const Footer = () => {
       <div className="box_copyRight">
         <hr className='hr_footer' />
         <div className="copyright">
-          <p>@Copyright NAME. All rights reserved.</p>
+          <p>@Copyright ARCO. All rights reserved.</p>
         </div>
       </div>
 

@@ -42,7 +42,7 @@ const Nav = () => {
         !isMobile ? 
           <header>
             <div className={isActive ? "nav_active" : "nav"}>
-              <a href="/"> <p className='titleNav_desktop'>NAME</p> </a>
+              <a href="/"> <p className='titleNav_desktop'>ARCO</p> </a>
 
               <ul className='list_nav_desktop'>
                 <a href="# " > <li >Inicio         </li> </a>
