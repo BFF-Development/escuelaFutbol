@@ -17,21 +17,21 @@ const About = () => {
         y: 100,
           scrollTrigger:{
             trigger:".about",
-            start:"-400px",
-            end: "0px",
+            start:"-50px",
+            end: "50px",
             scrub: 1
           }
       })
 
- /*      const tl = gsap.timeline({
-        duration:1,
+      const tl = gsap.timeline({
+        duration:2,
         scrollTrigger:{
           trigger:".about",
           pin:true,
           scrub:2,
           end:"+=1000"
         }
-      }) */
+      })
   
  /*      tl.to(".about",{
         background:"black",

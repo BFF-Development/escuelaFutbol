@@ -21,6 +21,7 @@
     color: #ffffff;
     position: relative;
     margin-bottom: 4rem ;
+    top: 5rem;
     margin-right: 22%;
     opacity: 1;
 }
@@ -33,7 +34,7 @@
     top: 5.4rem;
     left: .7rem;
     height: 1rem;
-    background: #fcc54e;
+    background: rgb(255, 194, 63);
     transform: skew(40deg);
 }
 

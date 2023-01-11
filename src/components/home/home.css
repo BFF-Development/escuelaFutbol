@@ -4,4 +4,6 @@
     min-height: 100vh;
 /*     background-color: #0d1b3e; */
     background-color: black;
+    background-image: url("../assets/src/backgrounds/b2.png");
+    background-size: cover;
 }

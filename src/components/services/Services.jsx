@@ -44,13 +44,20 @@ const Services = () => {
         
       <div className="container_services" >
           <section className="panel panel1">
-            <div className="backPanel1">
-
-            </div>
+              <div className="punt1"></div>
           </section>
-          <section className="panel panel2"></section>
-          <section className="panel panel3"></section>
-          <section className="panel panel4"></section>
+
+          <section className="panel panel2">
+            <div className="punt2"></div>
+          </section>
+
+          <section className="panel panel3">
+            <div className="punt3"></div>
+          </section>
+
+          <section className="panel panel4">
+            <div className="punt4"></div>
+          </section>
       </div>
   )
 }
