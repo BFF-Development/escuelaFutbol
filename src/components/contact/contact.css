@@ -2,15 +2,13 @@
     width: 100%;
     position: relative;
     min-height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 72%, rgba(216, 216, 216) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 10rem 0;
     gap: 10rem;
-    border-top: 4px solid black;
-
 }
 
 .contactTitle{
@@ -23,7 +21,6 @@
     position: relative;
     margin-bottom: 4rem ;
     margin-right: 29%;
-
 }
 
 .contactTitle::after{
@@ -61,7 +58,6 @@
     object-fit: contain;
     padding: 1rem;
     background-color: rgb(3, 3, 3);
-
     border-radius: 100%; 
     width: 6rem;
     height: 6rem;

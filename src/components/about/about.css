@@ -1,0 +1,37 @@
+.about{
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgb(221, 221, 221) 10%, rgba(255,255,255,1) 50%, rgb(221, 221, 221) 90%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   /*  justify-content: center; */
+    padding: 10rem 0;
+    gap: 10rem;
+    border-top: 4px solid black;
+}
+
+.about_title{
+    font-size: 3.6rem;
+    font-family: "benton-black";
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+    position: relative;
+    margin-bottom: 4rem ;
+    margin-right: 22%;
+}
+
+
+.about_title::after{
+    content: "";
+    position: absolute;
+    width: 22rem;
+    top: 5.4rem;
+    left: .7rem;
+    height: 1rem;
+    background: #6CAAE4;
+    transform: skew(40deg);
+}

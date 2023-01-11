@@ -47,7 +47,7 @@ const Nav = () => {
               <ul className='list_nav_desktop'>
                 <a href="# " > <li >Inicio         </li> </a>
                 <a href="# " > <li >Quienes somos  </li> </a>
-                <a href="# " > <li >Servicios      </li> </a>
+                <a href="#servicios " > <li >Servicios      </li> </a>
                 <a href="# " > <li >Blog           </li> </a>
                 <a href="#contact " > <li >Contacto </li> </a>
               </ul>
@@ -73,7 +73,7 @@ const Nav = () => {
                 <ul className='list_nav_mobile' >
                   <a href="# " >  <li className='list_mobile' onClick={() => handleToggle()}>Inicio         </li> </a>
                   <a href="# " >  <li className='list_mobile' onClick={() => handleToggle()}>Quienes somos  </li> </a>
-                  <a href="# " >  <li className='list_mobile' onClick={() => handleToggle()}>Servicios      </li> </a>
+                  <a href="#servicios " >  <li className='list_mobile' onClick={() => handleToggle()}>Servicios      </li> </a>
                   <a href="# " >  <li className='list_mobile' onClick={() => handleToggle()}>Blog           </li> </a>
                   <a href="#contact " > <li className='list_mobile' onClick={() => handleToggle()}>Contacto </li> </a>
                 </ul>

@@ -1,0 +1,94 @@
+.serviceTitle{
+    width: 100%;
+    position: relative;
+    min-height: 20vh;
+    background: linear-gradient(90deg, rgb(221, 221, 221) 10%, rgba(255,255,255,1) 50%, rgb(221, 221, 221) 90%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem 0;
+}
+
+
+
+
+/* horizontal */
+
+
+.container_services{
+	width: 400%;
+	display: flex;
+	flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(221, 221, 221) 10%, rgba(255,255,255,1) 50%, rgb(221, 221, 221) 90%);
+    border-bottom: 5px solid black;
+
+}
+
+
+.services_title{
+    font-size: 3.6rem;
+    font-family: "benton-black";
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+    position: relative;
+    margin-bottom: 4rem ;
+    margin-right: 22%;
+    top: 5rem;
+}
+
+
+.services_title::after{
+    content: "";
+    position: absolute;
+    width: 18rem;
+    top: 5.4rem;
+    left: .7rem;
+    height: 1rem;
+    background: #ffc117;
+    transform: skew(40deg);
+    
+}
+
+.panel{
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   /*  justify-content: center; */
+    padding: 10rem 0;
+    gap: 10rem;
+    overflow: hidden;
+
+}
+
+.panel1{
+    background: linear-gradient(90deg, rgb(221, 221, 221) 10%, rgba(255,255,255,1) 50%, rgb(221, 221, 221) 90%);
+}
+
+.panel2{
+    background: linear-gradient(90deg, rgb(221, 221, 221) 10%, rgba(255,255,255,1) 50%, rgb(221, 221, 221) 90%);
+}
+
+.panel2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.panel3{
+    background: linear-gradient(90deg, rgb(221, 221, 221) 10%, rgba(255,255,255,1) 50%, rgb(221, 221, 221) 90%);
+}
+
+.panel4{
+    background: linear-gradient(90deg, rgb(221, 221, 221) 10%, rgba(255,255,255,1) 50%, rgb(221, 221, 221) 90%);
+}
