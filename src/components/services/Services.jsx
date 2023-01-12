@@ -33,6 +33,7 @@ const Services = () => {
         snap: 1 / (sections.length - 1),
         end: () => "+=" + document.querySelector(".container_services").offsetWidth
       }
+      
     });
 
 

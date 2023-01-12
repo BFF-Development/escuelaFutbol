@@ -54,25 +54,26 @@ const Faqs = () => {
     ]
 
   return (
-    <div className="container_Faqs" id='faqs'>
-        <h2>Preguntas Frecuentes</h2>
+    <div className="boxfaqs"id='faqs'>
+        <div className="container_Faqs" >
+            <h2>Preguntas Frecuentes</h2>
 
-        <div className="box_faq">
-            {faqs.map((index, key) => {
-                return <div className="box_faq-item" key={key}>
-                            <button id="box_faq-button" aria-expanded="false">
-                                <span className="box_faq-title">{index.title}</span>
-                                <span className="icon" aria-hidden="true"></span>
-                            </button>
-                            <div className="box_faq-content">
-                                <p>{index.content}</p>
+            <div className="box_faq">
+                {faqs.map((index, key) => {
+                    return <div className="box_faq-item" key={key}>
+                                <button id="box_faq-button" aria-expanded="false">
+                                    <span className="box_faq-title">{index.title}</span>
+                                    <span className="icon" aria-hidden="true"></span>
+                                </button>
+                                <div className="box_faq-content">
+                                    <p>{index.content}</p>
+                                </div>
                             </div>
-                        </div>
-            })}
-
-
+                })}
+            </div>
         </div>
     </div>
+    
   )
 }
 

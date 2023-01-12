@@ -1,3 +1,13 @@
+.boxfaqs{
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+  background-color: white;
+  margin-top: -8rem;
+  padding-top: 2rem;
+}
+
+
 .container_Faqs {
     margin: 8rem auto;
     padding: 4rem;
