@@ -6,6 +6,9 @@
 /*     background-color: black; */
 /*     background-image: url("../assets/src/backgrounds/b2.png");
     background-size: cover; */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    pointer-events: none;
 }
 
 .home::after{
