@@ -84,17 +84,21 @@ const scene = () => {
    /*  const ambientLight = new THREE.AmbientLight(0xffffff , .5)
     scene.add(ambientLight)
  */
-    const pointLight1 = new THREE.PointLight(0xff0000, 1)
-    pointLight1.position.set(5 , -4 , 4)
+    const pointLight1 = new THREE.PointLight(0xFFE000, .7)
+    pointLight1.position.set(-1 , 4 , 1)
 
     scene.add(pointLight1)
 
-    const pointLight2 = new THREE.PointLight(0xFFE000, 1)
-    pointLight2.position.set(-5 , -4 , 4)
+    const pointLight2 = new THREE.PointLight(0xff0000, .2)
+    pointLight2.position.set(2 , 5 , 1)
 
     scene.add(pointLight2)
 
 
+    const pointLight3 = new THREE.PointLight(0x0000ff, .4)
+    pointLight3.position.set(0 , 5 , 1)
+
+    scene.add(pointLight3)
 
 
       /* Orbit Controls */
