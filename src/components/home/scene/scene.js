@@ -50,22 +50,28 @@ const scene = () => {
     scene.add(group);
 
     const planeGeo = new THREE.PlaneGeometry(10,12)
-    const planeMat = new THREE.MeshMatcapMaterial()
+    const planeMat = new THREE.MeshPhysicalMaterial({
+        side: THREE.DoubleSide
+    })
     const planeMesh = new THREE.Mesh(planeGeo, planeMat)
     planeMesh.position.set(-3 , 0, 0)
     planeMesh.rotation.y = ( Math.PI /2)
 
 
     const plane2Geo = new THREE.PlaneGeometry(25,12)
-    const plane2Mat = new THREE.MeshPhysicalMaterial()
+    const plane2Mat = new THREE.MeshPhysicalMaterial({
+        side: THREE.DoubleSide
+    })
     const planeMesh2 = new THREE.Mesh(plane2Geo, plane2Mat)
     planeMesh2.position.set(2 , 0, -5)
 
     
-    const floorGeo = new THREE.PlaneGeometry(25,10)
-    const floorMat = new THREE.MeshPhysicalMaterial()
+    const floorGeo = new THREE.PlaneGeometry(15,10)
+    const floorMat = new THREE.MeshPhysicalMaterial({
+        side: THREE.DoubleSide
+    })
     const floorMesh = new THREE.Mesh(floorGeo, floorMat)
-    floorMesh.position.set(2 , -4, 0)
+    floorMesh.position.set(4 , -4, 0)
     floorMesh.rotation.x = -(Math.PI / 2)
 
 
@@ -79,11 +85,13 @@ const scene = () => {
     scene.add(ambientLight)
  */
     const pointLight1 = new THREE.PointLight(0xff0000, 1)
+    pointLight1.position.set(5 , -4 , 4)
+
     scene.add(pointLight1)
 
-    const pointLight2 = new THREE.PointLight(0x00ffff, 1)
-    pointLight2.position.x = -2
-    pointLight2.position.z = -2
+    const pointLight2 = new THREE.PointLight(0xFFE000, 1)
+    pointLight2.position.set(-5 , -4 , 4)
+
     scene.add(pointLight2)
 
 
