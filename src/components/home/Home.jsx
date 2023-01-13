@@ -1,14 +1,9 @@
 import React, { useEffect } from 'react'
 import "./home.css"
-import scene from './scene/scene'
 
 export const Home = () => {
   useEffect(() => {
-    scene()
 
-  /*   return () => {
-      scene()
-    } */
   },[])
   
   return (
