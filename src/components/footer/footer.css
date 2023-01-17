@@ -11,8 +11,6 @@
     padding: 4rem;
     padding-top: 6rem;
     gap: 3rem;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
 }
 
 
@@ -42,10 +40,11 @@
 .title_footer p{
     color: white;
     list-style: none;
-    font-size: 2rem;
-    font-family: "shentox-bold";
-    letter-spacing: 1px ;
+    font-size: 2.7rem;
+    font-family: "Mongoose-bold";
+    letter-spacing: 2px ;
     text-transform: uppercase;
+    line-height: 2.5rem;
     position: relative;
 }
 
@@ -87,9 +86,9 @@
 
 .list_contact p{
     color: white;
-    font-size: 2rem;
-    color: rgb(255, 255, 255);
-    font-family: "shentox-bold";
+    font-size: 2.7rem;
+    line-height: 2.5rem;
+    font-family: "Mongoose-bold";
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -134,10 +133,10 @@
 
 .box_email p{
     color: white;
-    color: rgb(255, 255, 255);
-    font-family: "shentox-bold";
+    font-size: 2.7rem;
+    line-height: 2.5rem;
+    font-family: "Mongoose-bold";
     letter-spacing: 1px;
-    font-size: 2rem;
     text-transform: uppercase;
 }
 
@@ -167,19 +166,19 @@
     background-image: radial-gradient(100% 100% at 100% 0, #fcfeff 0, #ffde83 100%);
     border-radius: 6px;
     box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
-    color: rgb(0, 0, 0);
+    color: rgb(27, 27, 27);
     cursor: pointer;
     overflow: hidden;
     padding: 1rem ;
-    font-family: "shentox-bold";
-    font-weight: bold;
-    letter-spacing: .5px;
+    font-family: "Mongoose-bold";
+    text-transform: uppercase;
     position: relative;
     transition: box-shadow .15s,transform .15s;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-size: 2rem;
     margin-right: 15rem;
 }
 
@@ -217,10 +216,10 @@
 }
 
 .copyright{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: rgb(194, 194, 194);
-    font-family: "benton-black";
-    letter-spacing: 2px;
+    font-family: "Mongoose-bold";
+    letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
 }

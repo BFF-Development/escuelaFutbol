@@ -52,13 +52,12 @@ const ServicesScroll = () => {
           scrollTrigger: {
             trigger: ".contact",
              start:"-900px top",
-             end:"+=500",
+             end:"+=1000",
              scrub:2
           }
         })
 
         tl_punt.from(".circle-wrapper", { duration: 1,  height: "0vh", width: "0vw", opacity:1, border:0});
-
 
     },[])
 
@@ -68,32 +67,50 @@ const ServicesScroll = () => {
       
         <section className="panel panel1">
             <div className="titlePanel1">
+              <div className="boxCuadro"></div>
+
               <strong className='strong_title-panel1'>Metodos </strong>
               <strong className='strong_title-panel1'> de </strong>
               <strong className='strong_title-panel1'> entrenamiento</strong>
+
+              <div className="boxCuadro2"></div>
+
             </div>
-            {/* <div className="lineTitle"></div> */}
+
         </section>
 
         <section className="panel panel2">
           <div className="titlePanel1">
+              <div className="boxCuadro"></div>
+
               <strong className='strong_title-panel1'>Futbol </strong>
-              <strong className='strong_title-panel1'>Mixto </strong>
+              <strong className='strong_title-panel1'>Mixto</strong>
+              
+              <div className="boxCuadro2"></div>
+
             </div>
         </section>
 
         <section className="panel panel3">
           <div className="titlePanel1">
+              <div className="boxCuadro"></div>
+
               <strong className='strong_title-panel1'>Posibilidad </strong>
               <strong className='strong_title-panel1'>de </strong>
               <strong className='strong_title-panel1'>Realizar </strong>
-              <strong className='strong_title-panel1'>Viajes </strong>
+              <strong className='strong_title-panel1'>Viajes</strong>
+
+              <div className="boxCuadro2"></div>
+
             </div>
         </section>
 
         <section className="panel panel4">
             <div className="titlePanel1">
-              <strong className='strong_title-panel1'>Valores </strong>
+              <div className="boxCuadro"></div>
+              <strong className='strong_title-panel1'>Valores</strong>
+              <div className="boxCuadro2"></div>
+
             </div>
 
             <div className="circle-wrapper">

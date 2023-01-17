@@ -110,13 +110,12 @@
 /* punt */
 .circle-wrapper {
     position: absolute;
-    top: 100vh;
+    top: 95vh;
     left: 50%;
-    width: 150vw;
-    height: 150vw;
+    width: 200vw;
+    height: 200vw;
     transform: translate(-50%, 0);
     opacity: 1;
-    border: 3px solid rgb(125, 186, 255);
     border-radius: 100%;
 }
 .punt1 {
@@ -126,7 +125,7 @@
     height: 100%;
     border-radius: 50%;
     transform-origin: 50% 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 216, 89);
 
 }
 

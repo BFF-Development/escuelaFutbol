@@ -70,12 +70,16 @@ html{
   font-style: normal;
 }
 
+/* font title */
+
 @font-face {
   font-family: 'Mongoose-bold';
   src: url('./components/assets/fonts/creativ/PPFormula.woff') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
+/* font service */
 
 @font-face {
   font-family: 'Mongoose-black';

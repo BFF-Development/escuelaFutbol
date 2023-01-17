@@ -14,21 +14,6 @@ const Contact = () => {
         gsap.registerPlugin(ScrollTrigger);
     
     
-   /*      
-        const tl_punt = gsap.timeline({
-            duration:2,
-            scrollTrigger: {
-              trigger: ".contact",
-              start:"-900px top",
-              end: "70% 100%",
-              scrub: 3,
-            }
-          })
-    
-          tl_punt.to(".punt1",{
-            scale: "+=50",
-            duration:2
-          }) */
 
           const tl = gsap.timeline({
             duration:1,
@@ -54,27 +39,7 @@ const Contact = () => {
             y:200,
           })
       
-   /*        
-          const tl = gsap.timeline({
-            duration:2,
-            scrollTrigger: {
-              trigger: ".contact",
-              start:"-300px top",
-              end: "100% 100%",
-            }
-          })
-    
-          tl.from(".container_contact",{
-            opacity:0,
-            duration:2
-          })
-
-          tl.to( ".line_title_contact",{
-            width: "50%",
-            duration: .5,
-            x: -100,
-          })
- */
+        
 
     },[])
 

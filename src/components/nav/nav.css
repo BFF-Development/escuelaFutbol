@@ -16,14 +16,14 @@ a{
 
 
 .nav_active{
-    background-color: rgba(0, 0, 0, 0.966);
-    backdrop-filter: blur(10rem);
+    backdrop-filter: blur(10px);
+    background-color: rgba(8, 8, 8, 0.959);
     transition: all 1s ease-in-out;
 }
 
+
 .listEffectNav{
     transition: opacity 3s ease-in;
-
 }
 
 
@@ -32,13 +32,13 @@ a{
 
 
 .titleNav_desktop{
-    font-size: 2.6rem;
+    font-size: 3.7rem;
     font-family: bulevar;
     outline: none;
     text-transform: uppercase;
     position: relative;
-    font-family: "shentox-bold";
-    letter-spacing: 2.4px;
+    font-family: "Mongoose-bold";
+    letter-spacing: 3px;
     left: 10rem;
 }
 
@@ -65,7 +65,7 @@ a{
 
 .list_nav_desktop a{
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: rgb(255, 255, 255);
     letter-spacing: .5px;
     font-family: "benton-black";

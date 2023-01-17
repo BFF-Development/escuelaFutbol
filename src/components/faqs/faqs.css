@@ -2,7 +2,8 @@
     width: 100%;
     min-height: 75vh;
     position: relative;
-    background-color: white;
+    background-color: rgb(255, 216, 89);
+
     display: flex;
     justify-content: center;
     align-items: center;
