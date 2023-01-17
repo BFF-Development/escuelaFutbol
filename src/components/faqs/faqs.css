@@ -6,271 +6,285 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  
-  .container_Faqs {
-      margin: 0rem auto;
-      padding: 4rem;
-      width: 80rem;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-direction: column;
-      gap: 7rem;
-      position: relative;
-  }
-  
-  .container_Faqs h2{
-      font-size: 3.6rem;
-      font-family: "benton-black";
-      letter-spacing: 2.6px;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: #000000;
-      position: relative;
-      width: 100%;
-      height: 100%;
-  }
-  
-  .container_Faqs h2::after{
-      content: "";
-      position: absolute;
-      width: 28rem;
-      top: 5.4rem;
-      left: .7rem;
-      height: 1rem;
-      background: #6CAAE4;
-      transform: skew(40deg);
-  }
-    
-  .box_faq .box_faq-item {
-      border-bottom: 1px solid #e5e5e5;
-  }
-  
-  .box_faq .box_faq-item button[aria-expanded=true] {
-      border-bottom: 1px solid #81e1f0;
-  }
-  
-  
-  .box_faq button {
-    position: relative;
-    display: block;
-    text-align: left;
-    width: 100%;
-    padding: 1em 0;
-    color: #020303;
-    font-size: 2.15rem;
-    font-weight: 900;
-    font-family: "benton-bold";
-    letter-spacing: 1px;
-    border: none;
-    background: none;
-    outline: none;
-    transition: all .2s ease;
-  
-  }
-  
-  
-  .box_faq .box_faq-content p {
-      margin: 2em 0;
-      font-family: "montserrat";
-      letter-spacing: .5px;
-      line-height: 2.5rem;
-      font-size: 1.65rem;
-      font-weight: 600;
-      color: rgb(5, 5, 5);
-  }
-  
-  .box_faq button:hover, .box_faq button:focus {
-    cursor: pointer;
-    color: #6CAAE4;
-  }
-  
-  .box_faq button:hover::after, .box_faq button:focus::after {
-    cursor: pointer;
-    color: #24c0d8;
-    border: 1px solid #24c0d8;
-    transition: all .4s ease;
-  }
-  
-  .box_faq button .box_faq-title {
-    padding: 1em 1.5em 1em 0;
-  }
-  
-  .box_faq button .icon {
-    position: absolute;
-    top: 18px;
-    right: 0;
-    width: 22px;
-    height: 22px;
-    border: 1px solid;
-    border-radius: 22px;
+}
+
+
+.container_Faqs {
+    margin: 0rem auto;
+    padding: 4rem;
+    width: 80rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7rem;
+    position: relative;
+}
   
-  .box_faq button .icon::before {
-    display: block;
-    position: absolute;
+  
+.boxfaqs::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: transparent url("../assets/src/backgrounds/noise.png") repeat 0 0;
+  background-repeat: repeat;
+  animation: _noiseAnim_judif_1 .2s infinite;
+  width: 100%;
+  height: 100%;
+}
+
+
+.container_Faqs h2{
+    font-size: 3.6rem;
+    font-family: "benton-black";
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container_Faqs h2::after{
     content: "";
-    top: 9px;
-    left: 5px;
-    width: 10px;
-    height: 2px;
-    background: currentColor;
-  }
-  
-  .box_faq button .icon::after {
-    display: block;
     position: absolute;
-    content: "";
-    top: 5px;
-    left: 9px;
-    width: 2px;
-    height: 10px;
-    background: currentColor;
+    width: 28rem;
+    top: 5.4rem;
+    left: .7rem;
+    height: 1rem;
+    background: #6CAAE4;
+    transform: skew(40deg);
+}
+  
+.box_faq .box_faq-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box_faq .box_faq-item button[aria-expanded=true] {
+    border-bottom: 1px solid #81e1f0;
+}
+
+
+.box_faq button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #020303;
+  font-size: 2.15rem;
+  font-weight: 900;
+  font-family: "benton-bold";
+  letter-spacing: 1px;
+  border: none;
+  background: none;
+  outline: none;
+  transition: all .2s ease;
+
+}
+
+
+.box_faq .box_faq-content p {
+    margin: 2em 0;
+    font-family: "montserrat";
+    letter-spacing: .5px;
+    line-height: 2.5rem;
+    font-size: 1.65rem;
+    font-weight: 600;
+    color: rgb(5, 5, 5);
+}
+
+.box_faq button:hover, .box_faq button:focus {
+  cursor: pointer;
+  color: #6CAAE4;
+}
+
+.box_faq button:hover::after, .box_faq button:focus::after {
+  cursor: pointer;
+  color: #24c0d8;
+  border: 1px solid #24c0d8;
+  transition: all .4s ease;
+}
+
+.box_faq button .box_faq-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.box_faq button .icon {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box_faq button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+
+.box_faq button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.box_faq button[aria-expanded=true] {
+  color: #6CAAE4;
+  transition: all .4s ease;
+}
+
+.box_faq button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+
+.box_faq button[aria-expanded=true] + .box_faq-content {
+  opacity: 1;
+  max-height: 20rem;
+  transition: all 200ms linear;
+}
+
+.box_faq .box_faq-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+}
+
+
+@media screen and (max-width:810px) {
+  .container_Faqs {
+      width: 60rem;
   }
-  
-  .box_faq button[aria-expanded=true] {
-    color: #6CAAE4;
-    transition: all .4s ease;
+
+    
+  .container_Faqs h2{
+    font-size: 3rem;
+    letter-spacing: 2px;
   }
-  
-  .box_faq button[aria-expanded=true] .icon::after {
-    width: 0;
+
+  .container_Faqs h2::after{
+    width: 26rem;
+    top: 5rem;
+    left: 0;
+    height: .9rem;
   }
-  
-  .box_faq button[aria-expanded=true] + .box_faq-content {
-    opacity: 1;
-    max-height: 20rem;
-    transition: all 200ms linear;
-  }
-  
-  .box_faq .box_faq-content {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 200ms linear, max-height 200ms linear;
-  }
-  
-  
-  @media screen and (max-width:810px) {
+}
+
+
+@media screen and (max-width:600px) {
     .container_Faqs {
-        width: 60rem;
+        width: 95%;
     }
-  
-      
+
     .container_Faqs h2{
-      font-size: 3rem;
-      letter-spacing: 2px;
+      font-size: 2.6rem;
+      letter-spacing: 1.7px;
     }
   
     .container_Faqs h2::after{
-      width: 26rem;
-      top: 5rem;
+      width: 24rem;
+      top: 4.4rem;
       left: 0;
       height: .9rem;
     }
+}
+
+@media screen and (max-width:550px) {
+  .box_faq button {
+    font-size: 1.7rem;
   }
+
+  .box_faq .box_faq-content p {
+    margin: 2em 0;
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+  }
+  .container_Faqs {
+    padding: 2rem;
+  }
+
   
-  
-  @media screen and (max-width:600px) {
-      .container_Faqs {
-          width: 95%;
-      }
-  
-      .container_Faqs h2{
-        font-size: 2.6rem;
-        letter-spacing: 1.7px;
-      }
+  .container_Faqs h2{
+    font-size: 2.2rem;
+    letter-spacing: .5px;
+  }
+
+  .container_Faqs h2::after{
+    width: 18rem;
+    top: 3.5rem;
+    height: .8rem;
+  }
+}
+
+
+@media screen and (max-width:370px) {
+
     
-      .container_Faqs h2::after{
-        width: 24rem;
-        top: 4.4rem;
-        left: 0;
-        height: .9rem;
-      }
-  }
-  
-  @media screen and (max-width:550px) {
     .box_faq button {
-      font-size: 1.7rem;
+        font-size: 1.6rem;
     }
   
+    .box_faq button[aria-expanded=true] + .box_faq-content {
+        opacity: 1;
+        max-height: 25rem;
+        transition: all 200ms linear;
+    }
+
     .box_faq .box_faq-content p {
-      margin: 2em 0;
-      line-height: 1.8rem;
-      font-size: 1.3rem;
+        margin: 2em 0;
+        line-height: 2rem;
+        font-size: 1.3rem;
     }
-    .container_Faqs {
-      padding: 2rem;
-    }
-  
-    
-    .container_Faqs h2{
-      font-size: 2.2rem;
-      letter-spacing: .5px;
-    }
-  
-    .container_Faqs h2::after{
-      width: 18rem;
-      top: 3.5rem;
-      height: .8rem;
-    }
-  }
-  
-  
-  @media screen and (max-width:370px) {
-  
-      
-      .box_faq button {
-          font-size: 1.6rem;
-      }
-    
-      .box_faq button[aria-expanded=true] + .box_faq-content {
-          opacity: 1;
-          max-height: 25rem;
-          transition: all 200ms linear;
-      }
-  
-      .box_faq .box_faq-content p {
-          margin: 2em 0;
-          line-height: 2rem;
-          font-size: 1.3rem;
-      }
-  
-     
-      .container_Faqs h2{
-        font-size:1.9rem;
-        letter-spacing: .5px;
-      }
-    
-      .container_Faqs h2::after{
-        width: 15rem;
-        top: 3rem;
-        height: .8rem;
-      }
-  }
-  
-  
-  
-  @media screen and (max-width:340px) {
-  
+
    
     .container_Faqs h2{
-      font-size:1.6rem;
-      letter-spacing: 0px;
+      font-size:1.9rem;
+      letter-spacing: .5px;
     }
   
     .container_Faqs h2::after{
       width: 15rem;
-      top: 2.8rem;
-      height: .7rem;
+      top: 3rem;
+      height: .8rem;
     }
-  
-    .container_Faqs {
-      gap: 4rem;
-    }
+}
+
+
+
+@media screen and (max-width:340px) {
+
+ 
+  .container_Faqs h2{
+    font-size:1.6rem;
+    letter-spacing: 0px;
   }
+
+  .container_Faqs h2::after{
+    width: 15rem;
+    top: 2.8rem;
+    height: .7rem;
+  }
+
+  .container_Faqs {
+    gap: 4rem;
+  }
+}

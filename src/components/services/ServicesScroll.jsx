@@ -11,7 +11,6 @@ const ServicesScroll = () => {
         let sections = gsap.utils.toArray(".panel");
     
         const tl = gsap.timeline({
-          duration:.7,
           scrollTrigger: {
             trigger: ".container_services",
              start:"-300px top",
@@ -26,7 +25,7 @@ const ServicesScroll = () => {
           scrollTrigger: {
             trigger: ".container_services",
             pin: true,
-            scrub:1,
+            scrub:2,
             snap: 1 / (sections.length - 1),
             end: () => "+=" + document.querySelector(".container_services").offsetWidth 
           }

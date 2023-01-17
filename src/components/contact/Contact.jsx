@@ -42,7 +42,7 @@ const Contact = () => {
           })
       
           tl.to( ".line_title_contact",{
-            width: "50%",
+            width: "35%",
             duration: .5,
             x: -100,
           })
@@ -51,7 +51,7 @@ const Contact = () => {
           tl.from( ".contactTitle",{
             opacity:0,
             duration: .8,
-            x:-200,
+            y:200,
           })
       
    /*        
