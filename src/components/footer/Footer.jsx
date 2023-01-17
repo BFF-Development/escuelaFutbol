@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="box_contains_footer">
 
         <div className="box_list_footer">
-          <div className="title_footer"> <p>ARCO</p> </div>
+          <div className="title_footer"> <p><strong className='ar'>AR</strong><strong className='co'>CO</strong> </p> </div>
 
           <ul className="list_Footer">
               <a href="# " > <li >Inicio         </li> </a>

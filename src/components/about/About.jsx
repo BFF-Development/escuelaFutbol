@@ -1,63 +1,53 @@
-import React, { useEffect } from 'react'
+import React, { useEffect  } from 'react'
 import "./about.css"
 import gsap from 'gsap'
+import { Power4 } from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
 
 const About = () => {
 
+
   useEffect(() => {
 
     gsap.registerPlugin(ScrollTrigger);
-
-    const animateAbout = () => {
-
-
-      gsap.from(".about_title",{
-        opacity:0,
-        y: 100,
-          scrollTrigger:{
-            trigger:".about",
-            start:"-50px",
-            end: "50px",
-            scrub: 1
-          }
-      })
-
-      const tl = gsap.timeline({
-        duration:2,
-        scrollTrigger:{
+    
+    const tl = gsap.timeline({
+      duration:.5,
+      ease: Power4.easeOut,
+      scrollTrigger:{
           trigger:".about",
           pin:true,
-          scrub:2,
-          end:"+=1000"
+          start:"-66px top",
+          end:"+=500",
         }
-      })
-  
- /*      tl.to(".about",{
-        background:"black",
-      })
+    })
 
-      tl.to(".about_title",{
-        color:"white",
-      }) */
-  
- 
-    }
+    
+    tl.to( ".lineIz-about",{
+      width: "50%",
+      duration: .5,
+      x: -300,
+    })
 
-    animateAbout()
+    
+    tl.from( ".aboutEffect_title",{
+      opacity:0,
+      x: -200,
+    })
 
-  return () => {
-    animateAbout()
 
-  }
 
 
   }, [])
 
 
   return (
-    <div className="about">
-        <h2 className='about_title'>Quienes somos?</h2>
+    <div className="about" id='about'>
+      <div className="containerAbout">
+        <div className="lineIz-about aboutEffect"></div>
+        <h2 className='about_title aboutEffect_title'>Quienes somos ?</h2>
+        <div className="lineDer-about aboutEffect"></div>
+      </div>
     </div>
   )
 }

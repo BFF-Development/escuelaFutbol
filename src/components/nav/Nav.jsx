@@ -21,10 +21,36 @@ const Nav = () => {
     
     setIsMobile(isMobileOrTablet());
 
+
+    let sectionPosition = document.getElementById("about").offsetTop;
+    let navbar = document.querySelector(".nav");
+    
+    // Agrega un escuchador de eventos "scroll" al documento
+    document.addEventListener("scroll", function() {
+      // Obtén la posición actual del scroll
+      var scrollPosition = window.pageYOffset;
+      
+      // Comprueba si el usuario ha desplazado hasta la sección específica
+      if (scrollPosition >= sectionPosition) {
+        // Añade la clase "navbar-changed" a la barra de navegación
+        navbar.classList.add("nav_active");
+      } else {
+        // Elimina la clase "navbar-changed" de la barra de navegación
+        navbar.classList.remove("nav_active");
+      }
+    });
+
+
+
+
+
+
+
     function handleResize() {
       setIsMobile(isMobileOrTablet());
     }
-  
+    
+
     window.addEventListener("resize", handleResize);
   
     return () => {
@@ -42,11 +68,11 @@ const Nav = () => {
         !isMobile ? 
           <header>
             <div className= "nav" >
-              <a href="/"> <p className='titleNav_desktop'>ARCO</p> </a>
+              <a href="/"> <p className='titleNav_desktop'><strong className='ar'>AR</strong><strong className='co'>CO</strong> </p> </a>
 
               <ul className='list_nav_desktop'>
                 <a href="# " > <li >Inicio         </li> </a>
-                <a href="# " > <li >Quienes somos  </li> </a>
+                <a href="#about " > <li >Quienes somos  </li> </a>
                 <a href="#servicios " > <li >Servicios      </li> </a>
                 <a href="# " > <li >Blog           </li> </a>
                 <a href="#contact " > <li >Contacto </li> </a>
@@ -72,7 +98,7 @@ const Nav = () => {
               {isActive && 
                 <ul className='list_nav_mobile' >
                   <a href="# " >  <li className='list_mobile' onClick={() => handleToggle()}>Inicio         </li> </a>
-                  <a href="# " >  <li className='list_mobile' onClick={() => handleToggle()}>Quienes somos  </li> </a>
+                  <a href="#about " >  <li className='list_mobile' onClick={() => handleToggle()}>Quienes somos  </li> </a>
                   <a href="#servicios " >  <li className='list_mobile' onClick={() => handleToggle()}>Servicios      </li> </a>
                   <a href="# " >  <li className='list_mobile' onClick={() => handleToggle()}>Blog           </li> </a>
                   <a href="#contact " > <li className='list_mobile' onClick={() => handleToggle()}>Contacto </li> </a>

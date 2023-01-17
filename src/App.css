@@ -46,12 +46,6 @@ html{
 }
 
 
-@font-face {
-  font-family: 'benton-light';
-  src: url('./components/assets/fonts/benton/bentonsanslight.ttf') format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
   font-family: 'benton-bold';
@@ -60,12 +54,6 @@ html{
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'benton-medium';
-  src: url('./components/assets/fonts/benton/bentonsansmedium.ttf') format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
   font-family: 'benton-black';
@@ -78,6 +66,20 @@ html{
 @font-face {
   font-family: 'shentox-bold';
   src: url('./components/assets/fonts/benton/Shentox-bold.otf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mongoose-bold';
+  src: url('./components/assets/fonts/creativ/PPFormula.woff') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mongoose-black';
+  src: url('./components/assets/fonts/creativ/Mongoose-Medium.woff2') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -115,6 +117,14 @@ html{
 
 .App{
   overflow-x: hidden;
-  background-color: black;
+  background-color: rgb(8, 8, 8);
+  overflow: hidden;
 
+}
+
+.ar{
+  color: rgb(165, 219, 255);
+}
+.co{
+  color: rgb(255, 224, 140);
 }
