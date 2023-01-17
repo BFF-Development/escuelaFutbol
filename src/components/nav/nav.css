@@ -1,9 +1,11 @@
+a{
+    text-decoration: none;
+}
 
 .nav{
     position: fixed;
     width: 100%;
     height: 7rem;
-    transition: all .4s ease-in-out;
     z-index: 99999 !important;
     display: flex;
     justify-content: space-between;
@@ -16,17 +18,18 @@
 .nav_active{
     background-color: rgba(0, 0, 0, 0.966);
     backdrop-filter: blur(10rem);
-    border-bottom: 3px solid rgb(144, 220, 255);
-    filter: drop-shadow(0 0 8px rgb(144, 220, 255));
     transition: all 1s ease-in-out;
+}
+
+.listEffectNav{
+    transition: opacity 3s ease-in;
+
 }
 
 
 
 /* desktop */
-a{
-    text-decoration: none;
-}
+
 
 .titleNav_desktop{
     font-size: 2.6rem;
@@ -47,52 +50,78 @@ a{
     align-items: center;
     gap: 0rem;
     position: relative;
-    transition: all 1s ease;
     top: 0rem;
     right: 5rem;
+    transition: right .7s ease;
+}
+
+
+
+.list_nav_desktop li{
+    position: relative;
+    top:0rem;
+    padding:2rem 1rem;
 }
 
 .list_nav_desktop a{
     text-decoration: none;
-}
-
-.list_nav_desktop li{
-    position: relative;
     font-size: 1.4rem;
     color: rgb(255, 255, 255);
     letter-spacing: .5px;
     font-family: "benton-black";
     outline: none;
     text-transform: uppercase;
-    top:0rem;
-    transition: all .4s ease;
+    transition: color 1s ease-in-out;
     cursor: pointer;
-    padding:2rem 1rem;
 }
 
 
-.list_nav_desktop a li:after {
-  content: '';
-  position: absolute;
-  top: -.9rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(255, 194, 63);
-  z-index: -1;
-  transform: skewX(-30deg);
-  opacity: 0;
-  height: 7rem;
-  transition: opacity 0.3s;
+
+ .toggleDeskt{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    right: 3rem;
+    top: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: .8rem;
+    cursor: pointer;
+    z-index: 999999 !important;
+    list-style: none;
 }
-.list_nav_desktop a:hover li{
-  color: rgb(0, 0, 0);
-  transition: all .4s ease;
+
+
+
+.lineD{
+    width: 70%;
+    height: .18rem;
+    background-color: rgb(255, 255, 255);
+    transition: background-color 1s ease;
 }
-.list_nav_desktop a:hover li:after{
-  opacity: 1;
+
+.line1D{
+    width: 50%;
+    position: relative;
+    background-color: rgb(255, 254, 254);
 }
-  
+
+.line2D{
+    width: 80%;
+    position: relative;
+    background-color: rgb(255, 254, 254);
+}
+
+.line3D{
+    width: 110%;
+    background-color: rgb(255, 254, 254);
+}
+
+
+
+
 
 /* mobile */
 

@@ -36,7 +36,7 @@
     position: relative;
     margin-bottom: 4rem ;
     margin-right: 50%;
-    top: -3rem;
+    top: 2.5rem;
     opacity: 1;
     color: rgb(244, 250, 253);
     z-index: 300;
@@ -48,7 +48,7 @@
   height: 13rem;
   position: absolute;
   left: -8rem;
-  top: 4rem;
+  top: 10rem;
   z-index: 200;
   background-color: rgb(125, 186, 255);
   transform: skew(-10deg) !important;

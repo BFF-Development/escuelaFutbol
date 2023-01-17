@@ -13,12 +13,13 @@ const About = () => {
     
     const tl = gsap.timeline({
       duration:.5,
-      ease: Power4.easeOut,
+      ease: Power4.easeInOut,
       scrollTrigger:{
           trigger:".about",
+          pinSpacing: true, 
           pin:true,
-          start:"-66px top",
-          end:"+=500",
+          start:"center center",
+          end:"+=1000",
         }
     })
 

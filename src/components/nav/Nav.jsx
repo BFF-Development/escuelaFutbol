@@ -11,14 +11,21 @@ const Nav = () => {
   }
 
   const [isActive, setActive] = useState(false);
+  const [navDesk , setNavDesk] = useState(false)
   const [isMobile, setIsMobile] = useState(false);
 
   const handleToggle = () => {
     setActive(!isActive);
   };
 
+  const handlerDeskt = () => {
+    setNavDesk(!navDesk)
+  }
+
+
+
+
   useEffect(() => {
-    
     setIsMobile(isMobileOrTablet());
 
 
@@ -42,23 +49,29 @@ const Nav = () => {
 
 
 
-
-
-
-
     function handleResize() {
       setIsMobile(isMobileOrTablet());
     }
     
 
     window.addEventListener("resize", handleResize);
+
+ 
   
     return () => {
       window.removeEventListener("resize", handleResize);
+      window.addEventListener("scroll", handlerDeskt)
+
     }
 
 
   },[])
+
+  if(navDesk){
+    window.addEventListener("scroll", () => {
+      setNavDesk(false)
+    })
+  }
 
 
   return (
@@ -70,17 +83,30 @@ const Nav = () => {
             <div className= "nav" >
               <a href="/"> <p className='titleNav_desktop'><strong className='ar'>AR</strong><strong className='co'>CO</strong> </p> </a>
 
-              <ul className='list_nav_desktop'>
-                <a href="# " > <li >Inicio         </li> </a>
-                <a href="#about " > <li >Quienes somos  </li> </a>
-                <a href="#servicios " > <li >Servicios      </li> </a>
-                <a href="# " > <li >Blog           </li> </a>
-                <a href="#contact " > <li >Contacto </li> </a>
-              </ul>
+              <div className="listEffectNav">
+                    <div>
+                        {navDesk ? 
+                          <ul className='list_nav_desktop' >
+                              <li><a href="# ">Inicio</a> </li>
+                              <li><a href="#about ">Quienes somos</a> </li>
+                              <li><a href="#servicios ">Servicios</a> </li>
+                              <li><a href="# ">Blog </a> </li>
+                              <li><a href="#contact ">Contacto</a> </li>
+                          </ul>
+      
+                          : 
+                          <ul className='toggleDeskt' onClick={handlerDeskt}> 
+                              <li className="lineD line1D"></li>
+                              <li className="lineD line2D"></li>
+                              <li className="lineD line3D"></li>
+                          </ul>
+  
+                        }
+               
+                    </div>
+              </div>
 
-             {/*  <div className="nav_degree"></div> */}
             </div>
-
           </header>
           
           : 

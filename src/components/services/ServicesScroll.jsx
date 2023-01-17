@@ -13,7 +13,7 @@ const ServicesScroll = () => {
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: ".container_services",
-             start:"-300px top",
+             start:"top top",
              end:"100% 100%",
           }
         })
