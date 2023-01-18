@@ -61,6 +61,7 @@
 }
 
 
+/* panel config */
 
 .panel{
     width: 100%;
@@ -90,9 +91,10 @@
     top: 5rem;
     margin-right: 30%;
     transform: skewY(-1deg) !important;
+    
 }
 
-.boxCuadro{
+.boxCuadro1{
     position: absolute;
     width: 5rem;
     height: 100%;
@@ -116,38 +118,51 @@
 
 
 
+/* punt */
+.circle-wrapper {
+    position: absolute;
+    top: 95vh;
+    left: 50%;
+    width: 200vw;
+    height: 200vw;
+    opacity: 1;
+    border-radius: 100%;
+    transform: translate(-50%, 0);
+
+}
+.punt1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(255, 216, 89);
+}
+
+.punt1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent url("../assets/src/backgrounds/noise.png") repeat 0 0;
+    background-repeat: repeat;
+    animation: _noiseAnim_judif_1 .2s infinite;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
 
 
 
 @media screen and (max-width:550px) {
 
-    .services_title {
-        font-size: 2.5rem;
-        letter-spacing: .5px;
-        margin-bottom: 1rem;
-    }
-    
-    .services_title::after{
-        top: 3.8rem;
-        width: 11rem;
-        height: .8rem;
-    }
+ 
 
 }
 
   
-  @media screen and (max-width:370px) {
-  
-      
-    .services_title{
-        font-size: 2.5rem;
-        letter-spacing: .5px;
-        margin-bottom: 1rem;
-    }
+@media screen and (max-width:370px) {
+
     
-    .services_title::after{
-        top: 3.8rem;
-        width: 11rem;
-      }
-  }
+}
   

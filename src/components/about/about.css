@@ -58,111 +58,38 @@
 
 
 @media screen and (max-width:1440px) {
-  .about_title{
-    font-size: 10rem;
-  }
 
-  .lineIz-about{
-    width: 32rem;
-    height: 4rem;
-  }
-  
-  .lineDer-about{
-    width: 52rem;
-    height: 4rem;
-  }
-  
   
 }
 
 @media screen and (max-width:1170px) {
-  .about_title{
-    font-size: 8rem;
-    top: 2rem;
-  }
-  .lineIz-about{
-    width: 32rem;
-    height: 3.5rem;
-  }
-  
-  .lineDer-about{
-    width: 52rem;
-    height: 3.5rem;
-  }
+
   
 }
 
 
 
 @media screen and (max-width:870px) {
-    .about_title{
-      font-size: 7rem;
-      margin-right: 23%;
-      top: 2rem;
-    }
 
-    .lineDer-about{
-      width: 42rem;
-      height: 3.5rem;
-    }
-    
 }
   
 
   
-  @media screen and (max-width:550px) {
-    .about_title{
-      margin-right: 0%;
-      font-size: 5rem;
-      letter-spacing: 5.5px;
-    }
-
-    .lineIz-about{
-      width: 27rem;
-      height: 3.5rem;
-    }
-
-    .lineDer-about{
-      width: 32rem;
-      height: 3.5rem;
-    }
+@media screen and (max-width:550px) {
 
 
-  }
+}
   
   
-  @media screen and (max-width:370px) {
+@media screen and (max-width:370px) {
 
-    .about_title{
-      margin-right: 0%;
-      font-size: 4.5rem;
-      letter-spacing: 5.5px;
-    }
 
-    .lineIz-about{
-      width: 22rem;
-      height: 3.5rem;
-    }
 
-    .lineDer-about{
-      width: 27rem;
-      height: 3.5rem;
-    }
-
-  }
+}
   
   
-  @media screen and (max-width:300px) {
+@media screen and (max-width:300px) {
       
-    .about_title{
-      margin-right: 0%;
-      font-size: 4rem;
-      letter-spacing: 5.5px;
-    }
 
-    .lineDer-about{
-      width: 23rem;
-      height: 3.5rem;
-    }
 }
 

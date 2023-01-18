@@ -177,8 +177,8 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    letter-spacing: 1px;
-    font-size: 2rem;
+    letter-spacing: .9px;
+    font-size: 1.9rem;
     margin-right: 15rem;
 }
 

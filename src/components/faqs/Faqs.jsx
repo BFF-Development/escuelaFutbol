@@ -1,5 +1,8 @@
 import React, {useEffect} from 'react'
 import "./faqs.css"
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/src/ScrollTrigger'
+import { Power4 } from 'gsap'
 
 const Faqs = () => {
 
@@ -20,6 +23,42 @@ const Faqs = () => {
         }
     
         items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+
+        /* animation title */
+        gsap.registerPlugin(ScrollTrigger);
+
+        const tl = gsap.timeline({
+            duration:1,
+            ease: Power4.easeOut,
+            scrollTrigger:{
+                trigger:".boxfaqs",
+                /* pin:true, */
+                start:"-600px top",
+                end:"-=500",
+              }
+          })
+      
+          tl.to( ".line_title_faqs",{
+            width: "85%",
+            duration: .5,
+            x: -100,
+          })
+      
+         
+          tl.from( ".faqsTitle",{
+            opacity:0,
+            duration: .8,
+            y:20,
+          })
+
+          tl.from( ".box_faq-item",{
+            opacity:0,
+            duration: .8,
+            y:20,
+          })
+
+
 
         return () => {
             items.forEach(item => item.addEventListener('click', toggleAccordion));
@@ -56,7 +95,8 @@ const Faqs = () => {
   return (
     <div className="boxfaqs"id='faqs'>
         <div className="container_Faqs" >
-            <h2>Preguntas Frecuentes</h2>
+            <div className="line_title_faqs"></div>
+            <h2 className="faqsTitle">Preguntas Frecuentes</h2>
 
             <div className="box_faq">
                 {faqs.map((index, key) => {

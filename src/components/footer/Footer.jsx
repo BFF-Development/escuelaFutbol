@@ -20,7 +20,7 @@ const Footer = () => {
 
           <ul className="list_Footer">
               <a href="# " > <li >Inicio         </li> </a>
-              <a href="# " > <li >Quienes somos  </li> </a>
+              <a href="#about " > <li >Quienes somos  </li> </a>
               <a href="#servicios " > <li >Servicios      </li> </a>
               <a href="# " > <li >Blog           </li> </a>
               <a href="#contact " > <li >Contacto       </li> </a>

@@ -8,19 +8,22 @@ export const Home = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const tl = gsap.timeline({
-      scrollTrigger:{
-        trigger:".about",
-        start: "center center",
-        end: "+= 1000",
-        scrub:1,
-      }
-    })
 
-    tl.from( ".containerHome",{
+    gsap.to( ".containerHome",{
       opacity:0,
       filter:"blur(20px)",
+      yPercent: -50 ,
+      scrollTrigger:{
+        trigger:".about",
+        start: "-70% top",
+        scrub:2,
+        snap: .5,
+      }
     },)
+
+   
+
+
 
    
   },[])
