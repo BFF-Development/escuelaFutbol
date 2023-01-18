@@ -87,7 +87,7 @@ const Nav = () => {
                     <div>
                         {navDesk ? 
                           <ul className='list_nav_desktop' >
-                              <li><a href="javascript:location.reload() ">Inicio</a> </li>
+                              <li><a href="#home ">Inicio</a> </li>
                               <li><a href="#about ">Quienes somos</a> </li>
                               <li><a href="#servicios ">Servicios</a> </li>
                               <li><a href="# ">Blog </a> </li>
@@ -123,7 +123,7 @@ const Nav = () => {
               
               {isActive && 
                 <ul className='list_nav_mobile' >
-                  <a href="# " >  <li className='list_mobile' onClick={() => handleToggle()}>Inicio         </li> </a>
+                  <a href="#home " >  <li className='list_mobile' onClick={() => handleToggle()}>Inicio         </li> </a>
                   <a href="#about " >  <li className='list_mobile' onClick={() => handleToggle()}>Quienes somos  </li> </a>
                   <a href="#servicios " >  <li className='list_mobile' onClick={() => handleToggle()}>Servicios      </li> </a>
                   <a href="# " >  <li className='list_mobile' onClick={() => handleToggle()}>Blog           </li> </a>
