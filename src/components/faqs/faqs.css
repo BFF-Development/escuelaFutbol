@@ -58,7 +58,7 @@
   position: absolute;
   top: 9rem;
   z-index: 200;
-  background-color: rgb(125, 186, 255);
+  background-color: rgb(0, 0, 0);
   transform: skew(-10deg) !important;
   border-radius: 5px;
 }
@@ -68,11 +68,11 @@
 /* faqs */
 
 .box_faq .box_faq-item {
-    border-bottom: 2px solid #e5e5e5;
+    border-bottom: 2px solid #f08181;
 }
 
 .box_faq .box_faq-item button[aria-expanded=true] {
-    border-bottom: 3px solid #81e1f0;
+    border-bottom: 3px solid #f08181;
 
 }
 
@@ -83,7 +83,7 @@
   text-align: left;
   width: 100%;
   padding: 1em 0;
-  color: #ffffff;
+  color: #000000;
   font-size: 4rem;
   font-family: "Mongoose-bold";
   text-transform: uppercase;
@@ -104,18 +104,18 @@
     font-size: 2.1rem;
     font-weight: 600;
     padding: 0 1rem;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .box_faq button:hover, .box_faq button:focus {
   cursor: pointer;
-  color: #6CAAE4;
+  color: #e46c6c;
 }
 
 .box_faq button:hover::after, .box_faq button:focus::after {
   cursor: pointer;
-  color: #24c0d8;
-  border: 1px solid #24c0d8;
+  color: #d82424;
+  border: 1px solid #d82424;
   transition: all .4s ease;
 }
 
@@ -159,7 +159,7 @@
 }
 
 .box_faq button[aria-expanded=true] {
-  color: #6CAAE4;
+  color: #e46c6c;
   transition: all .4s ease;
 }
 
