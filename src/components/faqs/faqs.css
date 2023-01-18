@@ -2,7 +2,6 @@
     width: 100%;
     min-height: 75vh;
     position: relative;
-    background-color: rgb(255, 224, 122);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,6 +17,7 @@
   animation: _noiseAnim_judif_1 .2s infinite;
   width: 100%;
   height: 100%;
+  background-color:rgb(255, 251, 0)
 }
 
 
@@ -48,7 +48,7 @@
   margin-bottom: 10rem ;
   top: 6rem;
   opacity: 1;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   z-index: 300;
 }
 
@@ -58,7 +58,7 @@
   position: absolute;
   top: 9rem;
   z-index: 200;
-  background-color: rgb(0, 0, 0);
+  background-color:#1E1C0C;
   transform: skew(-10deg) !important;
   border-radius: 5px;
 }
@@ -67,12 +67,17 @@
 
 /* faqs */
 
+
+.box_faq{
+  width: 54vw;
+}
+
 .box_faq .box_faq-item {
-    border-bottom: 2px solid #f8f8f8;
+    border-bottom: 4px solid #ffffff;
 }
 
 .box_faq .box_faq-item button[aria-expanded=true] {
-    border-bottom: 3px solid #f8f8f8;
+    border-bottom: 4px solid #009A93;
 
 }
 
@@ -83,7 +88,7 @@
   text-align: left;
   width: 100%;
   padding: 1em 0;
-  color: #000000;
+  color: #1E1C0C;
   font-size: 4rem;
   font-family: "Mongoose-bold";
   text-transform: uppercase;
@@ -104,17 +109,17 @@
     font-size: 2.1rem;
     font-weight: 600;
     padding: 0 1rem;
-    color: rgb(0, 0, 0);
+    color: #1E1C0C;
 }
 
 .box_faq button:hover, .box_faq button:focus {
   cursor: pointer;
-  color: #8fbfff;
+  color: #009A93;
 }
 
 .box_faq button:hover::after, .box_faq button:focus::after {
   cursor: pointer;
-  color: #8fbfff;
+  color: #007083;
   border: 1px solid #8fbfff;
   transition: all .4s ease;
 }
@@ -134,6 +139,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(36, 36, 36);
 }
 
 .box_faq button .icon::before {
@@ -145,6 +151,7 @@
   width: 10px;
   height: 2px;
   background: currentColor;
+  background-color: white;
 }
 
 .box_faq button .icon::after {
@@ -156,10 +163,12 @@
   width: 2px;
   height: 10px;
   background: currentColor;
+  background-color: white;
+
 }
 
 .box_faq button[aria-expanded=true] {
-  color: #8fbfff;
+  color: #007083;
   transition: all .4s ease;
 }
 

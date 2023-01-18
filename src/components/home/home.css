@@ -8,8 +8,10 @@
     width: 100%;
     min-height: 100vh;
     background-color: black;
-    background-image: url("../assets/src/backgrounds/back.png");
-    background-size: cover;
+    background-image: url("../assets/src/backgrounds/back2.jpg");
+    background-size: contain;
+    background-position: 180% 0%;
+    background-repeat: no-repeat;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     pointer-events: none;
@@ -30,26 +32,26 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.2rem;
     padding: 2rem;
-    margin-left: 3%;
-    margin-top: -16%;
+    margin-left: 2%;
+    margin-top: -14%;
     width: 50vw;
     color: rgb(255, 255, 255);
 }
 
 .titleHome{
     position: relative;
-    font-size: 5.6rem;
+    font-size: 8rem;
     letter-spacing: 2px;
-    font-family: "shentox-bold";
+    font-family: "Mongoose-bold";
     text-transform: uppercase;
 }
 
 
 .subtitle_home{
     position: relative;
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     letter-spacing: 1px;
     font-family: "ArticulatCF-bold";
     top: -1.5rem;
@@ -59,7 +61,7 @@
     position: relative;
     font-size: 1.4rem;
     letter-spacing: .5px;
-    font-family: "montserrat-semiBold";
+    font-family: "montserrat";
     width: 60%;
     text-align: inherit;
     line-height: 3rem;

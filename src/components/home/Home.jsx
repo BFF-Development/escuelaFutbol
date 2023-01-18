@@ -33,7 +33,7 @@ export const Home = () => {
       <div className="containerHome">
         <div className="boxText_home">
           <h1 className="titleHome">
-            Academia de Futbol <strong className='ar'>AR</strong><strong className='co'>CO</strong> 
+            Academia de Futbol 
           </h1>
           <h2 className='subtitle_home'>
             Formamos deportistas con disciplina, dedicación y pasión.
