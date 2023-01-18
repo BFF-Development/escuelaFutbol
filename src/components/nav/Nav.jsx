@@ -87,7 +87,7 @@ const Nav = () => {
                     <div>
                         {navDesk ? 
                           <ul className='list_nav_desktop' >
-                              <li><a href="# ">Inicio</a> </li>
+                              <li><a href="javascript:location.reload() ">Inicio</a> </li>
                               <li><a href="#about ">Quienes somos</a> </li>
                               <li><a href="#servicios ">Servicios</a> </li>
                               <li><a href="# ">Blog </a> </li>
