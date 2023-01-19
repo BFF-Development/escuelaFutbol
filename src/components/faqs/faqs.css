@@ -58,7 +58,7 @@
   position: absolute;
   top: 9rem;
   z-index: 200;
-  background-color:#1E1C0C;
+ background-color:rgb(52, 17, 107);
   transform: skew(-10deg) !important;
   border-radius: 5px;
 }
@@ -77,7 +77,7 @@
 }
 
 .box_faq .box_faq-item button[aria-expanded=true] {
-    border-bottom: 4px solid #009A93;
+    border-bottom: 4px solid rgb(110, 53, 201);
 
 }
 
@@ -114,13 +114,13 @@
 
 .box_faq button:hover, .box_faq button:focus {
   cursor: pointer;
-  color: #009A93;
+  color: rgb(52, 17, 107);
 }
 
 .box_faq button:hover::after, .box_faq button:focus::after {
   cursor: pointer;
-  color: #007083;
-  border: 1px solid #8fbfff;
+  color: rgb(52, 17, 107);
+  border: 1px solid rgb(52, 17, 107);
   transition: all .4s ease;
 }
 
@@ -139,7 +139,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(52, 17, 107);
 }
 
 .box_faq button .icon::before {
@@ -168,7 +168,7 @@
 }
 
 .box_faq button[aria-expanded=true] {
-  color: #007083;
+  color: rgb(89, 40, 167);
   transition: all .4s ease;
 }
 

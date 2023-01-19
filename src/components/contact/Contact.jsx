@@ -20,26 +20,22 @@ const Contact = () => {
     
 
           const tl = gsap.timeline({
-            duration:1,
             ease: Power4.easeOut,
             scrollTrigger:{
                 trigger:".container_contact",
-                /* pin:true, */
-                start:"-600px top",
-                end:"-=500",
+                start:"-200px top",
               }
           })
       
           tl.to( ".line_title_contact",{
             width: "35%",
-            duration: .5,
             x: -100,
           })
       
          
           tl.from( ".contactTitle",{
             opacity:0,
-            duration: .8,
+            duration: .5,
             y:20,
           })
 

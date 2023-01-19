@@ -28,8 +28,8 @@ const ServicesScroll = () => {
           scrollTrigger: {
             trigger: ".container_services",
             pin: true,
-            scrub:2,
-            snap: 1 / (sections.length - 1),
+            scrub:1.5,
+            snap: 1 / (sections.length - 1) ,
             end: () => "+=" + document.querySelector(".container_services").offsetWidth 
           }
         });
@@ -40,7 +40,7 @@ const ServicesScroll = () => {
         const tl_titles = gsap.timeline({
           scrollTrigger: {
             trigger: ".container_services",
-             start:"-380px center",
+             start:"-350px center",
              end:"+=550",
              snap: 5,
           }
@@ -48,10 +48,10 @@ const ServicesScroll = () => {
 
 
         tl_titles.from(".boxCuadro",{
-          delay:1,
-          opacity: -1,
+          delay:.8,
+          opacity: 0,
           x: -100,
-          duration: .5,
+          duration: 1,
           stagger: .1,
         })
 
@@ -69,7 +69,7 @@ const ServicesScroll = () => {
         const tl_punt = gsap.timeline({
           scrollTrigger: {
             trigger: ".contact",
-             start:"-800px top",
+             start:"-900px top",
              end:"+=1000",
              scrub:2
           }

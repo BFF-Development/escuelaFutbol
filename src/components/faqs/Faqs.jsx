@@ -55,6 +55,7 @@ const Faqs = () => {
           tl.from( ".box_faq-item",{
             opacity:0,
             duration: .8,
+            stagger: .4,
             y:20,
           })
 
