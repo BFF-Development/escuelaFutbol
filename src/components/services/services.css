@@ -127,11 +127,11 @@
 .circle-wrapper {
     position: absolute;
     top: 95vh;
-    left: 50%;
     width: 200vw;
     height: 200vw;
     opacity: 1;
     border-radius: 100%;
+    left: 38%;
     transform: translate(-50%, 0);
 
 }

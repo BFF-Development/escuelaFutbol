@@ -11,13 +11,13 @@ export const Home = () => {
 
     gsap.to( ".home",{
       opacity:0,
+      duration: .1,
       filter:"blur(20px)",
-      yPercent: -50 ,
       scrollTrigger:{
-        trigger:".about",
-        start: "-70% top",
-        scrub:2,
-        snap: .5,
+        trigger:".containerHome",
+        start: "center center",
+        scrub:3,
+        snap: 3,
       }
     },)
 

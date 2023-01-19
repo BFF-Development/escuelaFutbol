@@ -42,26 +42,27 @@ const ServicesScroll = () => {
             trigger: ".container_services",
              start:"-350px center",
              end:"+=550",
-             snap: 5,
+         /*     snap: 5, */
           }
         })
 
 
         tl_titles.from(".boxCuadro",{
-          delay:.8,
+          delay:.6,
           opacity: 0,
           x: -100,
-          duration: 1,
-          stagger: .1,
+          duration: .5,
+          stagger: .3,
         })
 
+        let titlesService = gsap.utils.toArray(".strong_title-panel1");
 
 
-        tl_titles.from(".strong_title-panel1",{
-          opacity: -1,
+        tl_titles.from(titlesService,{
+          opacity: 0,
           y: 100,
-          duration: .1,
-          stagger: .5,
+          duration: 1,
+          stagger: .3,
         })
 
 
@@ -82,7 +83,7 @@ const ServicesScroll = () => {
            width: "0vw", 
            opacity:1, 
            border:0,
-          });
+        });
 
 
 
@@ -119,9 +120,8 @@ const ServicesScroll = () => {
         </section>
 
         <section className="panel panel3">
-          <div className="titlePanel1">
+           <div className="titlePanel1">
               <div className="boxCuadro boxCuadro1"></div>
-
               <strong className='strong_title-panel1'>Posibilidad </strong>
               <strong className='strong_title-panel1'>de </strong>
               <strong className='strong_title-panel1'>Realizar </strong>
@@ -130,21 +130,23 @@ const ServicesScroll = () => {
               <div className="boxCuadro boxCuadro2"></div>
 
             </div>
+            <div className="circle-wrapper">
+              <div className="punt1"></div>
+            </div>
         </section>
-
+{/* 
         <section className="panel panel4">
             <div className="titlePanel1">
               <div className="boxCuadro boxCuadro1"></div>
               <strong className='strong_title-panel1'>Valores</strong>
               <div className="boxCuadro boxCuadro2"></div>
-
             </div>
 
             <div className="circle-wrapper">
               <div className="punt1"></div>
             </div>
 
-        </section>
+        </section> */}
     </div>
   )
 }

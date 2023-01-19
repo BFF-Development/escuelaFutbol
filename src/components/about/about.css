@@ -1,7 +1,7 @@
 .about{
   position: relative;
-  height: 100vh;
   width: 100%;
+  min-height: 100vh;
   background-color: black;
 }
 
@@ -15,7 +15,7 @@
     flex-direction: column;
    /*  justify-content: center; */
     padding: 8rem 0;
-    gap: 10rem;
+    gap: 5rem;
 }
 
 
@@ -55,6 +55,27 @@
   z-index: 200;
   background-color: rgb(125, 186, 255);
   transform: skew(-10deg) !important;
+}
+
+
+/* text */
+
+.text_about{
+  width: 70%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text_about p{
+    font-family: "Montserrat";
+    letter-spacing: 2.5px;
+    font-size: 5.5rem;
+    font-weight: 600;
+    padding: 0 1rem;
+    color: #ffffff;
 }
 
 
