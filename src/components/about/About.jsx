@@ -1,8 +1,9 @@
 import React, { useEffect  } from 'react'
 import "./about.css"
 import gsap from 'gsap'
-import { Power4 } from 'gsap'
+import { Power4  } from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
+
 
 const About = () => {
 
@@ -13,6 +14,7 @@ const About = () => {
     
     const tl = gsap.timeline({
       duration:.5,
+
       ease: Power4.easeInOut,
       scrollTrigger:{
           trigger:".about",

@@ -40,13 +40,12 @@ const ServicesScroll = () => {
         const tl_titles = gsap.timeline({
           scrollTrigger: {
             trigger: ".container_services",
-             start:"-390px center",
+             start:"-380px center",
              end:"+=550",
              snap: 5,
           }
         })
 
-    
 
         tl_titles.from(".boxCuadro",{
           delay:1,
@@ -70,7 +69,7 @@ const ServicesScroll = () => {
         const tl_punt = gsap.timeline({
           scrollTrigger: {
             trigger: ".contact",
-             start:"-900px top",
+             start:"-800px top",
              end:"+=1000",
              scrub:2
           }

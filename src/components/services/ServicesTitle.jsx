@@ -21,7 +21,7 @@ const ServicesTitle = () => {
     })
 
     tl.to( ".line_title_service",{
-      width: "50%",
+      width: "55%",
       duration: .5,
       x: -100,
     })

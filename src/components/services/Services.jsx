@@ -7,10 +7,13 @@ const Services = () => {
 
 
   return (
-    <div className="services">
-      <ServicesTitle/>
-      <ServicesScroll/>
+    <div className="service_back">
+      <div className="services">
+        <ServicesTitle/>
+        <ServicesScroll/>
+      </div>
     </div>
+
   )
 }
 
