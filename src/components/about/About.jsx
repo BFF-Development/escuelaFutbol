@@ -1,9 +1,8 @@
 import React, { useEffect  } from 'react'
 import "./about.css"
 import gsap from 'gsap'
-import { Power4  } from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
-
+import logo from "../assets/src/backgrounds/logo.png"
 
 const About = () => {
 
@@ -27,10 +26,26 @@ const About = () => {
     })
 
 
+    tl.to( ".p_text_about",{
+      color: "white",
+      stagger: .01,
+      duration: .01,
+      scrollTrigger:{
+        trigger: ".containerAbout" ,
+        start: "10% top",
+        end: "+=1000",
+        scrub: 3,
+      }
+    })
+
+
+
 
     gsap.to(".box_text_about",{
       duration:2,
       ease: "none",
+      color: "white",
+      stagger: .01,
       y: "-122%",
       scrollTrigger:{
         trigger:".containerAbout",
@@ -40,21 +55,31 @@ const About = () => {
     })
 
 
-
-    tl.to( ".p_text_about",{
-      color: "white",
-      stagger: .01,
-      duration: .01,
+    const tl_logo = gsap.timeline({
       scrollTrigger:{
-        trigger: ".containerAbout" ,
-        start: "10% top",
-        end: "+=1600",
-        scrub: 3,
+        trigger:".containerAbout",
+        start:"top top",
+        end: "+=2000",
+        scrub: 2,
       }
     })
 
+    tl_logo.to(".logo_about_top",{
+      duration: 4,
+      opacity:0,
+    })
 
+    tl_logo.from(".logo_about_bottom",{
+      duration:4,
+      opacity:0,
+      rotateZ:360,
+      x: -800
+    })
 
+    tl_logo.from(".aca_str",{
+      duration: 2,
+      opacity:0,
+    })
 
   }, [])
 
@@ -65,6 +90,9 @@ const About = () => {
   let texto1 = "Para nosotros los que conformamos ARCO son fundamentales y nos encargamos de transmitir en todo momento a los jugadores, los valores del ser humano ante todo, los pilares conceptuales de la academia serán trabajo individual y en equipo, perseverancia, sacrificio, compañerismo, cuidado de su salud, buena alimentación, entre otros."
 
   let texto2 = "Los jugadores tendrán entre sus conceptos la mezcla de ideologías futbolísticas Argentinas y Colombianas para poder desenvolverse dentro  y  fuera de la cancha."
+
+  let title_quienes = "Quienes"
+  let title_somos = "Somos ?"
 
 
   const arrayPalabras = (texto) => {
@@ -86,6 +114,9 @@ const About = () => {
   let cadena1 = arrayPalabras(texto)
   let cadena2 = arrayPalabras(texto1)
   let cadena3 = arrayPalabras(texto2)
+  let cadenaTitle_quienes = arrayPalabras(title_quienes)
+  let cadenaTitle_somos = arrayPalabras(title_somos)
+
 
 
 
@@ -96,38 +127,39 @@ const About = () => {
         <div className="containerTitle_about">
 
           <div className="container_titulo_line">
-            <div className="line_title_abut"></div>
+              <div className="line_title_abut"></div>
 
               <div className="box_title_about">
                 <div className="quienes">
-                  <h2 className='about_title'>Q</h2>
-                  <h2 className='about_title'>u </h2>
-                  <h2 className='about_title'>i</h2>
-                  <h2 className='about_title'>e</h2>
-                  <h2 className='about_title'>n</h2>
-                  <h2 className='about_title'>e</h2>
-                  <h2 className='about_title'>s</h2>
+                {
+                  cadenaTitle_quienes.map((index, key) => {
+                    return <p key={key} className='about_title'>{index} </p>
+                  })
+                }
                 </div>
 
                 <div className="somos">
-                  <h2 className='about_title'>s</h2>
-                  <h2 className='about_title'>o</h2>
-                  <h2 className='about_title'>m</h2>
-                  <h2 className='about_title'>o</h2>
-                  <h2 className='about_title'>s</h2>
-                  <h2 className='about_title'>&nbsp;</h2>
-                  <h2 className='about_title'>?</h2>
+                {
+                  cadenaTitle_somos.map((index, key) => {
+                    return <p key={key} className='about_title'>{index} </p>
+                  })
+                }
                 </div>
 
               </div>
           </div>
-       
+            <div className="logo_about">
+                <img className='logo_about_bottom' src={logo} alt="logo" />
+            </div>
         </div>
         
 
     {/*     <div className="lineDer-about aboutEffect"></div>
  */}
         <div className="text_about">
+          <div className="logo_about">
+              <img className='logo_about_top' src={logo} alt="logo" />
+          </div>
           <div className="box_text_about">
 
             <div className="cadenaAbout cadena1_about">
