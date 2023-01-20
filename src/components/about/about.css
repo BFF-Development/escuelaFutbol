@@ -118,14 +118,8 @@
   object-fit: contain;
   width: 33rem;
   left: 7rem;
-  filter:grayscale(100%) opacity(.3) ;
-  transition: all 1s ease;
 }
 
-.logo_about_bottom:hover{
-  filter:grayscale(0%) opacity(1) ;
-  transition: all 1s ease;
-}
 
 
 

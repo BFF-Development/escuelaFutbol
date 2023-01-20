@@ -25,7 +25,7 @@ const About = () => {
       }
     })
 
-
+    
     tl.to( ".p_text_about",{
       color: "white",
       stagger: .01,
@@ -37,8 +37,6 @@ const About = () => {
         scrub: 3,
       }
     })
-
-
 
 
     gsap.to(".box_text_about",{
@@ -64,6 +62,7 @@ const About = () => {
       }
     })
 
+  
     tl_logo.to(".logo_about_top",{
       duration: 4,
       opacity:0,
@@ -80,6 +79,30 @@ const About = () => {
       duration: 2,
       opacity:0,
     })
+
+
+    const tl_title = gsap.timeline({
+      scrollTrigger:{
+        trigger:".containerAbout",
+        start:"top top",
+        end: "+=2000",
+      }
+    })
+
+
+    tl_title.to( ".about_title",{
+      duration: .4,
+      color:"rgb(125, 186, 255)",
+      stagger: .1
+    })
+
+
+    tl_title.to( ".about_title",{
+      duration: .5,
+      color:"rgb(255, 255, 255)",
+      stagger: .1
+    })
+
 
   }, [])
 
