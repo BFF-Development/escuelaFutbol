@@ -12,10 +12,11 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
    /*  justify-content: center; */
     padding: 8rem 0;
     gap: 5rem;
+
 }
 
 
@@ -35,18 +36,44 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: .3rem;
+  position: relative;
+  flex-direction: column;
+  border: 2px solid red;
+  width: 100%;
+  height: 100;
+
+}
+
+.quienes, .somos{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: row;
+  line-height: 13rem;
+}
+
+.somos{
+  left: 1rem;
+}
+
+.line_title_abut{
+  width: .5rem;
+  height: 28rem;
+  background-color: white;
+  position: absolute;
+  left: 26rem;
 }
 
 .about_title{
-    font-size: 10rem;
+    font-size: 12rem;
     font-family: "Mongoose-bold";
     letter-spacing: 1.6px;
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
 /*     margin-right: 50%; */
-    top: 1rem;
     opacity: 1;
     color: rgb(244, 250, 253);
     z-index: 300;
@@ -67,13 +94,23 @@
 
 /* text */
 
+.containerTitle_about{
+  width: 50%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .text_about{
   position: relative;
-  width: 60%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 10rem;
+  min-height: 100vh;
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -81,14 +118,17 @@
 .text_about p{
     font-family: "Montserrat";
     letter-spacing: 2.3px;
-    font-size: 1.7rem;
-    line-height: 2.4rem;
+    font-size: 3rem;
     text-align: center;
     font-weight: 600;
     padding: 0 1rem;
     color: rgb(255, 255, 255);
-}
+    margin-right: 10rem;
+  }
 
+
+
+/* vertical */
 
 .academia_vertical{
   font-weight: bold;
@@ -114,6 +154,11 @@
   background-clip: text;
   -webkit-background-clip: text;
 }
+
+
+
+
+
 
 @media screen and (max-width:1440px) {
 

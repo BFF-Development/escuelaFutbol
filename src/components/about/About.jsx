@@ -11,10 +11,36 @@ const About = () => {
   useEffect(() => {
 
     gsap.registerPlugin(ScrollTrigger);
-    
+
+
+  /*   const tl = gsap.timeline({
+      duration:.5,
+      ease: Power4.easeInOut,
+      scrollTrigger:{
+          trigger:".box_title_about",
+          pinSpacing: true, 
+          pin:true,
+          start:"-1px top",
+          end:"+=1000",
+        }
+    }) */
+
+    const tl = gsap.timeline()
+
+
+    tl.to(".about_title",{
+      duration:.5,
+      ease: Power4.easeInOut,
+      scrollTrigger:{
+          trigger:".containerTitle_about",
+          pin:true,
+          start:"top top",
+          scrub: 2,
+        }
+    })
+/*     
     const tl = gsap.timeline({
       duration:.5,
-
       ease: Power4.easeInOut,
       scrollTrigger:{
           trigger:".about",
@@ -24,7 +50,7 @@ const About = () => {
           end:"+=1000",
         }
     })
-
+ */
 /*     
     tl.to( ".lineIz-about",{
       width: "50%",
@@ -33,17 +59,22 @@ const About = () => {
     })
  */
     
-    tl.from( ".about_title",{
+/*     tl.from( ".about_title",{
       opacity:0,
       y: 50,
       stagger:.12,
     })
 
 
-    tl.to( ".about_title",{
-      duration: .4,
-      color:"rgb(125, 186, 255)",
-      stagger: .1
+    gsap.to( ".box_title_about",{
+      stagger: .1,
+      scrollTrigger:{
+        trigger:".about",
+        pinSpacing: true, 
+        pin:true,
+        start:"top top",
+        end: "100% 100%"
+      }
     })
 
 
@@ -65,7 +96,7 @@ const About = () => {
       duration: .4,
       opacity:0,
       stagger: .1
-    })
+    }) */
   }, [])
 
 
@@ -74,24 +105,33 @@ const About = () => {
       <div className="about_animation_full"></div>
       <div className="containerAbout">
         <div className="lineIz-about aboutEffect"></div>
+        <div className="containerTitle_about">
+          <div className="box_title_about">
+            <div className="line_title_abut"></div>
+            <div className="quienes">
+              <h2 className='about_title'>Q</h2>
+              <h2 className='about_title'>u </h2>
+              <h2 className='about_title'>i</h2>
+              <h2 className='about_title'>e</h2>
+              <h2 className='about_title'>n</h2>
+              <h2 className='about_title'>e</h2>
+              <h2 className='about_title'>s</h2>
+            </div>
 
-        <div className="box_title_about">
-          <h2 className='about_title'>Q</h2>
-          <h2 className='about_title'>u </h2>
-          <h2 className='about_title'>i</h2>
-          <h2 className='about_title'>e</h2>
-          <h2 className='about_title'>n</h2>
-          <h2 className='about_title'>e</h2>
-          <h2 className='about_title'>s</h2>
-          <h2 className='about_title'>&nbsp;</h2>
-          <h2 className='about_title'>s</h2>
-          <h2 className='about_title'>o</h2>
-          <h2 className='about_title'>m</h2>
-          <h2 className='about_title'>o</h2>
-          <h2 className='about_title'>s</h2>
-          <h2 className='about_title'>&nbsp;</h2>
-          <h2 className='about_title'>?</h2>
+            <div className="somos">
+              <h2 className='about_title'>s</h2>
+              <h2 className='about_title'>o</h2>
+              <h2 className='about_title'>m</h2>
+              <h2 className='about_title'>o</h2>
+              <h2 className='about_title'>s</h2>
+              <h2 className='about_title'>&nbsp;</h2>
+              <h2 className='about_title'>?</h2>
+            </div>
+
+
+          </div>
         </div>
+        
 
         <div className="lineDer-about aboutEffect"></div>
 
