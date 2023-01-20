@@ -25,129 +25,139 @@ const About = () => {
         }
     }) */
 
-    const tl = gsap.timeline()
-
-
-    tl.to(".about_title",{
-      duration:.5,
-      ease: Power4.easeInOut,
-      scrollTrigger:{
-          trigger:".containerTitle_about",
-          pin:true,
-          start:"top top",
-          scrub: 2,
-        }
-    })
-/*     
     const tl = gsap.timeline({
-      duration:.5,
-      ease: Power4.easeInOut,
-      scrollTrigger:{
-          trigger:".about",
-          pinSpacing: true, 
-          pin:true,
-          start:"-1px top",
-          end:"+=1000",
-        }
-    })
- */
-/*     
-    tl.to( ".lineIz-about",{
-      width: "50%",
-      duration: .5,
-      x: -300,
-    })
- */
-    
-/*     tl.from( ".about_title",{
-      opacity:0,
-      y: 50,
-      stagger:.12,
-    })
-
-
-    gsap.to( ".box_title_about",{
-      stagger: .1,
       scrollTrigger:{
         trigger:".about",
-        pinSpacing: true, 
         pin:true,
         start:"top top",
-        end: "100% 100%"
+        scrub: 2,
+        end: () => "+=" + document.querySelector(".about").offsetWidth 
       }
     })
 
 
-    tl.to( ".about_title",{
-      duration: .5,
-      color:"rgb(255, 255, 255)",
-      stagger: .1
+
+    tl.to(".box_text_about",{
+      duration:5,
+      ease: "none",
+      y: "-200%",
     })
 
-    tl.from( ".p_text_about",{
-      duration: .5,
-      opacity: 0,
-      stagger: .1,
-      y: 100
+
+    tl.to( ".p_text_about",{
+      color: "white",
+      stagger: 10,
+      duration: 2,
+      scrollTrigger:{
+        trigger: ".containerAbout" ,
+        start: "10% top",
+        end: "+=1600",
+        scrub: 2,
+      }
     })
 
-    
-    tl.from( ".aca_str",{
-      duration: .4,
-      opacity:0,
-      stagger: .1
-    }) */
+
   }, [])
+
+
+
+  let texto = "En ARCO queremos que sus hijos vengan a aprender, practicar y mejorar sus aptitudes en el deporte más lindo del mundo, el que iguala a todos los estratos sociales, ese en el que, cuando la pelota rueda, no distingue entre clases sociales sino que sólo harán diferencias en aquellos que mas pasión y entrega puedan darle a la redonda."
+
+  let texto1 = "Para nosotros los que conformamos ARCO son fundamentales y nos encargamos de transmitir en todo momento a los jugadores, los valores del ser humano ante todo, los pilares conceptuales de la academia serán trabajo individual y en equipo, perseverancia, sacrificio, compañerismo, cuidado de su salud, buena alimentación, entre otros."
+
+  let texto2 = "Los jugadores tendrán entre sus conceptos la mezcla de ideologías futbolísticas Argentinas y Colombianas para poder desenvolverse dentro  y  fuera de la cancha."
+
+
+  const arrayPalabras = (texto) => {
+    const cadena = []
+
+    for(let i = 0 ; i < texto.length ; i++){
+
+      if( texto[i] == " "){
+        cadena.push( <span> &nbsp;</span> )
+      }
+      else{
+        cadena.push(texto[i])
+      }
+    }
+
+    return cadena
+  }
+
+  let cadena1 = arrayPalabras(texto)
+  let cadena2 = arrayPalabras(texto1)
+  let cadena3 = arrayPalabras(texto2)
+
 
 
   return (
     <div className="about" id='about'>
-      <div className="about_animation_full"></div>
       <div className="containerAbout">
-        <div className="lineIz-about aboutEffect"></div>
+
         <div className="containerTitle_about">
-          <div className="box_title_about">
+
+          <div className="container_titulo_line">
             <div className="line_title_abut"></div>
-            <div className="quienes">
-              <h2 className='about_title'>Q</h2>
-              <h2 className='about_title'>u </h2>
-              <h2 className='about_title'>i</h2>
-              <h2 className='about_title'>e</h2>
-              <h2 className='about_title'>n</h2>
-              <h2 className='about_title'>e</h2>
-              <h2 className='about_title'>s</h2>
+
+              <div className="box_title_about">
+                <div className="quienes">
+                  <h2 className='about_title'>Q</h2>
+                  <h2 className='about_title'>u </h2>
+                  <h2 className='about_title'>i</h2>
+                  <h2 className='about_title'>e</h2>
+                  <h2 className='about_title'>n</h2>
+                  <h2 className='about_title'>e</h2>
+                  <h2 className='about_title'>s</h2>
+                </div>
+
+                <div className="somos">
+                  <h2 className='about_title'>s</h2>
+                  <h2 className='about_title'>o</h2>
+                  <h2 className='about_title'>m</h2>
+                  <h2 className='about_title'>o</h2>
+                  <h2 className='about_title'>s</h2>
+                  <h2 className='about_title'>&nbsp;</h2>
+                  <h2 className='about_title'>?</h2>
+                </div>
+
+              </div>
+          </div>
+       
+        </div>
+        
+
+    {/*     <div className="lineDer-about aboutEffect"></div>
+ */}
+        <div className="text_about">
+          <div className="box_text_about">
+
+            <div className="cadenaAbout cadena1_about">
+              {
+                cadena1.map((index, key) => {
+                  return <p key={key} className='p_text_about'>{index} </p>
+                })
+              }
             </div>
 
-            <div className="somos">
-              <h2 className='about_title'>s</h2>
-              <h2 className='about_title'>o</h2>
-              <h2 className='about_title'>m</h2>
-              <h2 className='about_title'>o</h2>
-              <h2 className='about_title'>s</h2>
-              <h2 className='about_title'>&nbsp;</h2>
-              <h2 className='about_title'>?</h2>
+            <div className="cadenaAbout cadena2_about">
+              {
+                cadena2.map((index, key) => {
+                  return <p key={key} className='p_text_about'>{index} </p>
+                })
+              }
             </div>
 
+            <div className="cadenaAbout cadena3_about">
+              {
+                cadena3.map((index, key) => {
+                  return <p key={key} className='p_text_about'>{index} </p>
+                })
+              }
+            </div>
 
           </div>
         </div>
         
-
-        <div className="lineDer-about aboutEffect"></div>
-
-        <div className="text_about">
-          <p className='p_text_about'>
-           En ARCO queremos que sus hijos vengan a aprender, practicar y mejorar sus aptitudes en el deporte más lindo del mundo, el que iguala a todos los estratos sociales, ese en el que, cuando la pelota rueda, no distingue entre clases sociales sino que sólo harán diferencias en aquellos que mas pasión y entrega puedan darle a la redonda.
-          </p>
-          <p className='p_text_about'>
-            Para nosotros los que conformamos ARCO son fundamentales y nos encargamos de transmitir en todo momento a los jugadores, los valores del ser humano ante todo, los pilares conceptuales de la academia serán trabajo individual y en equipo, perseverancia, sacrificio, compañerismo, cuidado de su salud, buena alimentación, entre otros.
-          </p>
-
-          <p className='p_text_about'>
-            Los jugadores tendrán entre sus conceptos la mezcla de ideologías futbolísticas Argentinas y Colombianas para poder desenvolverse dentro  y  fuera de la cancha.
-          </p>
-
-        </div>
       </div>
 
       <div className="academia_vertical">
