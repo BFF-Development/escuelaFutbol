@@ -13,48 +13,47 @@ const About = () => {
     gsap.registerPlugin(ScrollTrigger);
 
 
-  /*   const tl = gsap.timeline({
-      duration:.5,
-      ease: Power4.easeInOut,
-      scrollTrigger:{
-          trigger:".box_title_about",
-          pinSpacing: true, 
-          pin:true,
-          start:"-1px top",
-          end:"+=1000",
-        }
-    }) */
+    const tl = gsap.timeline()
 
-    const tl = gsap.timeline({
+    
+    tl.to( ".about",{
       scrollTrigger:{
         trigger:".about",
         pin:true,
-        start:"top top",
+        start:"-1px top",
         scrub: 2,
-        end: () => "+=" + document.querySelector(".about").offsetWidth 
+        end:"+=2400"
       }
     })
 
 
 
-    tl.to(".box_text_about",{
-      duration:5,
+    gsap.to(".box_text_about",{
+      duration:2,
       ease: "none",
-      y: "-200%",
+      y: "-122%",
+      scrollTrigger:{
+        trigger:".containerAbout",
+        start:"top top",
+        scrub: 2,
+      }
     })
+
 
 
     tl.to( ".p_text_about",{
       color: "white",
-      stagger: 10,
-      duration: 2,
+      stagger: .01,
+      duration: .01,
       scrollTrigger:{
         trigger: ".containerAbout" ,
         start: "10% top",
         end: "+=1600",
-        scrub: 2,
+        scrub: 3,
       }
     })
+
+
 
 
   }, [])

@@ -10,7 +10,6 @@ const ServicesScroll = () => {
 
 
         let sections = gsap.utils.toArray(".panel");
-    
 
         /* section antimation */
         const tl = gsap.timeline({
@@ -20,7 +19,7 @@ const ServicesScroll = () => {
              end:"100% 100%",
           }
         })
-
+    
 
         tl.to(sections, {
           xPercent: -100 * (sections.length - 1),

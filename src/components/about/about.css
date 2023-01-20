@@ -101,7 +101,6 @@
 
 
 
-
 /* text about */
 
 .text_about{
@@ -112,12 +111,11 @@
 }
 
 
-
 .box_text_about{
   width: 90%;
   position: absolute;
-  top: 95vh;
   display: flex;
+  top:95vh;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -146,7 +144,7 @@
 
 .academia_vertical{
   font-weight: bold;
-  position: fixed;
+  position: absolute;
   opacity: 1;
   bottom: 16rem;
   left: 3rem;

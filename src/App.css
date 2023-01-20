@@ -121,7 +121,7 @@ html{
 
 
 
-.services::before, .containerAbout::before  {
+.services::before, .about::before  {
   content: "";
   position: absolute;
   left: 0;
