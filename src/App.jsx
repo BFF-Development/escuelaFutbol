@@ -1,6 +1,7 @@
 import './App.css'
 import About from './components/about/About'
 import Arco from './components/arco/Arco'
+import AudioLoader from './components/audioLoader/AudioLoader'
 import Contact from './components/contact/Contact'
 import Faqs from './components/faqs/Faqs'
 import Footer from './components/footer/Footer'
@@ -12,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      
+      <AudioLoader/>
       <Nav/>
       <Home/>
       <About/>
