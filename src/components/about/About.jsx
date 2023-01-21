@@ -112,9 +112,9 @@ const About = () => {
           scrollTrigger:{
             trigger:".about",
             pin:true,
-            start:"-1px top",
+            start:"top top",
             end:"+=500",
-            scrub: 2,
+            scrub: 1,
           }
         })
   
