@@ -113,40 +113,61 @@ const About = () => {
             trigger:".about",
             pin:true,
             start:"-1px top",
+            end:"+=700",
             scrub: 2,
           }
         })
   
-   
 
         const tl_logo = gsap.timeline({
           scrollTrigger:{
             trigger:".containerAbout",
             start:"top top",
-            end: "+=800",
-            scrub: 5,
           }
         })
   
         
         tl_logo.from(".logo_about_bottom",{
-          duration:4,
+          duration:1,
           opacity:0,
           rotateZ:360,
           x: -800
         })
 
         tl_logo.to(".box_text_about",{
-          duration:2,
+          duration:.1,
           opacity:1
    
         })
 
         tl_logo.to( ".p_text_about",{
-          duration: 1,
-          opacity:1
-        
+          duration: .6,
+          opacity:1,
+          y: -10,
+          stagger: .01
         })
+
+        const tl_title = gsap.timeline({
+          scrollTrigger:{
+            trigger:".containerAbout",
+            start:"top top",
+          }
+        })
+
+
+        tl_title.to( ".about_title",{
+          duration: .4,
+          color:"rgb(125, 186, 255)",
+          stagger: .1
+        })
+
+
+        tl_title.to( ".about_title",{
+          duration: .5,
+          color:"rgb(255, 255, 255)",
+          stagger: .1
+        })
+
 
 
       }

@@ -8,20 +8,26 @@ export const Home = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-
-/*     gsap.to( ".home",{
-      opacity:0,
-      duration: .1,
-      filter:"blur(20px)",
-      scrollTrigger:{
-        trigger:".containerHome",
-        start: "center center",
-        scrub:true,
-        snap: 3,
+    const homeEffect = () => {
+      
+      if (window.innerWidth > 900) {
+        gsap.to( ".home",{
+          opacity:0,
+          duration: .1,
+          filter:"blur(20px)",
+          scrollTrigger:{
+            trigger:".containerHome",
+            start: "center center",
+            scrub:true,
+            snap: 3,
+          }
+        },)
       }
-    },)
- */
-   
+    }
+    homeEffect()
+   return () => {
+    homeEffect()
+   }
   },[])
   
   return (
