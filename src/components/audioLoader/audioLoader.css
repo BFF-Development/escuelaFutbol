@@ -2,12 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
   position: fixed;
   bottom: 3rem;
   left: 5rem;
   z-index: 999999;
   cursor: pointer;
+  width: 12rem;
+  height: 10rem;
 }
 
 #wave {
