@@ -111,10 +111,10 @@ const About = () => {
         tl.to( ".about",{
           scrollTrigger:{
             trigger:".about",
-            pin:true,
+            pin:".about",
             start:"top top",
-            end:"+=500",
-            scrub: 1,
+            end:"+=700",
+            scrub: 2,
           }
         })
   
