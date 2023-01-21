@@ -113,7 +113,7 @@ const About = () => {
             trigger:".about",
             pin:true,
             start:"-1px top",
-            end:"+=700",
+            end:"+=500",
             scrub: 2,
           }
         })
@@ -128,7 +128,7 @@ const About = () => {
   
         
         tl_logo.from(".logo_about_bottom",{
-          duration:1,
+          duration:2,
           opacity:0,
           rotateZ:360,
           x: -800
