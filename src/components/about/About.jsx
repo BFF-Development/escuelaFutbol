@@ -12,101 +12,158 @@ const About = () => {
     gsap.registerPlugin(ScrollTrigger);
 
 
-    const tl = gsap.timeline()
 
-    
-    tl.to( ".about",{
-      scrollTrigger:{
-        trigger:".about",
-        pin:true,
-        start:"-1px top",
-        scrub: 2,
-        end:"+=2400"
+    const handleResize = () => {
+
+
+
+      if (window.innerWidth > 900) {
+        const tl = gsap.timeline()
+        
+        tl.to( ".about",{
+          scrollTrigger:{
+            trigger:".about",
+            pin:true,
+            start:"-1px top",
+            scrub: 2,
+            end:"+=2400"
+          }
+        })
+  
+
+        
+        tl.to( ".p_text_about",{
+          color: "white",
+          stagger: .01,
+          duration: .01,
+          scrollTrigger:{
+            trigger: ".containerAbout" ,
+            start: "10% top",
+            end: "+=1000",
+            scrub: 3,
+          }
+        })
+
+        gsap.to(".box_text_about",{
+          duration:2,
+          ease: "none",
+          color: "white",
+          stagger: .01,
+          y: "-122%",
+          scrollTrigger:{
+            trigger:".containerAbout",
+            start:"top top",
+            scrub: 2,
+          }
+        })
+
+        const tl_logo = gsap.timeline({
+          scrollTrigger:{
+            trigger:".containerAbout",
+            start:"top top",
+            end: "+=1600",
+            scrub: 5,
+          }
+        })
+  
+
+        tl_logo.to(".logo_about_top",{
+          duration: 4,
+          opacity:0,
+          delay: 1
+        })
+
+        
+        tl_logo.from(".logo_about_bottom",{
+          duration:4,
+          opacity:0,
+          rotateZ:360,
+          x: -800
+        })
+
+
+        const tl_title = gsap.timeline({
+          scrollTrigger:{
+            trigger:".containerAbout",
+            start:"top top",
+            end: "+=2000",
+          }
+        })
+
+
+        tl_title.to( ".about_title",{
+          duration: .4,
+          color:"rgb(125, 186, 255)",
+          stagger: .1
+        })
+
+
+        tl_title.to( ".about_title",{
+          duration: .5,
+          color:"rgb(255, 255, 255)",
+          stagger: .1
+        })
+
+      }else{
+
+        const tl = gsap.timeline()
+        
+        tl.to( ".about",{
+          scrollTrigger:{
+            trigger:".about",
+            pin:true,
+            start:"-1px top",
+            scrub: 2,
+          }
+        })
+  
+   
+
+        const tl_logo = gsap.timeline({
+          scrollTrigger:{
+            trigger:".containerAbout",
+            start:"top top",
+            end: "+=800",
+            scrub: 5,
+          }
+        })
+  
+        
+        tl_logo.from(".logo_about_bottom",{
+          duration:4,
+          opacity:0,
+          rotateZ:360,
+          x: -800
+        })
+
+        tl_logo.to(".box_text_about",{
+          duration:2,
+          opacity:1
+   
+        })
+
+        tl_logo.to( ".p_text_about",{
+          duration: 1,
+          opacity:1
+        
+        })
+
+
       }
-    })
+      
 
-    
-    tl.to( ".p_text_about",{
-      color: "white",
-      stagger: .01,
-      duration: .01,
-      scrollTrigger:{
-        trigger: ".containerAbout" ,
-        start: "10% top",
-        end: "+=1000",
-        scrub: 3,
-      }
-    })
+  }
 
 
-    gsap.to(".box_text_about",{
-      duration:2,
-      ease: "none",
-      color: "white",
-      stagger: .01,
-      y: "-122%",
-      scrollTrigger:{
-        trigger:".containerAbout",
-        start:"top top",
-        scrub: 2,
-      }
-    })
+  handleResize();
 
+  return () => {
+    handleResize();
+  };
 
-    const tl_logo = gsap.timeline({
-      scrollTrigger:{
-        trigger:".containerAbout",
-        start:"top top",
-        end: "+=1600",
-        scrub: 5,
-      }
-    })
+}, [])
 
-
-    tl_logo.to(".logo_about_top",{
-      duration: 4,
-      opacity:0,
-      delay: 1
-    })
-
-    tl_logo.from(".logo_about_bottom",{
-      duration:4,
-      opacity:0,
-      rotateZ:360,
-      x: -800
-    })
-
-    tl_logo.from(".aca_str",{
-      duration: 2,
-      opacity:0,
-    })
-
-
-    const tl_title = gsap.timeline({
-      scrollTrigger:{
-        trigger:".containerAbout",
-        start:"top top",
-        end: "+=2000",
-      }
-    })
-
-
-    tl_title.to( ".about_title",{
-      duration: .4,
-      color:"rgb(125, 186, 255)",
-      stagger: .1
-    })
-
-
-    tl_title.to( ".about_title",{
-      duration: .5,
-      color:"rgb(255, 255, 255)",
-      stagger: .1
-    })
-
-
-  }, [])
-
+  
 
 
   let texto = "En ARCO queremos que sus hijos vengan a aprender, practicar y mejorar sus aptitudes en el deporte más lindo del mundo, el que iguala a todos los estratos sociales, ese en el que, cuando la pelota rueda, no distingue entre clases sociales sino que sólo harán diferencias en aquellos que mas pasión y entrega puedan darle a la redonda."
@@ -117,7 +174,7 @@ const About = () => {
 
   let title_quienes = "Quienes"
   let title_somos = "Somos ?"
-  let textoAcademia = "Academia de Futbol"
+/*   let textoAcademia = "Academia de Futbol" */
 
 
   const arrayPalabras = (texto) => {
@@ -141,7 +198,7 @@ const About = () => {
   let cadena3 = arrayPalabras(texto2)
   let cadenaTitle_quienes = arrayPalabras(title_quienes)
   let cadenaTitle_somos = arrayPalabras(title_somos)
-  let cadenaAcademia = arrayPalabras(textoAcademia)
+/*   let cadenaAcademia = arrayPalabras(textoAcademia) */
 
 
 
@@ -217,13 +274,13 @@ const About = () => {
         
       </div>
 
-      <div className="academia_vertical">
+ {/*      <div className="academia_vertical">
           {
             cadenaAcademia.map((index, key) => {
               return <p key={key} className='aca_str'>{index} </p>
             })
           }
-      </div>
+      </div> */}
     </div>
   )
 }

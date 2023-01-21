@@ -9,7 +9,7 @@ export const Home = () => {
     gsap.registerPlugin(ScrollTrigger);
 
 
-    gsap.to( ".home",{
+/*     gsap.to( ".home",{
       opacity:0,
       duration: .1,
       filter:"blur(20px)",
@@ -20,7 +20,7 @@ export const Home = () => {
         snap: 3,
       }
     },)
-
+ */
    
   },[])
   

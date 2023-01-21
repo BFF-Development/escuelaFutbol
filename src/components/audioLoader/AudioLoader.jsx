@@ -51,7 +51,7 @@ const AudioLoader = () => {
                 </svg>
             :
                 <svg xmlns="http://www.w3.org/2000/svg"  id="visual"  version="1.1" >
-                   <path className="lineOut" d="M 0 0 L 100 0" fill="wrehite" stroke="skyblue" stroke-width="1"/>
+                   <path className="lineOut" d="M 0 0 L 100 0" fill="wrehite" stroke="skyblue" strokeWidth="1"/>
                 </svg>
         }
 
