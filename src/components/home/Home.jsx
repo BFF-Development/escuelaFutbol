@@ -16,7 +16,7 @@ export const Home = () => {
       scrollTrigger:{
         trigger:".containerHome",
         start: "center center",
-        scrub:3,
+        scrub:true,
         snap: 3,
       }
     },)

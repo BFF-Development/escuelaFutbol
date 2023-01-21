@@ -96,9 +96,9 @@ const ServicesScroll = () => {
             <div className="titlePanel1">
               <div className="boxCuadro boxCuadro1"></div>
 
-              <strong className='strong_title-panel1'>Metodos </strong>
-              <strong className='strong_title-panel1'> de </strong>
-              <strong className='strong_title-panel1'> entrenamiento</strong>
+              <strong className='strong_title-panel1'>Metodos de entrenamiento</strong>
+           {/*    <strong className='strong_title-panel1'> de </strong>
+              <strong className='strong_title-panel1'> entrenamiento</strong> */}
 
               <div className="boxCuadro boxCuadro2"></div>
 

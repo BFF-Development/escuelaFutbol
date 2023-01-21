@@ -190,8 +190,39 @@ html{
 }
 
 .ar{
-  color: rgb(138, 208, 255);
+  color: #8ad0ff;
 }
 .co{
-  color:rgb(255, 251, 41);
+  color:#fffb29;
+}
+
+
+
+.ar{
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg,#8ad0ff 16.66666%,#c9e7ffe1 33.33333%,#e8f5ff 50%,#e8f5ff 66.66666%,#c7e6ffe1 83.33333%,#8ad0ff);
+  background-size: 400%;
+  color: #fff;
+  animation: titleEffect 5.5s linear infinite;
+  transform: matrix(1, 0, 0, 1, 0, 0); 
+}
+
+
+.co{
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg,#ffeb94 16.66666%,#ffeb94 33.33333%,#fffb29 50%,#fffb29 66.66666%,#ffeb94 83.33333%,#ffeb94);
+  background-size: 400%;
+  color: #fff;
+  animation: titleEffect 5.5s linear infinite;
+  transform: matrix(1, 0, 0, 1, 0, 0); 
+}
+
+@keyframes titleEffect {
+  0%{background-position: left;} /*por defecto*/
+  50%{background-position: right;}
+  0%{background-position: left;} /*por defecto*/
 }

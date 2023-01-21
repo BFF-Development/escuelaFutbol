@@ -107,11 +107,10 @@
 .logo_about_top{
   position: absolute;
   object-fit: contain;
-  top: 10rem;
+  top: 6rem;
   left: 6rem;
   width: 60rem;
 }
-
 
 .logo_about_bottom{
   position: relative;
@@ -119,7 +118,6 @@
   width: 33rem;
   left: 7rem;
 }
-
 
 
 
@@ -150,7 +148,6 @@
   flex-direction: row;
   padding: 2rem 0;
   color: rgb(34, 34, 34);
-
 }
 
 .p_text_about{
@@ -158,7 +155,6 @@
     letter-spacing: 1px;
     font-size: 2rem;
     line-height: 3.5rem;
-    font-weight: 600;
     /* text-transform: uppercase; */
 }
 

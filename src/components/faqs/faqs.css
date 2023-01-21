@@ -58,7 +58,7 @@
   position: absolute;
   top: 9rem;
   z-index: 200;
- background-color:rgb(52, 17, 107);
+  background-color:rgb(0, 0, 0);
   transform: skew(-10deg) !important;
   border-radius: 5px;
 }

@@ -57,15 +57,16 @@ const About = () => {
       scrollTrigger:{
         trigger:".containerAbout",
         start:"top top",
-        end: "+=2000",
-        scrub: 2,
+        end: "+=1600",
+        scrub: 5,
       }
     })
 
-  
+
     tl_logo.to(".logo_about_top",{
       duration: 4,
       opacity:0,
+      delay: 1
     })
 
     tl_logo.from(".logo_about_bottom",{
@@ -116,6 +117,7 @@ const About = () => {
 
   let title_quienes = "Quienes"
   let title_somos = "Somos ?"
+  let textoAcademia = "Academia de Futbol"
 
 
   const arrayPalabras = (texto) => {
@@ -139,6 +141,7 @@ const About = () => {
   let cadena3 = arrayPalabras(texto2)
   let cadenaTitle_quienes = arrayPalabras(title_quienes)
   let cadenaTitle_somos = arrayPalabras(title_somos)
+  let cadenaAcademia = arrayPalabras(textoAcademia)
 
 
 
@@ -215,24 +218,11 @@ const About = () => {
       </div>
 
       <div className="academia_vertical">
-        <div className="aca_str">A</div>
-        <div className="aca_str">C</div>
-        <div className="aca_str">A</div>
-        <div className="aca_str">D</div>
-        <div className="aca_str">E</div>
-        <div className="aca_str">M</div>
-        <div className="aca_str">I</div>
-        <div className="aca_str">A</div>
-        <div className="aca_str">&nbsp;</div>
-        <div className="aca_str">D</div>
-        <div className="aca_str">E</div>
-        <div className="aca_str">&nbsp;</div>
-        <div className="aca_str">F</div>
-        <div className="aca_str">U</div>
-        <div className="aca_str">T</div>
-        <div className="aca_str">B</div>
-        <div className="aca_str">O</div>
-        <div className="aca_str">L</div>
+          {
+            cadenaAcademia.map((index, key) => {
+              return <p key={key} className='aca_str'>{index} </p>
+            })
+          }
       </div>
     </div>
   )
