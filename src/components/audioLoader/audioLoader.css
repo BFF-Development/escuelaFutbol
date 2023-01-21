@@ -3,12 +3,15 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom: 3rem;
-  left: 5rem;
+  bottom: 1rem;
+  left: 1rem;
   z-index: 999999;
   cursor: pointer;
-  width: 12rem;
-  height: 10rem;
+  width: 11rem;
+  height: 8rem;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(17px);
+  border-radius: 20%;
 }
 
 #wave {
