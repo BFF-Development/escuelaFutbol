@@ -8,42 +8,66 @@ const ServicesTitle = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-
-    const tl = gsap.timeline({
-      duration:.5,
-      ease: Power4.easeOut,
-      scrollTrigger:{
-          trigger:".serviceTitle",
-          /* pin:true, */
-          start:"-700px top",
-          end:"-=500",
-        }
-    })
-
-    tl.to( ".line_title_service",{
-      width: "55%",
-      duration: .5,
-      x: -100,
-    })
-
-   
-    tl.from( ".services_title",{
-      opacity:0,
-      duration: .8,
-      x:200,
-    })
-
+    const titleService_effect = () => {
   
 
+    }
+
+    titleService_effect()
+
+    return () => {
+      titleService_effect()
+    }
 
   },[])
 
+  
+  let title_que = "Que"
+  let title_ofrecemos = "Ofrecemos ?"
+
+  const arrayPalabras = (texto) => {
+    const cadena = []
+
+    for(let i = 0 ; i < texto.length ; i++){
+
+      if( texto[i] == " "){
+        cadena.push( <span> &nbsp;</span> )
+      }
+      else{
+        cadena.push(texto[i])
+      }
+    }
+
+    return cadena
+  }
+
+  let cadena1 = arrayPalabras(title_que)
+  let cadena2 = arrayPalabras(title_ofrecemos)
+
 
   return (
-    <div className="serviceTitle" id='servicios'>
-        <div className="line_title_service"></div>
-        <h2 className='services_title'>Que ofrecemos ?</h2>
-    </div>
+    <div className="containerTitle_service">
+
+      <div className="container_titulo_line_service">
+          <div className="line_title_service"></div>
+          <div className="box_title_service">
+            <div className="que">
+              {
+                cadena1.map((index, key) => {
+                  return <p key={key} className='service_title'>{index} </p>
+                })
+              }
+            </div>
+            <div className="ofrecemos">
+              {
+                cadena2.map((index, key) => {
+                  return <p key={key} className='service_title'>{index} </p>
+                })
+              }
+            </div>
+        </div>
+      </div>
+  </div>
   )
 }
 

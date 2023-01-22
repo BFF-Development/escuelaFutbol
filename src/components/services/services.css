@@ -24,46 +24,68 @@
 
 /* container title */
 
-.serviceTitle{
+/* title que ofrecemos */
+
+
+.containerTitle_service{
     width: 100%;
+    min-height: 50vh;
     position: relative;
-    min-height: 20vh;
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: center;
     flex-direction: column;
-    padding: 10rem 0;
-    padding-bottom: 5rem;
+  }
+  
+  
+.container_titulo_line_service{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    right: 27rem;
+    gap: 1rem;
+  
 }
 
 
-/* text */
+.que, .ofrecemos{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  flex-direction: row;
+  line-height: 13rem;
+}
 
-.services_title{
-    font-size: 10rem;
+
+.line_title_service{
+  width: .5rem;
+  height: 28rem;
+  background-color: rgb(108, 189, 255);
+  top: -1rem;
+  position: relative;
+  left: -3.5rem;
+}
+
+.service_title{
+    font-size: 12rem;
     font-family: "Mongoose-bold";
     letter-spacing: 1.6px;
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
-    margin-bottom: 4rem ;
-    margin-right: 10%;
     opacity: 1;
-    color: rgb(255, 255, 255);
+    color: rgb(244, 250, 253);
     z-index: 300;
-    top: 4rem;
-}
+} 
 
-.line_title_service{
-    width: 0%;
-    height: 13rem;
-    position: absolute;
-    margin-right: -13rem;
-    top: 13.5rem;
-    z-index: 200;
-    background-color: rgb(125, 186, 255);
-    transform: skew(10deg);
-    
-}
+
+/* text */
+
 
 
 /* panel config */
@@ -94,8 +116,8 @@
     opacity: 1;
     color: rgb(255, 255, 255);
     top: 5rem;
-    margin-right: 30%;
-    transform: skewY(-1deg) !important;
+    margin-right: 25%;
+    transform: skewY(-2deg) !important;
     
 }
 
@@ -156,9 +178,6 @@
     border-radius: 100%;
     background-color: rgb(255, 251, 41);
 }
-
-
-
 
 
 
