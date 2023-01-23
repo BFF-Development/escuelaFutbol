@@ -7,12 +7,10 @@ const Services = () => {
 
 
   return (
-    <div className="service_back">
-      <div className="services">
+      <div className="services" id='servicios'>
         <ServicesTitle/>
         <ServicesScroll/>
       </div>
-    </div>
 
   )
 }

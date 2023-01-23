@@ -61,21 +61,21 @@ const About = () => {
           scrollTrigger:{
             trigger:".containerAbout",
             start:"top top",
-            end: "+=1600",
+            end: "+=1000",
             scrub: 5,
           }
         })
   
 
         tl_logo.to(".logo_about_top",{
-          duration: 4,
+          duration: 3,
           opacity:0,
           delay: 1
         })
 
         
         tl_logo.from(".logo_about_bottom",{
-          duration:4,
+          duration:3,
           opacity:0,
           rotateZ:360,
           x: -800
@@ -220,8 +220,6 @@ const About = () => {
   let cadenaTitle_quienes = arrayPalabras(title_quienes)
   let cadenaTitle_somos = arrayPalabras(title_somos)
 /*   let cadenaAcademia = arrayPalabras(textoAcademia) */
-
-
 
 
   return (

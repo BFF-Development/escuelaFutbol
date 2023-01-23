@@ -39,19 +39,15 @@ const ServicesScroll = () => {
         const tl_titles = gsap.timeline({
           scrollTrigger: {
             trigger: ".container_services",
-             start:"-350px center",
-             end:"+=550",
-         /*     snap: 5, */
+             start:"-350px top",
           }
         })
 
 
         tl_titles.from(".boxCuadro",{
-          delay:.6,
           opacity: 0,
-          x: -100,
-          duration: .5,
-          stagger: .3,
+          x: -20,
+          stagger: .2,
         })
 
         let titlesService = gsap.utils.toArray(".strong_title-panel1");
@@ -59,9 +55,8 @@ const ServicesScroll = () => {
 
         tl_titles.from(titlesService,{
           opacity: 0,
-          y: 100,
-          duration: 1,
-          stagger: .3,
+          y: -20,
+          stagger: .2,
         })
 
 
