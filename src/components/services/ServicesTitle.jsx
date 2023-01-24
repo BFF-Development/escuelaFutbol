@@ -23,7 +23,7 @@ const ServicesTitle = () => {
         opacity:1,
         stagger: .007,
         y: -10,
-       
+        duration:1.5,
       })
    
       
@@ -113,11 +113,10 @@ const ServicesTitle = () => {
 
       <div className="text_service">
           <div className="box_text_service">
-              {
-                cadena3.map((index, key) => {
-                  return <p key={key} className='p_text_service'>{index} </p>
-                })
-              }
+        
+              <p className='p_text_service'>
+                En nuestra academia de fútbol ofrecemos diversión y compañerismo mientras los niños aprenden técnicas de juego y desarrollan un compromiso con el deporte. Ofrecemos charlas personalizadas con niños y padres para mejorar el aprendizaje y adaptación al fútbol, así como metodologías de entrenamiento especializadas. Además, contamos con visitas anuales de personalidades del fútbol para inspirar a los jóvenes y brindar una experiencia única. Nuestro objetivo es mejorar el desempeño de los jóvenes en aspectos tácticos, físicos y mentales relacionados con el juego del fútbol.
+              </p>
 
           </div>
       </div>
