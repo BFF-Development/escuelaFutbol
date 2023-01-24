@@ -90,57 +90,30 @@ const ServicesScroll = () => {
         <section className="panel panel1">
             <div className="titlePanel1">
               <div className="boxCuadro boxCuadro1"></div>
-
-              <strong className='strong_title-panel1'>Metodos de entrenamiento</strong>
-           {/*    <strong className='strong_title-panel1'> de </strong>
-              <strong className='strong_title-panel1'> entrenamiento</strong> */}
-
+              <strong className='strong_title-panel1'>Entrenamientos Innovadores</strong>
               <div className="boxCuadro boxCuadro2"></div>
-
             </div>
-
         </section>
 
         <section className="panel panel2">
           <div className="titlePanel1">
               <div className="boxCuadro boxCuadro1"></div>
-
-              <strong className='strong_title-panel1'>Futbol </strong>
-              <strong className='strong_title-panel1'>Mixto</strong>
-              
+              <strong className='strong_title-panel1'>Futbol Mixto</strong>
               <div className="boxCuadro boxCuadro2"></div>
-
             </div>
         </section>
 
         <section className="panel panel3">
            <div className="titlePanel1">
               <div className="boxCuadro boxCuadro1"></div>
-              <strong className='strong_title-panel1'>Posibilidad </strong>
-              <strong className='strong_title-panel1'>de </strong>
-              <strong className='strong_title-panel1'>Realizar </strong>
-              <strong className='strong_title-panel1'>Viajes</strong>
-
+              <strong className='strong_title-panel1'>Informes Personalizados </strong>
               <div className="boxCuadro boxCuadro2"></div>
-
             </div>
+
             <div className="circle-wrapper">
               <div className="punt1"></div>
             </div>
         </section>
-{/* 
-        <section className="panel panel4">
-            <div className="titlePanel1">
-              <div className="boxCuadro boxCuadro1"></div>
-              <strong className='strong_title-panel1'>Valores</strong>
-              <div className="boxCuadro boxCuadro2"></div>
-            </div>
-
-            <div className="circle-wrapper">
-              <div className="punt1"></div>
-            </div>
-
-        </section> */}
     </div>
   )
 }

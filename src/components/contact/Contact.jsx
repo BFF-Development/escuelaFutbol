@@ -27,10 +27,19 @@ const Contact = () => {
               }
           })
       
-          tl.to( ".line_title_contact",{
-            width: "35%",
-            x: -100,
-          })
+       
+
+          if(window.innerWidth > 670){
+            tl.to( ".line_title_contact",{
+              width: "60rem",
+              x: -100,
+            })
+          }else{
+            tl.to( ".line_title_contact",{
+              width: "90%",
+              x: -100,
+            })
+          }
       
          
           tl.from( ".contactTitle",{
