@@ -5,10 +5,10 @@
   position: fixed;
   bottom: 2rem;
   left: 2rem;
-  z-index: 999999;
   cursor: pointer;
   width: 11rem;
   height: 8rem;
+  z-index: 9999 ;
 
   transition: all 1s ease;
   
@@ -108,7 +108,6 @@
   position: absolute;
   width: 100%;
   bottom: 0rem;
-  
 }
 
 .circleBlur{
@@ -127,7 +126,6 @@
 .circle{
   width: 22rem;
   left: 0rem;
-
 }
 
 .circle:hover .textcircle {
@@ -157,8 +155,32 @@
   filter: drop-shadow( 0 0 10px rgb(0, 0, 0));
 }
 
+.minCirc{
+  background-color: yellow;
+  color: yellow;
+  background-color: yellow;
+  width: 5rem;
+  height: 5rem;
+  border: 2px solid red;
+}
+
 @keyframes rotate {
   to {
     transform: rotate(360deg);
   }
+}
+
+
+@media screen and (max-width: 600px) {
+  .circleBlur{
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(2px);
+  }
+
+
+  .loaderBox{
+    width: 17rem;
+    bottom: -3rem;
+  }
+  
 }

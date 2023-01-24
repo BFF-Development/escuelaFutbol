@@ -11,6 +11,7 @@
     padding: 4rem;
     padding-top: 6rem;
     gap: 3rem;
+    z-index: 99999 !important;
 }
 
 
@@ -310,8 +311,6 @@
 
     .footer{
         padding: 4rem 2rem;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
     }
     .copyright{
         font-size: 1.3rem;
