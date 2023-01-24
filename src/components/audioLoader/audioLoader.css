@@ -112,7 +112,6 @@
 }
 
 .circleBlur{
-  background-color: rgba(0, 0, 0, 0.082);
   backdrop-filter: blur(7px);
   border-radius: 120%;
   width: 16rem;
