@@ -36,6 +36,7 @@ const About = () => {
           color: "white",
           stagger: .01,
           duration: .01,
+
           scrollTrigger:{
             trigger: ".containerAbout" ,
             start: "10% top",
@@ -49,7 +50,7 @@ const About = () => {
           ease: "none",
           color: "white",
           stagger: .01,
-          y: "-122%",
+          y: "-138%",
           scrollTrigger:{
             trigger:".containerAbout",
             start:"top top",
