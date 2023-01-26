@@ -482,6 +482,10 @@
 
 @media screen and (max-width:330px) {
 
+    .services{
+        margin-top: -1rem;
+    }
+
     .service_title{
         font-size: 5.6rem;
         left: .5rem;

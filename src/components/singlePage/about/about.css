@@ -437,12 +437,17 @@
   }
 
 
+
 }
   
   
 @media screen and (max-width:610px) {
   .line_title_abut {
     left: 0rem;
+  }
+
+  .text_about {
+    min-height: 100vh;
   }
 }
 
