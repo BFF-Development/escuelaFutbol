@@ -401,7 +401,6 @@
     .container_titulo_line_service{
         right: 0;
         padding-top:12rem;
-
     }
 
     .containerTitle_service {
@@ -415,9 +414,10 @@
     .p_text_service {
         font-size: 1.65rem;
         line-height: 3rem;
+        text-align: inherit;
     }
 
-    
+ 
     
     /* panel title */
     
@@ -546,6 +546,8 @@
         top: 16rem;
     }
 
+  
+
     .service_title{
         font-size: 6.7rem;
         left: 1rem;
@@ -553,7 +555,7 @@
 
     .line_title_service {
         height: 21rem;
-        left: 0rem;
+        left: -.5rem;
     }
 
     .que, .ofrecemos{

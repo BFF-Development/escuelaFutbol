@@ -124,6 +124,8 @@
 
 /* text about */
 
+
+
 .text_about{
   width: 100%;
   min-height: 100vh;
@@ -345,6 +347,28 @@
     flex-direction: column;
   }
 
+  .box_text_about{
+    display: none;
+  }
+
+  .textComplete_about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2rem ;
+  }
+
+  .textComplete_about p {
+    width: 80%;
+    font-family: "montserrat-semiBold";
+    letter-spacing: .7px;
+    font-size: 1.65rem;
+    line-height: 3rem;
+    color: white;
+  }
 
   .logo_about_top {
     display: none;
@@ -436,7 +460,9 @@
     width: 92%;
   }
 
-
+  .textComplete_about p {
+    width: 90%;
+  }
 
 }
   
@@ -448,6 +474,10 @@
 
   .text_about {
     min-height: 100vh;
+  }
+
+  .textComplete_about p {
+    width: 95%;
   }
 }
 

@@ -142,11 +142,10 @@ const About = () => {
    
         })
 
-        tl_logo.to( ".p_text_about",{
-          duration: .6,
-          opacity:1,
-          y: -10,
-          stagger: .006
+        tl_logo.from( ".textComplete_about",{
+          opacity:0,
+          stagger: 1,
+          duration: 1
         })
 
         const tl_title = gsap.timeline({
@@ -262,6 +261,15 @@ const About = () => {
     {/*     <div className="lineDer-about aboutEffect"></div>
  */}
         <div className="text_about">
+          <div className="textComplete_about">
+            <p>
+              En ARCO queremos que sus hijos vengan a aprender, practicar y mejorar sus aptitudes en el deporte más lindo del mundo, el que iguala a todos los estratos sociales, ese en el que, cuando la pelota rueda, no distingue entre clases sociales sino que sólo harán diferencias en aquellos que mas pasión y entrega puedan darle a la redonda.
+              <br /><br />
+              Para nosotros los que conformamos ARCO son fundamentales y nos encargamos de transmitir en todo momento a los jugadores, los valores del ser humano ante todo, los pilares conceptuales de la academia serán trabajo individual y en equipo, perseverancia, sacrificio, compañerismo, cuidado de su salud, buena alimentación, entre otros.
+              <br /><br />
+              Los jugadores tendrán entre sus conceptos la mezcla de ideologías futbolísticas Argentinas y Colombianas para poder desenvolverse dentro  y  fuera de la cancha.
+            </p>
+          </div>
           <div className="logo_about">
               <img className='logo_about_top' src={logo} alt="logo" />
           </div>
