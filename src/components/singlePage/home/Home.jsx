@@ -24,10 +24,14 @@ export const Home = () => {
         },)
       }
     }
+
+
     homeEffect()
+
    return () => {
     homeEffect()
    }
+   
   },[])
   
   return (

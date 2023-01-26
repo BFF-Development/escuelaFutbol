@@ -108,6 +108,7 @@ const About = () => {
       }else{
 
         const tl = gsap.timeline()
+
         
         tl.to( ".about",{
           scrollTrigger:{
@@ -118,8 +119,8 @@ const About = () => {
             scrub: 2,
           }
         })
+      
   
-
         const tl_logo = gsap.timeline({
           scrollTrigger:{
             trigger:".containerAbout",
@@ -127,7 +128,7 @@ const About = () => {
           }
         })
   
-        
+      
         tl_logo.from(".logo_about_bottom",{
           duration:2,
           opacity:0,

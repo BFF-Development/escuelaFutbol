@@ -9,19 +9,20 @@
 .containerHome{
     width: 100%;
     min-height: 100vh;
-    background-image: url("../../assets/src/backgrounds/back2blue.png");
+/*     background-image: url("../../assets/src/backgrounds/back2blue.png");
     background-size: contain;
     background-position: 180% 0%;
     background-repeat: no-repeat;
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; */
     pointer-events: none;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: fixed;
     top: 0;
-    background-color: black;
+    left: 0;
+    background-color: rgb(2, 2, 2);
     filter: contrast(110%) brightness(120%);
 }
 
