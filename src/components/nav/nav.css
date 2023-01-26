@@ -149,10 +149,11 @@ a{
     z-index: -1;
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
-    background-color: rgba(0, 0, 0, 0.89);
+    background-color: rgba(0, 0, 0, 0.973);
     backdrop-filter: blur(45px);
     border-bottom: 4px solid rgb(63, 185, 255);
     transition: all .5s ease;
+    z-index: 1000;
 }
 
 
@@ -170,6 +171,7 @@ a{
     font-family: "shentox-bold";
     font-weight: bold;
     transition: all 1.5s ease;
+
 }
 
 .titleNav_mobile-active{
@@ -186,6 +188,8 @@ a{
     font-family: "shentox-bold";
     font-weight: bold;
     transition: all 1.5s ease;
+    z-index: 1100;
+
 }
 
 
