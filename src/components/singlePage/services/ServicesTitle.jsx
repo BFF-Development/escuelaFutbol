@@ -6,28 +6,56 @@ const ServicesTitle = () => {
 
   useEffect(() => {
 
+
+
+
     const titleService_effect = () => {
+      
 
       gsap.registerPlugin(ScrollTrigger);
-      const tl_service = gsap.timeline({
-        scrollTrigger:{
-          trigger:".containerTitle_service",
-          pin:true,
-          start:"top top",
-          end:"+=800"
-        }
-      })
+
+      if (window.innerWidth > 900) {
+
+        const tl_service = gsap.timeline({
+          scrollTrigger:{
+            trigger:".containerTitle_service",
+            pin:true,
+            start:"top top",
+            end:"+=800"
+          }
+        })
+
+        tl_service.to(".p_text_service",{
+          opacity:1,
+          stagger: .007,
+          y: -10,
+          duration:1.5,
+        })
+     
+        
+    
+
+      }else{
+        const tl_service = gsap.timeline({
+          scrollTrigger:{
+            trigger:".containerTitle_service",
+            start:"top top",
+            end:"+=800"
+          }
+        })
+
+        tl_service.to(".p_text_service",{
+          opacity:1,
+          stagger: .007,
+          y: -10,
+          duration:1.5,
+        })
+     
+      }
+
         
       
-      tl_service.to(".p_text_service",{
-        opacity:1,
-        stagger: .007,
-        y: -10,
-        duration:1.5,
-      })
-   
       
-  
       const tl_title = gsap.timeline({
         scrollTrigger:{
           trigger:".container_titulo_line_service",
@@ -49,6 +77,12 @@ const ServicesTitle = () => {
         stagger: .1
       })
 
+      tl_title.to( ".p_text_about",{
+        duration: .6,
+        opacity:1,
+        y: -10,
+        stagger: .006
+      })
 
 
     }
@@ -64,7 +98,6 @@ const ServicesTitle = () => {
   
   let title_que = "Que"
   let title_ofrecemos = "Ofrecemos ?"
-  let textAbout = "En nuestra academia de fútbol ofrecemos diversión y compañerismo mientras los niños aprenden técnicas de juego y desarrollan un compromiso con el deporte. Ofrecemos charlas personalizadas con niños y padres para mejorar el aprendizaje y adaptación al fútbol, así como metodologías de entrenamiento especializadas. Además, contamos con visitas recurrentes de personalidades del fútbol para inspirar a los jóvenes y brindar una experiencia única. Nuestro objetivo es mejorar el desempeño de los jóvenes en aspectos tácticos, físicos y mentales relacionados con el juego del fútbol."
 
   const arrayPalabras = (texto) => {
     const cadena = []
@@ -84,7 +117,6 @@ const ServicesTitle = () => {
 
   let cadena1 = arrayPalabras(title_que)
   let cadena2 = arrayPalabras(title_ofrecemos)
-  let cadena3 = arrayPalabras(textAbout)
 
 
 

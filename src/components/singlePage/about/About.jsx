@@ -145,7 +145,7 @@ const About = () => {
           duration: .6,
           opacity:1,
           y: -10,
-          stagger: .01
+          stagger: .006
         })
 
         const tl_title = gsap.timeline({
