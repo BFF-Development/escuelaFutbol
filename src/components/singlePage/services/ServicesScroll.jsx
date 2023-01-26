@@ -1,8 +1,6 @@
 import React, {useEffect} from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
-import { Power4 } from 'gsap'
-import SvgLine from '../svgLine/SvgLine'
 
 const ServicesScroll = () => {
 
@@ -111,9 +109,8 @@ const ServicesScroll = () => {
 
   return (
     <div className="container_services" >
- 
+        
         <section className="panel panel1">
-
             <div className="titlePanel1">
               <div className="boxCuadro boxCuadro1"></div>
               <strong className='strong_title-panel1'>Entrenamientos Innovadores</strong>

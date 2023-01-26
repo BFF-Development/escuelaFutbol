@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react'
 import "./contact.css"
-import telIcon from "../assets/src/icons/contact.svg"
-import emailIcon from "../assets/src/icons/email.svg"
-import ubiIcon from "../assets/src/icons/ubi.svg"
-import followIcon from "../assets/src/icons/follow.svg"
-import instaIcon from "../assets/src/icons/insta.svg"
+import telIcon from "../../assets/src/icons/contact.svg"
+import emailIcon from "../../assets/src/icons/email.svg"
+import ubiIcon from "../../assets/src/icons/ubi.svg"
+import followIcon from "../../assets/src/icons/follow.svg"
+import instaIcon from "../../assets/src/icons/insta.svg"
 
 
 import gsap from 'gsap'

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import "./services.css"
 import ServicesScroll from './ServicesScroll'
 import ServicesTitle from './ServicesTitle'

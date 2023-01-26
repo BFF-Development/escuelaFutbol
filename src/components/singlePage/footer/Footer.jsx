@@ -1,8 +1,8 @@
 import React  from 'react'
 import "./footer.css"
-import telIcon from "../assets/src/icons/tel.png"
-import emailIcon from "../assets/src/icons/email.png"
-import ubiIcon from "../assets/src/icons/ubi.png"
+import telIcon from "../../assets/src/icons/tel.png"
+import emailIcon from "../../assets/src/icons/email.png"
+import ubiIcon from "../../assets/src/icons/ubi.png"
 
 
 const Footer = () => {

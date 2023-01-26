@@ -2,11 +2,10 @@ import React, { useEffect  } from 'react'
 import "./about.css"
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
-import logo from "../assets/src/backgrounds/logo.png"
-import SvgLine from '../svgLine/SvgLine'
+import logo from "../../assets/src/backgrounds/logo.png"
+
 
 const About = () => {
-
 
   useEffect(() => {
 

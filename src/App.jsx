@@ -1,29 +1,19 @@
 import './App.css'
-import About from './components/about/About'
-import Arco from './components/arco/Arco'
 import AudioLoader from './components/audioLoader/AudioLoader'
-import Contact from './components/contact/Contact'
-import Faqs from './components/faqs/Faqs'
-import Footer from './components/footer/Footer'
-import { Home } from './components/home/Home'
 import Nav from './components/nav/Nav'
-import Services from './components/services/Services'
+import PreLoader from './components/preLoader/PreLoader'
+import SinglePage from './components/singlePage/SinglePage'
 import SvgLine from './components/svgLine/SvgLine'
 
 function App() {
 
   return (
     <div className="App">
+      <PreLoader/>
       <SvgLine/>
       <AudioLoader/>
       <Nav/>
-      <Home/>
-      <About/>
-      <Services/>
-      <Contact/>
-      <Faqs/>
-      <Arco/>
-      <Footer/>
+      <SinglePage/>
     </div>
   )
 }
