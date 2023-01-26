@@ -9,12 +9,19 @@ const PreLoader = () => {
   
     useEffect(() => {
 
-        gsap.to(".preloader",{
+        const tl = gsap.timeline()
+
+        tl.to(".preloader",{
             delay: 3,
             duration: .5, 
             z: -1,
             opacity:0,
         })
+
+        tl.to(".preloader",{
+            visibility:"hidden"
+        })
+
 
     },[])
   
