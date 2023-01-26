@@ -131,7 +131,7 @@ a{
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: rgba(241, 249, 255, 0.925);
+    background-color: rgba(0, 0, 0, 0.925);
     backdrop-filter: blur(15px);
 /*     border-bottom: 2px solid rgb(161, 225, 255); */
     z-index: 99999 !important;
@@ -151,7 +151,7 @@ a{
     border-bottom-right-radius: 35px;
     background-color: rgba(0, 0, 0, 0.89);
     backdrop-filter: blur(45px);
-    border-bottom: 4px solid rgb(255, 194, 63);
+    border-bottom: 4px solid rgb(63, 185, 255);
     transition: all .5s ease;
 }
 
@@ -259,7 +259,7 @@ a{
     font-weight: bold;
     transition: all .4s ease;
     font-size: 3rem;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: bulevar;
     outline: none;
     text-transform: uppercase;

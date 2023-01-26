@@ -121,7 +121,6 @@
 }
 
 
-
 .panel{
     width: 100%;
     position: relative;
@@ -133,10 +132,6 @@
     top: 19rem;
 }
 
-
-
-
-/* panel 1 */
 
 .titlePanel1{
     font-size: 9rem;
@@ -258,6 +253,90 @@
         top: 15rem;
     }
 
+
+    /* title que ofrecemos */
+
+
+    .containerTitle_service{
+        width: 100%;
+        min-height: 50vh;
+        gap: 6rem;
+    }
+    
+    
+    .container_titulo_line_service{
+        right: 24rem;
+        gap: 1rem;
+    }
+
+
+    .que, .ofrecemos{
+        line-height: 11rem;
+    }
+
+
+    .line_title_service{
+        width: .5rem;
+        height: 27rem;
+        top: -1rem;
+        left: -3rem;
+    }
+
+    .service_title{
+        font-size: 10rem;
+        letter-spacing: 1.6px;
+    } 
+
+
+
+
+    /* text title */
+
+
+    .box_text_service{
+        width: 75%;
+        padding: 2rem 0;
+    }
+
+
+    .p_text_service{
+        letter-spacing: .7px;
+        font-size: 1.8rem;
+        line-height: 3.5rem;
+    }
+    
+
+
+
+    /* panel title */
+    .panel {
+        gap: 1.5rem;
+        top: 19rem;
+    }
+    
+    .titlePanel1{
+        font-size: 8rem;
+        letter-spacing: 3.6px;
+        margin-right: 25%;
+    }
+
+   /* text panel */
+
+    .textPanel{
+        font-size: 3rem;
+        margin-bottom: 4rem ;
+        margin-right: 25%;
+        padding: 1rem 2rem;
+    }
+
+
+}
+
+@media screen and (max-width:1300px) {
+    .container_titulo_line_service{
+        right: 15%;
+    }
+
 }
 
 
@@ -272,6 +351,15 @@
         width: 380vw;
         height: 380vw;
     }
+
+    .container_titulo_line_service{
+        right: 13%;
+    }
+
+    .box_text_service{
+        width: 85%;
+    }
+
 }
   
 @media screen and (max-width:900px) {
@@ -280,21 +368,91 @@
         width: 550vw;
         height: 750vw;
     }
+
+    .container_titulo_line_service{
+        right: 0;
+        padding-top:12rem;
+
+    }
+
+    .containerTitle_service {
+        justify-content: center;
+        align-items: center;
+    }
+    .box_text_service{
+        width: 80%;
+    }
+
+    .p_text_service {
+        font-size: 1.65rem;
+        line-height: 3rem;
+    }
 }
   
 
 @media screen and (max-width:700px) {
+    .que, .ofrecemos{
+        line-height: 10rem;
+    }
 
- 
+    .service_title{
+        font-size: 8rem;
+        letter-spacing: 1.6px;
+    } 
+
+
+    .box_text_service{
+        width: 85%;
+    }
+
+    .line_title_service {
+        height: 25rem;
+        left: -1rem;
+    }
 
 }
-
 
 
 
 @media screen and (max-width:550px) {
 
- 
+    .que, .ofrecemos{
+        line-height: 9rem;
+    }
+
+    .service_title{
+        font-size: 7.2rem;
+        letter-spacing: 1.6px;
+    } 
+
+    .line_title_service {
+        height: 23rem;
+        left: -1rem;
+    }
+
+    
+    .box_text_service {
+        padding: 2rem;
+        width: 98%;
+    }
+
+}
+
+@media screen and (max-width:420px) {
+
+    .service_title{
+        font-size: 6.7rem;
+        left: 1rem;
+    } 
+
+    .line_title_service {
+        height: 21rem;
+        left: 0rem;
+    }
+
+    .que, .ofrecemos{
+        line-height: 8rem;
+    }
 
 }
 
@@ -305,8 +463,43 @@
         width: 150%;
         left: -15%;
     }
+
+    .service_title{
+        font-size: 6.3rem;
+        left: .5rem;
+    } 
+
+    .line_title_service {
+        height: 20rem;
+        left: 0rem;
+    }
+
+    .que, .ofrecemos{
+        line-height: 7.6rem;
+    }
     
 }
+
+@media screen and (max-width:330px) {
+
+    .service_title{
+        font-size: 5.6rem;
+        left: .5rem;
+    } 
+
+    .line_title_service {
+        height: 18rem;
+        left: 0rem;
+    }
+
+    .que, .ofrecemos{
+        line-height: 7.1rem;
+    }
+    
+    
+}
+  
+
   
 @media screen and (max-width:320px) {
 

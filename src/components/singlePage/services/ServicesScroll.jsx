@@ -91,16 +91,22 @@ const ServicesScroll = () => {
         tl_punt.to(".e", {
           duration: .1,  
           opacity:0,
-       });
-  
-
-        tl_punt.from(".circle-wrapper", {
-           duration: 1,  
-           height: "0vh", 
-           width: "0vw", 
-           opacity:1, 
-           border:0,
         });
+  
+ 
+       tl_punt.to(".line-container", {
+        display:"none",
+        duration: 0
+      });
+
+
+      tl_punt.from(".circle-wrapper", {
+         duration: 1,  
+         height: "0vh", 
+         width: "0vw", 
+         opacity:1, 
+         border:0,
+      });
 
 
 

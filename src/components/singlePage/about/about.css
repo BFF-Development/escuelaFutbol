@@ -286,6 +286,12 @@
     height: 17rem;
   }
 
+  .text_about {
+    width: 100%;
+    min-height: 80vh;
+    padding-top: 5rem;
+  }
+
   .box_text_about {
     top: 117vh;
     width: 94%;
@@ -302,7 +308,7 @@
   }
 
   .p_text_about {
-    font-size: 1.55rem;
+    font-size: 1.65rem;
     line-height: 3rem;
   }
 
@@ -444,6 +450,11 @@
 @media screen and (max-width:510px) {
   .line_title_abut {
     left: -3rem;
+  }
+
+  .cadenaAbout {
+    padding: 2rem;
+    width: 98%;
   }
 }
 
