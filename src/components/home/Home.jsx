@@ -31,10 +31,10 @@ export const Home = () => {
   },[])
   
   return (
-    <div className="home" id="home">
+    <div className="home" id="home" >
       <div className="containerHome">
         <div className="boxText_home">
-          <h1 className="titleHome">
+          <h1 className="titleHome " >
             Academia de Futbol 
           </h1>
           <h2 className='subtitle_home'>

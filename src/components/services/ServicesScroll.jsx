@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
 import { Power4 } from 'gsap'
+import SvgLine from '../svgLine/SvgLine'
 
 const ServicesScroll = () => {
 
@@ -35,30 +36,48 @@ const ServicesScroll = () => {
 
         
         /* titles animation */
+        let titlesService = gsap.utils.toArray(".strong_title-panel1");
 
         const tl_titles = gsap.timeline({
           scrollTrigger: {
             trigger: ".container_services",
-             start:"-350px top",
+             start:"-450px top",
           }
         })
+
+        tl_titles.to(".e", {
+          duration: .1,  
+          stroke: "#fffb29",
+          scrollTrigger: {
+            trigger: ".container_services",
+            true: "-300px top",
+            end: "100% 100%",
+             scrub: true,
+          }
+       });
 
 
         tl_titles.from(".boxCuadro",{
           opacity: 0,
+          duration: .4,
           x: -20,
           stagger: .2,
         })
 
-        let titlesService = gsap.utils.toArray(".strong_title-panel1");
 
-
+    
         tl_titles.from(titlesService,{
           opacity: 0,
-          y: -20,
+          duration: 1,
           stagger: .2,
         })
-
+        tl_titles.from(".textPanel",{
+          opacity: 0,
+          y: -20,
+          duration: 1,
+          stagger: .2,
+        })
+        
 
         /* circle animation */
         const tl_punt = gsap.timeline({
@@ -70,6 +89,12 @@ const ServicesScroll = () => {
           }
         })
 
+ 
+        tl_punt.to(".e", {
+          duration: .1,  
+          opacity:0,
+       });
+  
 
         tl_punt.from(".circle-wrapper", {
            duration: 1,  
@@ -86,12 +111,18 @@ const ServicesScroll = () => {
 
   return (
     <div className="container_services" >
-
+ 
         <section className="panel panel1">
+
             <div className="titlePanel1">
               <div className="boxCuadro boxCuadro1"></div>
               <strong className='strong_title-panel1'>Entrenamientos Innovadores</strong>
               <div className="boxCuadro boxCuadro2"></div>
+            </div>
+
+            <div className="textPanel">
+              <p>Desarrollo de acciones técnico <strong>/</strong> tácticas innovadoras</p>
+              <div className="lineYellow"></div>
             </div>
         </section>
 
@@ -101,6 +132,11 @@ const ServicesScroll = () => {
               <strong className='strong_title-panel1'>Futbol Mixto</strong>
               <div className="boxCuadro boxCuadro2"></div>
             </div>
+
+            <div className="textPanel">
+              <p>Esperamos niños y niñas de entre 8 y 12 años</p>
+              <div className="lineYellow"></div>
+            </div>
         </section>
 
         <section className="panel panel3">
@@ -108,6 +144,11 @@ const ServicesScroll = () => {
               <div className="boxCuadro boxCuadro1"></div>
               <strong className='strong_title-panel1'>Informes Personalizados </strong>
               <div className="boxCuadro boxCuadro2"></div>
+            </div>
+
+            <div className="textPanel">
+              <p>Cada joven será evaluado y recibirá notificaciones escritas durante el cuatrimestre vigente</p>
+              <div className="lineYellow"></div>
             </div>
 
             <div className="circle-wrapper">

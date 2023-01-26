@@ -3,6 +3,7 @@ import "./about.css"
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
 import logo from "../assets/src/backgrounds/logo.png"
+import SvgLine from '../svgLine/SvgLine'
 
 const About = () => {
 
@@ -192,7 +193,7 @@ const About = () => {
 
   let texto1 = "Para nosotros los que conformamos ARCO son fundamentales y nos encargamos de transmitir en todo momento a los jugadores, los valores del ser humano ante todo, los pilares conceptuales de la academia serán trabajo individual y en equipo, perseverancia, sacrificio, compañerismo, cuidado de su salud, buena alimentación, entre otros."
 
-  let texto2 = "Los jugadores tendrán entre sus conceptos la mezcla de ideologías futbolísticas Argentinas y Colombianas para poder desenvolverse dentro  y  fuera de la cancha."
+  let texto2 = "Los jugadores tendrán entre sus conceptos la mezcla de ideologías futbolísticas Argentinas y Colombianas para poder desenvolverse dentro y fuera de la cancha."
 
   let title_quienes = "Quienes"
   let title_somos = "Somos ?"
@@ -225,6 +226,7 @@ const About = () => {
 
   return (
     <div className="about" id='about'>
+
       <div className="containerAbout">
 
         <div className="containerTitle_about">

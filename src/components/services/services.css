@@ -71,7 +71,6 @@
 } 
 
 
-/* title text */
 
 
 /* text title */
@@ -130,28 +129,26 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 10rem 0;
-    gap: 10rem;
+    gap:2rem;
+    top: 19rem;
 }
+
 
 
 
 /* panel 1 */
 
 .titlePanel1{
-    font-size: 8rem;
+    font-size: 9rem;
     font-family: "Mongoose-bold";
     letter-spacing: 3.6px;
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
-    margin-bottom: 4rem ;
     opacity: 1;
     color: rgb(255, 255, 255);
-    top: 5rem;
     margin-right: 25%;
     transform: skewY(-2deg) !important;
-    
 }
 
 .boxCuadro1{
@@ -177,11 +174,42 @@
 }
 
 
+/* text panel */
+
+.textPanel{
+    font-size: 3.8rem;
+    font-family: "Mongoose-bold";
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 4rem ;
+    color: black;
+    margin-right: 25%;
+    transform: skewY(-2deg) !important;
+    padding: 1rem 2rem;
+}
+
+.textPanel strong{
+    font-family: "montserrat-bold";
+}
+
+.lineYellow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fffb29;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 
 /* punt */
 .circle-wrapper {
     position: absolute;
-    top: 95vh;
+    top: 75vh;
     width: 240vw;
     height: 240vw;
     opacity: 1;

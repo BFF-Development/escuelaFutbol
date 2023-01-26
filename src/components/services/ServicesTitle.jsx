@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+import SvgLine from '../svgLine/SvgLine'
 
 const ServicesTitle = () => {
 
@@ -64,7 +65,7 @@ const ServicesTitle = () => {
   
   let title_que = "Que"
   let title_ofrecemos = "Ofrecemos ?"
-  let textAbout = "En nuestra academia de fútbol ofrecemos diversión y compañerismo mientras los niños aprenden técnicas de juego y desarrollan un compromiso con el deporte. Ofrecemos charlas personalizadas con niños y padres para mejorar el aprendizaje y adaptación al fútbol, así como metodologías de entrenamiento especializadas. Además, contamos con visitas anuales de personalidades del fútbol para inspirar a los jóvenes y brindar una experiencia única. Nuestro objetivo es mejorar el desempeño de los jóvenes en aspectos tácticos, físicos y mentales relacionados con el juego del fútbol."
+  let textAbout = "En nuestra academia de fútbol ofrecemos diversión y compañerismo mientras los niños aprenden técnicas de juego y desarrollan un compromiso con el deporte. Ofrecemos charlas personalizadas con niños y padres para mejorar el aprendizaje y adaptación al fútbol, así como metodologías de entrenamiento especializadas. Además, contamos con visitas recurrentes de personalidades del fútbol para inspirar a los jóvenes y brindar una experiencia única. Nuestro objetivo es mejorar el desempeño de los jóvenes en aspectos tácticos, físicos y mentales relacionados con el juego del fútbol."
 
   const arrayPalabras = (texto) => {
     const cadena = []

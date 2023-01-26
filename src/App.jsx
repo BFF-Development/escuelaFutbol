@@ -8,11 +8,13 @@ import Footer from './components/footer/Footer'
 import { Home } from './components/home/Home'
 import Nav from './components/nav/Nav'
 import Services from './components/services/Services'
+import SvgLine from './components/svgLine/SvgLine'
 
 function App() {
 
   return (
     <div className="App">
+      <SvgLine/>
       <AudioLoader/>
       <Nav/>
       <Home/>

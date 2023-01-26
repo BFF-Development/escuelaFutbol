@@ -137,8 +137,6 @@ html{
 
 
 
-
-
 @keyframes _noiseAnim_judif_1 {
   0% {
       background-position: 0 0
@@ -190,7 +188,7 @@ html{
 }
 
 .ar{
-  color: #8ad0ff;
+  color: rgb(54, 174, 255);
 }
 .co{
   color:#fffb29;
