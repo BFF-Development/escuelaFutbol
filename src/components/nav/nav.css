@@ -36,7 +36,7 @@ a{
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.925);
+    background-color: rgba(0, 0, 0, 0.973);
     backdrop-filter: blur(15px);
 /*     border-bottom: 2px solid rgb(161, 225, 255); */
     z-index: 99999991 !important;
@@ -56,7 +56,7 @@ a{
     border-bottom-right-radius: 35px;
     background-color: rgba(0, 0, 0, 0.973);
     backdrop-filter: blur(45px);
-    border-bottom: 4px solid rgb(63, 185, 255);
+    border-bottom: 3px solid  rgb(54, 174, 255);
     transition: all .5s ease;
     z-index: 1000;
 }
@@ -73,7 +73,6 @@ a{
     left: 10rem;
     top: 1.2rem;
     transition: all 1.5s ease;
-
 }
 
 .titleNav_mobile-active{
@@ -190,23 +189,23 @@ a{
 
 
 .list_nav_mobile li:hover{
-    text-shadow:  0 0 1rem rgb(5, 224, 240);
+    text-shadow:  0 0 5px rgb(255, 255, 255);
     transition: all .4s ease;
 }
 
 
-.nav_degree{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background: rgb(5,194,254);
-    background: linear-gradient(90deg, rgba(5,194,254,1) 0%, rgba(146,245,255,1) 14%, rgba(254,255,255,1) 16%, rgba(249,254,255,1) 30%, rgba(138,236,255,1) 32%, rgba(0,212,255,1) 43%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 52%, rgb(255, 229, 79) 56%, rgb(255, 253, 105) 69%, rgb(55, 93, 221) 70%, rgb(45, 68, 223) 83%, rgb(238, 77, 77) 87%);
-    height: .3rem;
-}
+
 
 
 @media screen and (max-width:950px) {
 
+    .titleNav_mobile{
+        left: 5rem;
+    }
+
+    .titleNav_mobile-active {
+        left: 5rem;
+    }
     
 }
 

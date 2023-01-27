@@ -29,12 +29,12 @@ const Faqs = () => {
         gsap.registerPlugin(ScrollTrigger);
 
         const tl = gsap.timeline({
-            duration:1,
+            duration:.5,
             ease: Power4.easeOut,
             scrollTrigger:{
                 trigger:".boxfaqs",
                 /* pin:true, */
-                start:"-600px top",
+                start:"-700px top",
                 end:"-=500",
               }
           })
@@ -48,7 +48,7 @@ const Faqs = () => {
          
           tl.from( ".faqsTitle",{
             opacity:0,
-            duration: .8,
+            duration: .5,
             y:20,
           })
 

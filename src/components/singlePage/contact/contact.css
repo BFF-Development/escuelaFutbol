@@ -238,7 +238,7 @@
 
             
     .boxTitleContact h2{
-        font-size: 4.2rem;
+        font-size: 3.7rem;
         letter-spacing: 2.3px;
     }
 
@@ -251,33 +251,26 @@
         width: 25rem;
     }
     .boxiconInstagram {
-        left: 7rem;
+        left: 5rem;
     }
 
+    .iconContac img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .map {
+        width: 95%;
+        height: 23rem;
+        filter: drop-shadow( 0 0 5px rgb(194, 193, 193));
+    }
+
+    
+.map iframe{
+    border: 5px ridge rgb(37, 37, 37);
 }
 
-  
-@media screen and (max-width:410px) {
-
-    .boxTitleContact h2{
-        font-size: 4rem;
-        letter-spacing: 2.3px;
-    }
-
-    .boxTitleContact p{
-        font-size: 1.3rem;
-        letter-spacing: 1px;
-    }
-
-    .boxTitleContact {
-        width: 21rem;
-    }
-    .boxiconInstagram {
-        left: 6rem;
-    }
 }
-  
-
   
 @media screen and (max-width:357px) {
 

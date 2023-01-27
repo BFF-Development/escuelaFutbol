@@ -41,3 +41,20 @@
 
     }
 }
+
+
+
+
+
+@media screen and (max-width:1440px) {
+    .preloader img{
+        width: 27rem;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .preloader img{
+        width: 22rem;
+    }
+}

@@ -665,19 +665,15 @@
         line-height: 7.1rem;
     }
 
-
-    
-    
 }
   
 
   
 @media screen and (max-width:320px) {
 
-    .punt1::before{
+    .punt1::before {
         width: 150%;
-        left: -6%;
+        left: -24%;
     }
-    
 }
   
