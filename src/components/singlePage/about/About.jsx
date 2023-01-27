@@ -29,7 +29,7 @@ const About = () => {
         
         tl_title.from( ".line_title_abut",{ opacity:.4, duration: .4,})
 
-        tl_title.from( ".about_title",{ duration: .7, y: 20, opacity:.7, color: "rgb(208, 208, 208)", stagger: .1})
+        tl_title.from( ".about_title",{ duration: .7, x: -26, opacity:.7, color: "rgb(208, 208, 208)", stagger: .08})
 
         tl_title.to( ".about_title",{ duration: .4, color:"rgb(125, 186, 255)", stagger: .1})
 

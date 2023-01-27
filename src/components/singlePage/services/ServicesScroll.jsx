@@ -46,6 +46,7 @@ const ServicesScroll = () => {
                 scrollTrigger: {
                   trigger: ".container_services",
                   start:"-450px top",
+                  end:"+=500"
                 }
               })
 
@@ -63,22 +64,21 @@ const ServicesScroll = () => {
 
               tl_titles.from(".boxCuadro",{
                 opacity: 0,
-                duration: .4,
+                duration: .2,
                 x: -20,
-                stagger: .2,
               })
 
 
               tl_titles.from(titlesService,{
                 opacity: 0,
-                duration: 1,
+                duration: .7,
                 stagger: .2,
               })
 
               tl_titles.from(".textPanel",{
                 opacity: 0,
                 y: -20,
-                duration: 1,
+                duration: .7,
                 stagger: .2,
               })
 
