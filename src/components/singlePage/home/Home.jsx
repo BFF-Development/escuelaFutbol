@@ -3,7 +3,7 @@ import "./home.css"
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
 
-export const Home = () => {
+const Home = () => {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -55,3 +55,6 @@ export const Home = () => {
     </div>
   )
 }
+
+
+export default Home

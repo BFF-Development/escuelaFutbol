@@ -27,7 +27,7 @@ const PreLoader = () => {
   
     return (
     <div className="preloader">
-        <img src={logo} alt="logo" />
+        <img width="300" height="300" src={logo} alt="logo" />
     </div>
   )
 }

@@ -94,7 +94,7 @@ const Faqs = () => {
     ]
 
   return (
-    <div className="boxfaqs"id='faqs'>
+    <div className="boxfaqs" id='faqs'>
         <div className="container_Faqs" >
             <div className="line_title_faqs"></div>
             <h2 className="faqsTitle">Preguntas Frecuentes</h2>
@@ -102,7 +102,7 @@ const Faqs = () => {
             <div className="box_faq">
                 {faqs.map((index, key) => {
                     return <div className="box_faq-item" key={key}>
-                                <button id="box_faq-button" aria-expanded="false">
+                                <button className="box_faq-button" aria-expanded="false">
                                     <span className="box_faq-title">{index.title}</span>
                                     <span className="icon" aria-hidden="true"></span>
                                 </button>

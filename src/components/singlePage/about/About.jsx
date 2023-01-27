@@ -169,10 +169,7 @@ const About = () => {
           stagger: .1
         })
 
-
-
       }
-      
 
   }
 
@@ -187,16 +184,17 @@ const About = () => {
 
   
 
+const textos_about = {
+     "texto" : "En ARCO queremos que sus hijos vengan a aprender, practicar y mejorar sus aptitudes en el deporte más lindo del mundo, el que iguala a todos los estratos sociales, ese en el que, cuando la pelota rueda, no distingue entre clases sociales sino que sólo harán diferencias en aquellos que mas pasión y entrega puedan darle a la redonda.",
+     
+     "texto1": "Para nosotros los que conformamos ARCO son fundamentales y nos encargamos de transmitir en todo momento a los jugadores, los valores del ser humano ante todo, los pilares conceptuales de la academia serán trabajo individual y en equipo, perseverancia, sacrificio, compañerismo, cuidado de su salud, buena alimentación, entre otros." ,
 
-  let texto = "En ARCO queremos que sus hijos vengan a aprender, practicar y mejorar sus aptitudes en el deporte más lindo del mundo, el que iguala a todos los estratos sociales, ese en el que, cuando la pelota rueda, no distingue entre clases sociales sino que sólo harán diferencias en aquellos que mas pasión y entrega puedan darle a la redonda."
+     "texto2" : "Los jugadores tendrán entre sus conceptos la mezcla de ideologías futbolísticas Argentinas y Colombianas para poder desenvolverse dentro y fuera de la cancha.",
 
-  let texto1 = "Para nosotros los que conformamos ARCO son fundamentales y nos encargamos de transmitir en todo momento a los jugadores, los valores del ser humano ante todo, los pilares conceptuales de la academia serán trabajo individual y en equipo, perseverancia, sacrificio, compañerismo, cuidado de su salud, buena alimentación, entre otros."
+     "title_quienes" : "Quienes" ,
 
-  let texto2 = "Los jugadores tendrán entre sus conceptos la mezcla de ideologías futbolísticas Argentinas y Colombianas para poder desenvolverse dentro y fuera de la cancha."
-
-  let title_quienes = "Quienes"
-  let title_somos = "Somos ?"
-/*   let textoAcademia = "Academia de Futbol" */
+     "title_somos" : "Somos ?"
+}
 
 
   const arrayPalabras = (texto) => {
@@ -215,12 +213,12 @@ const About = () => {
     return cadena
   }
 
-  let cadena1 = arrayPalabras(texto)
-  let cadena2 = arrayPalabras(texto1)
-  let cadena3 = arrayPalabras(texto2)
-  let cadenaTitle_quienes = arrayPalabras(title_quienes)
-  let cadenaTitle_somos = arrayPalabras(title_somos)
-/*   let cadenaAcademia = arrayPalabras(textoAcademia) */
+  let cadena1 = arrayPalabras(textos_about.texto)
+  let cadena2 = arrayPalabras(textos_about.texto1)
+  let cadena3 = arrayPalabras(textos_about.texto2)
+  let cadenaTitle_quienes = arrayPalabras(textos_about.title_quienes)
+  let cadenaTitle_somos = arrayPalabras(textos_about.title_somos)
+
 
 
   return (
@@ -253,7 +251,7 @@ const About = () => {
               </div>
           </div>
             <div className="logo_about">
-                <img className='logo_about_bottom' src={logo} alt="logo" />
+                <img width="300" height="300" className='logo_about_bottom' src={logo} alt="logo" />
             </div>
         </div>
         
@@ -261,42 +259,29 @@ const About = () => {
     {/*     <div className="lineDer-about aboutEffect"></div>
  */}
         <div className="text_about">
-          <div className="textComplete_about">
-            <p>
-              En ARCO queremos que sus hijos vengan a aprender, practicar y mejorar sus aptitudes en el deporte más lindo del mundo, el que iguala a todos los estratos sociales, ese en el que, cuando la pelota rueda, no distingue entre clases sociales sino que sólo harán diferencias en aquellos que mas pasión y entrega puedan darle a la redonda.
-              <br /><br />
-              Para nosotros los que conformamos ARCO son fundamentales y nos encargamos de transmitir en todo momento a los jugadores, los valores del ser humano ante todo, los pilares conceptuales de la academia serán trabajo individual y en equipo, perseverancia, sacrificio, compañerismo, cuidado de su salud, buena alimentación, entre otros.
-              <br /><br />
-              Los jugadores tendrán entre sus conceptos la mezcla de ideologías futbolísticas Argentinas y Colombianas para poder desenvolverse dentro  y  fuera de la cancha.
-            </p>
-          </div>
+
           <div className="logo_about">
-              <img className='logo_about_top' src={logo} alt="logo" />
+              <img width="450" height="450" className='logo_about_top' src={logo} alt="logo" />
           </div>
           <div className="box_text_about">
 
             <div className="cadenaAbout cadena1_about">
-              {
-                cadena1.map((index, key) => {
-                  return <p key={key} className='p_text_about'>{index} </p>
-                })
-              }
+              <p  className='p_text_about'> 
+                En ARCO queremos que sus hijos vengan a aprender, practicar y mejorar sus aptitudes en el deporte más lindo del mundo, el que iguala a todos   los estratos sociales, ese en el que, cuando la pelota rueda, no distingue entre clases sociales sino que sólo harán diferencias en aquellos que mas pasión y entrega puedan darle a la redonda. 
+              </p>
+         
             </div>
 
             <div className="cadenaAbout cadena2_about">
-              {
-                cadena2.map((index, key) => {
-                  return <p key={key} className='p_text_about'>{index} </p>
-                })
-              }
+              <p  className='p_text_about'> 
+                Para nosotros los que conformamos ARCO son fundamentales y nos encargamos de transmitir en todo momento a los jugadores, los valores del ser humano ante todo, los pilares conceptuales de la academia serán trabajo individual y en equipo, perseverancia, sacrificio, compañerismo, cuidado de su salud, buena alimentación, entre otros.
+              </p>
             </div>
 
             <div className="cadenaAbout cadena3_about">
-              {
-                cadena3.map((index, key) => {
-                  return <p key={key} className='p_text_about'>{index} </p>
-                })
-              }
+              <p  className='p_text_about'> 
+                Los jugadores tendrán entre sus conceptos la mezcla de ideologías futbolísticas Argentinas y Colombianas para poder desenvolverse dentro  y  fuera de la cancha.
+              </p>
             </div>
 
           </div>

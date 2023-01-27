@@ -246,6 +246,7 @@
 
   .logo_about_bottom {
     width: 30rem;
+    height: 30rem;
     left: 3rem;
   }
 
@@ -253,6 +254,7 @@
     top: 6rem;
     left: 4rem;
     width: 45rem;
+    height: 45rem;
   }
 
 }
@@ -348,10 +350,6 @@
   }
 
   .box_text_about{
-    display: none;
-  }
-
-  .textComplete_about{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -361,7 +359,8 @@
     padding: 2rem ;
   }
 
-  .textComplete_about p {
+
+  .p_text_about {
     width: 80%;
     font-family: "montserrat-semiBold";
     letter-spacing: .7px;
@@ -391,7 +390,6 @@
     width: 100%;
     padding: 0;
     padding-right: 0rem;
-    opacity: 0;
   }
 
   .about_title {
@@ -404,12 +402,14 @@
 
   .p_text_about {
     color: white;
-    opacity: 0;
   }
 
   .cadenaAbout {
-    padding: 2rem ;
-    width: 80%;
+    padding: 2rem  0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .container_titulo_line {
@@ -447,7 +447,6 @@
 
   .p_text_about {
     color: white;
-    opacity: 0;
   }
 
   .logo_about_bottom {
@@ -456,13 +455,13 @@
   }
 
   .cadenaAbout {
-    padding: 2rem ;
-    width: 92%;
+    padding: 2rem 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .textComplete_about p {
-    width: 90%;
-  }
+
 
 }
   
@@ -476,9 +475,11 @@
     min-height: 100vh;
   }
 
-  .textComplete_about p {
-    width: 95%;
+  .p_text_about {
+    width: 85%;
   }
+
+
 }
 
   
@@ -490,6 +491,14 @@
   .cadenaAbout {
     padding: 2rem;
     width: 98%;
+  }
+
+  .p_text_about {
+    width: 99%;
+  }
+
+  .text_about {
+    min-height: 120vh;
   }
 }
 
@@ -514,6 +523,10 @@
     left: -4rem;
     height: 18rem;
 
+  }
+
+  .text_about {
+    min-height: 140vh;
   }
 
 }

@@ -61,7 +61,7 @@
     position: relative;
 }
 
-.list_Footer li , .list_contact li{
+.list_Footer li a , .list_contact li{
     font-size: 1.2rem;
     letter-spacing: .5px;
     text-transform: uppercase;

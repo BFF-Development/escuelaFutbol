@@ -10,7 +10,6 @@
 
 html{
   font-size: 62.5%;
-
 }
 
 
@@ -20,6 +19,7 @@ html{
   src: url('./components/assets/fonts/ArticulatCF-Bold.otf') format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 
@@ -28,6 +28,7 @@ html{
   src: url('./components/assets/fonts/Montserrat-Regular.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 
@@ -36,6 +37,7 @@ html{
   src: url('./components/assets/fonts/Montserrat-Bold.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -43,23 +45,7 @@ html{
   src: url('./components/assets/fonts/Montserrat-SemiBold.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
-}
-
-
-
-@font-face {
-  font-family: 'benton-bold';
-  src: url('./components/assets/fonts/benton/bentonsansbold.ttf') format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'benton-black';
-  src: url('./components/assets/fonts/benton/BentonSans-Black.otf') format("truetype");
-  font-weight: normal;
-  font-style: normal;
+  font-display: swap;
 }
 
 
@@ -68,6 +54,7 @@ html{
   src: url('./components/assets/fonts/benton/Shentox-bold.otf') format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 /* font title */
@@ -77,16 +64,9 @@ html{
   src: url('./components/assets/fonts/creativ/PPFormula.woff') format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
-/* font service */
-
-@font-face {
-  font-family: 'Mongoose-black';
-  src: url('./components/assets/fonts/creativ/Mongoose-Medium.woff2') format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 
 
 
@@ -183,7 +163,7 @@ html{
 
 .App{
   overflow-x: hidden;
-  background-color: rgb(5, 5, 5);
+  background-color: #050505;
   overflow: hidden;
 
 }

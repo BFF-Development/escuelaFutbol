@@ -1,15 +1,20 @@
 import React from 'react'
-import About from './about/About'
-import Arco from './arco/Arco'
-import Contact from './contact/Contact'
-import Faqs from './faqs/Faqs'
-import Footer from './footer/Footer'
-import { Home } from './home/Home'
-import Services from './services/Services'
+import { lazy,Suspense } from 'react';
+import Loader from '../assets/loader/Loader'
+
+const Services = lazy(() => import('./services/Services'))
+const About = lazy(() => import('./about/About'))
+const Contact = lazy(() => import('./contact/Contact'))
+const Arco = lazy(() => import('./arco/Arco'))
+const Faqs = lazy(() => import('./faqs/Faqs'))
+const Footer = lazy(() => import('./footer/Footer'))
+const Home = lazy(() => import('./home/Home'))
+
 
 const SinglePage = () => {
+
   return (
-    <>
+    <Suspense fallback={<Loader/>}>
         <Home/>
         <About/>
         <Services/>
@@ -17,7 +22,7 @@ const SinglePage = () => {
         <Faqs/>
         <Arco/>
         <Footer/>
-    </>
+    </Suspense>
   )
 }
 

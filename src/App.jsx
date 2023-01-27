@@ -1,20 +1,28 @@
 import './App.css'
-import AudioLoader from './components/audioLoader/AudioLoader'
-import Nav from './components/nav/Nav'
-import PreLoader from './components/preLoader/PreLoader'
-import SinglePage from './components/singlePage/SinglePage'
-import SvgLine from './components/svgLine/SvgLine'
+import { lazy,Suspense } from 'react';
+import Loader from './components/assets/loader/Loader';
+import Nav from './components/nav/Nav';
+
+const AudioLoader = lazy(() => import('./components/audioLoader/AudioLoader'))
+const PreLoader = lazy(() => import('./components/preLoader/PreLoader'))
+const SinglePage = lazy(() => import('./components/singlePage/SinglePage'))
+const SvgLine = lazy(() => import('./components/svgLine/SvgLine'))
+
+
 
 function App() {
 
   return (
-    <div className="App">
-      <PreLoader/>
-      <SvgLine/>
-      <AudioLoader/>
-      <Nav/>
-      <SinglePage/>
-    </div>
+      <Suspense fallback={<Loader/>}>
+        <div className="App">
+            <PreLoader/>
+            <SvgLine/>
+            <AudioLoader/>
+            <Nav/>
+            <SinglePage/>
+        </div>
+      </Suspense>
+
   )
 }
 

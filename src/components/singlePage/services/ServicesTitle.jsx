@@ -6,9 +6,6 @@ const ServicesTitle = () => {
 
   useEffect(() => {
 
-
-
-
     const titleService_effect = () => {
       
 
@@ -95,9 +92,13 @@ const ServicesTitle = () => {
 
   },[])
 
+
+  const text_services = {
+    "cadena" : "Que" ,
+    "cadena1" : "Ofrecemos ?"
+  }
+
   
-  let title_que = "Que"
-  let title_ofrecemos = "Ofrecemos ?"
 
   const arrayPalabras = (texto) => {
     const cadena = []
@@ -115,8 +116,8 @@ const ServicesTitle = () => {
     return cadena
   }
 
-  let cadena1 = arrayPalabras(title_que)
-  let cadena2 = arrayPalabras(title_ofrecemos)
+  let cadena1 = arrayPalabras(text_services.cadena)
+  let cadena2 = arrayPalabras(text_services.cadena1)
 
 
 

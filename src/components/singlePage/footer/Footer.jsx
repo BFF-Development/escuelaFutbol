@@ -19,13 +19,12 @@ const Footer = () => {
           <div className="title_footer"> <p><strong className='ar'>AR</strong><strong className='co'>CO</strong> </p> </div>
 
           <ul className="list_Footer">
-              <a href="# " > <li >Inicio         </li> </a>
-              <a href="#about " > <li >Quienes somos  </li> </a>
-              <a href="#servicios " > <li >Servicios      </li> </a>
-              <a href="# " > <li >Blog           </li> </a>
-              <a href="#contact " > <li >Contacto       </li> </a>
-              <a href="#faqs " > <li >FAQ's       </li> </a>
-
+              <li ><a href="#home " > Inicio </a> </li> 
+              <li ><a href="#about " >Quienes somos </a> </li> 
+              <li ><a href="#servicios " > Servicios</a> </li> 
+              {/* <li ><a href="# " >Blog </a></li>  */}
+              <li ><a href="#contact "> Contacto  </a></li> 
+              <li ><a href="#faqs "> FAQ's </a></li> 
           </ul>     
         </div>
    

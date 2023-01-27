@@ -125,11 +125,13 @@ const Nav = () => {
               
               {isActive && 
                 <ul className='list_nav_mobile' >
-                  <a href="#home " >  <li className='list_mobile' onClick={() => handleToggle()}>Inicio         </li> </a>
-                  <a href="#about " >  <li className='list_mobile' onClick={() => handleToggle()}>Quienes somos  </li> </a>
-                  <a href="#servicios " >  <li className='list_mobile' onClick={() => handleToggle()}>Servicios      </li> </a>
-                  <a href="# " >  <li className='list_mobile' onClick={() => handleToggle()}>Blog           </li> </a>
-                  <a href="#contact " > <li className='list_mobile' onClick={() => handleToggle()}>Contacto </li> </a>
+                 <li className='list_mobile' onClick={() => handleToggle()}>  <a href="#home ">      Inicio         </a>  </li>
+                 <li className='list_mobile' onClick={() => handleToggle()}>  <a href="#about ">     Quienes somos  </a>  </li>
+                 <li className='list_mobile' onClick={() => handleToggle()}>  <a href="#servicios "> Servicios      </a>  </li>
+                 <li className='list_mobile' onClick={() => handleToggle()}>  <a href="#contact ">    Contacto      </a>  </li>
+
+             {/*     <li className='list_mobile' onClick={() => handleToggle()}> <a href="# " >           Blog            </a> </li> */}
+
                 </ul>
               }
 
