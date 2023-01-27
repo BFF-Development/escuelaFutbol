@@ -15,6 +15,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 0rem;
+    opacity: 1;
     padding: 5rem 0;
 }
 
@@ -95,8 +96,7 @@
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
-    opacity: 1;
-    color: rgb(244, 250, 253);
+    color: rgb(255, 255, 255);
     z-index: 300;
 } 
 
@@ -109,9 +109,11 @@
   position: absolute;
   object-fit: contain;
   top: 6rem;
-  left: 6rem;
-  width: 60rem;
+  left: 14rem;
+  width: 54rem;
+  height: 54rem;
 }
+
 
 .logo_about_bottom{
   position: relative;
@@ -126,6 +128,57 @@
 
 
 
+.subtites_about{
+  width: 32rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  margin-left: 2rem;
+}
+
+.subtites_about2{
+  width: 13rem;
+}
+
+.marco1{
+  position: absolute;
+  width: 3rem;
+  height: 100%;
+  border:3px solid rgb(165, 222, 255);
+  border-right: none;
+  left: -1.5rem;
+  transform: skewY(-1deg) !important;
+  top: -1.3rem;
+}
+
+.marco2{
+  position: absolute;
+  width: 3rem;
+  height: 100%;
+  border:3px solid rgb(165, 222, 255);
+  border-left: none;
+  right:  -1rem;
+  transform: skewY(-1deg) !important;
+  top: -1.3rem;
+}
+
+.cadenaAbout h3{
+  font-size: 3rem;
+  font-family: "Mongoose-bold";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  color: rgb(255, 255, 255);
+  z-index: 300;
+  margin-bottom:2rem;
+}
+
+
 .text_about{
   width: 100%;
   min-height: 100vh;
@@ -138,11 +191,12 @@
   width: 92%;
   position: absolute;
   display: flex;
-  top:90vh;
+  top:95vh;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 5rem 0;  
+  gap: 4rem;
 }
 
 .cadenaAbout{
@@ -150,6 +204,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   padding: 2rem 0;
+  gap: 2rem;
   color: rgb(34, 34, 34);
 }
 
