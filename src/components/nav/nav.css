@@ -28,102 +28,7 @@ a{
 
 
 
-/* desktop */
-
-
-.titleNav_desktop{
-    font-size: 3.7rem;
-    font-family: bulevar;
-    outline: none;
-    text-transform: uppercase;
-    position: relative;
-    font-family: "Mongoose-bold";
-    letter-spacing: 3px;
-    left: 10rem;
-}
-
-.list_nav_desktop{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    gap: 0rem;
-    position: relative;
-    top: 0rem;
-    right: 5rem;
-    transition: right .7s ease;
-}
-
-
-
-.list_nav_desktop li{
-    position: relative;
-    top:0rem;
-    padding:2rem 1rem;
-}
-
-.list_nav_desktop a{
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: rgb(255, 255, 255);
-    letter-spacing: .5px;
-    font-family: "benton-black";
-    outline: none;
-    text-transform: uppercase;
-    transition: color 1s ease-in-out;
-    cursor: pointer;
-}
-
-
-
- .toggleDeskt{
-    position: absolute;
-    width: 5rem;
-    height: 5rem;
-    right: 3rem;
-    top: .8rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: column;
-    gap: .8rem;
-    cursor: pointer;
-    z-index: 999999 !important;
-    list-style: none;
-}
-
-
-
-.lineD{
-    width: 70%;
-    height: .28rem;
-    background-color: rgb(255, 255, 255);
-    transition: background-color 1s ease;
-}
-
-.line1D{
-    width: 50%;
-    position: relative;
-    background-color: rgb(255, 254, 254);
-}
-
-.line2D{
-    width: 80%;
-    position: relative;
-    background-color: rgb(255, 254, 254);
-}
-
-.line3D{
-    width: 110%;
-    background-color: rgb(255, 254, 254);
-}
-
-
-
-
-
-/* mobile */
+/* nav hambur */
 
 .nav_active_mobile{
     position: fixed;
@@ -158,37 +63,32 @@ a{
 
 
 .titleNav_mobile{
-    font-size: 2rem;
-    color: rgb(255, 255, 255);
-    letter-spacing: 1px;
+    font-size: 3.7rem;
     font-family: bulevar;
     outline: none;
     text-transform: uppercase;
-    margin-left: 4rem;
-    top:2.2rem;
     position: absolute;
-    left: 0;
-    font-family: "shentox-bold";
-    font-weight: bold;
+    font-family: "Mongoose-bold";
+    letter-spacing: 3px;
+    left: 10rem;
+    top: 1.2rem;
     transition: all 1.5s ease;
 
 }
 
 .titleNav_mobile-active{
-    font-size: 2rem;
     color: rgb(255, 255, 255);
-    letter-spacing: 1px;
-    font-family: bulevar;
+    top:1.2rem;
+    font-weight: bold;
+    z-index: 1100;
+    font-size: 3.7rem;
     outline: none;
     text-transform: uppercase;
-    margin-left: 4rem;
-    top:2.2rem;
     position: absolute;
-    left: 0;
-    font-family: "shentox-bold";
-    font-weight: bold;
+    font-family: "Mongoose-bold";
+    letter-spacing: 3px;
+    left: 10rem;
     transition: all 1.5s ease;
-    z-index: 1100;
 
 }
 
@@ -201,13 +101,15 @@ a{
     top: .7rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
     gap: .8rem;
     transition: all .3s ease;
     cursor: pointer;
     z-index: 999999 !important;
+    padding: .4rem;
 }
+
 
 
 .line{
@@ -215,6 +117,19 @@ a{
     height: .3rem;
     background-color: rgb(255, 255, 255);
     transition: all .3s ease;
+}
+
+
+.line1{
+    width: 55%;
+}
+
+.line2{
+    width: 85%;
+}
+
+.line3{
+    width: 120%;
 }
 
 .line1_active{
@@ -238,6 +153,7 @@ a{
     background-color: rgb(255, 254, 254);
     transition: all .1s ease;
 }
+
 
 
 .list_nav_mobile{
@@ -291,15 +207,6 @@ a{
 
 @media screen and (max-width:950px) {
 
-    /* desktop */
-
-    .titleNav_desktop{
-        left: 5rem;
-    }
-
-    .list_nav_desktop{
-        right: 5rem;
-    }
     
 }
 
