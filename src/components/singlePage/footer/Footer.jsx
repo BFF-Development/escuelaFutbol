@@ -8,23 +8,20 @@ import { useEffect } from 'react'
 
 const Footer = () => {
 
-
   const submitHandler= e =>{
     e.preventDefault()
 
     const email = e.target.email.value
 
-
     axios
-        .post(`https://arcoacademia.co/api/guardarEmail.php`,{email})
-        .then(res => {
-            
-            console.log(res.response.data)
+        .post(`api/guardarEmail.php`, { email: email })
+        .then(res => {            
+            console.log(res.data)
         })
-}
-
-  
-
+        .catch(error => {
+          console.log(error)
+        })
+  }
 
   return (
     <div className="footer">
