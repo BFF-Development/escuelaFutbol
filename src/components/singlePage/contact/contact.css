@@ -158,7 +158,7 @@
     border-radius: 10px;
     justify-content: center;
     align-items: center;
-    filter: drop-shadow( 0 0 10px rgb(194, 193, 193));
+    filter: drop-shadow( 0 0 10px rgba(194, 193, 193, 0.363));
 }
 
 .map iframe{

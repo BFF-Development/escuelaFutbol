@@ -1,8 +1,8 @@
 import React, {useEffect, useState, useRef} from 'react'
 import "./audioLoader.css"
 import muchachosAudio from "../assets/audio/muchachos.mp3"
-
 import ReactGA from 'react-ga4'
+
 
 const AudioLoader = () => {
     const [activeSound , setActiveSound] = useState(false)

@@ -208,12 +208,36 @@
 
 @media screen and (max-width:1440px) {
   .box_faq {
-    width: 74vw;
+    width: 68vw;
   }
 
   .box_faq button {
     font-size: 3.5rem;
   }
+
+    /* title */
+
+  .faqsTitle{
+    font-size: 8rem;
+    letter-spacing: 1.6px;
+    margin-bottom: 10rem ;
+    top: 6rem;
+    opacity: 1;
+  }
+
+  .line_title_faqs{
+    width: 0%;
+    height: 12rem;
+    top: 8.5rem;
+    border-radius: 5px;
+  }
+
+  .box_faq .box_faq-content p {
+    line-height: 2.8rem;
+    font-size: 1.8rem;
+    letter-spacing: .1px;
+    margin: 3.5rem 0;
+  }  
 }
 
 @media screen and (max-width:1170px) {

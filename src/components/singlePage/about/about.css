@@ -103,9 +103,6 @@
 /* logo bottom */
 
 
-
-
-
 .logo_about_top{
   position: absolute;
   object-fit: contain;
@@ -227,36 +224,39 @@
   }
 
   .logo_about_top {
-    top: 6rem;
-    left: 6rem;
-    width:50rem;
+    top: 10rem;
+    left: 15rem;
+    width:30rem;
+    height: 30rem;
   }
 
   .box_text_about {
-    top: 105vh;
+    top: 108vh;
     width: 100%;
     padding-right: 3rem;
+    gap: 1.5rem;
   }
+  
 
   .box_title_about {
     position: relative;
     width: 50%;
     height: 100%;
-    top: 12rem;
+    top: 8rem;
   }
   
   .p_text_about {
-    font-size: 1.8rem;
-    line-height: 3.4rem;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
   }
 
   .about_title {
-    font-size: 10rem;
+    font-size: 8rem;
   }
 
   .containerTitle_about {
     width: 80%;
-    gap: 12rem;
+    gap: 10rem;
   }
 
   .container_titulo_line {
@@ -265,19 +265,55 @@
   } 
 
   .quienes, .somos {
-    line-height: 12rem;
+    line-height: 9rem;
   }
 
   .line_title_abut {
-    left: 0rem;
+    left: 1rem;
+    height: 20rem;
+    top: 7rem;
   }
 
   .logo_about_bottom {
     position: relative;
     object-fit: contain;
-    width: 33rem;
+    width: 17rem;
+    height: 20rem;
     left: 3rem;
   }
+
+
+  /* text about */
+
+
+  .subtites_about{
+    width: 32rem;
+    height: 100%;
+    margin-left: 0rem;
+  }
+
+  .subtites_about2{
+    width: 15rem;
+  }
+
+  .marco1{
+    width: 3rem;
+    left: .5rem;
+    top: -.7rem;
+  }
+
+  .marco2{
+    width: 3rem;
+    right:  1rem;
+    top: -.7rem;
+  }
+
+  .cadenaAbout h3{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom:1rem;
+  }
+
 }
 
 @media screen and (max-width:1270px) {
