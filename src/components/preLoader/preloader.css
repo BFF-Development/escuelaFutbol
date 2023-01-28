@@ -23,10 +23,11 @@
 
 .preloader img{
     object-fit: contain;
-    width: 30rem;
-    height: 30rem;
+    width: 27rem;
+    height: 27rem;
     filter: contrast(110%) brightness(110%) drop-shadow( 0 0 10px rgb(0, 0, 0));
     animation: rotateLogo 3s linear infinite ;
+    background-color: black;
 }
 
 
