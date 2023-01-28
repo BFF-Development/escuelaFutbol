@@ -19,7 +19,7 @@ const Footer = () => {
         .post(`https://arcoacademia.co/api/guardarEmail.php`,{email})
         .then(res => {
             
-            console.log(res.resultado)
+            console.log(res.response.data)
         })
 }
 
