@@ -9,9 +9,7 @@
   width: 11rem;
   height: 8rem;
   z-index: 9999999 ;
-
   transition: all 1s ease;
-  
 }
 
 .loader:hover{
@@ -37,7 +35,6 @@
   position: absolute;
   width: 2px;    
   animation: sound 0ms -800ms linear infinite alternate;
-
 }
 
 
@@ -167,6 +164,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+@media screen and (max-width: 1440px) {
+  .loaderBox{
+    width: 17rem;
+    bottom: -2rem;
+  }
+
+  .circleBlur{
+    width: 14rem;
+    height: 14rem;
+    z-index: -1;
+    left: 3.1rem;
+    bottom: 3.2rem;
+  }
+  
+  .circle{
+    width: 20rem;
+    left: 0rem;
+  }
+  
+  
+  /* desactive */
+
+  #bar_line{
+    bottom: 4rem;
+    left: 7.5rem;
+    bottom: 10.4rem;
+    scale: 1.2;
+  }
+
+  .bar_out{
+    height: 8px;
+    width: 2px;    
+  }
+
+    /* active */
+
+  #bars {
+    scale: 1.2;
+    left: 7.5rem;
+    bottom: 9.1rem;
+  }
+
+  .bars {
+    bottom: 1px;
+    height: 3px;
+    width: 2px;      
+  }
+
+  .circle:hover .textcircle {
+    transform: scale(1.12) rotate(90deg);
+  }
+  
+  .loaderBox:hover .circleBlur{
+    transform: scale(1.12) rotate(90deg);
+  }
+  
 }
 
 
