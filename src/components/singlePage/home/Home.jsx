@@ -37,8 +37,9 @@ const Home = () => {
   
   return (
     <div className="home" id="home" >
-      <div className="containerHome">
         <Scene/>
+
+      <div className="containerHome">
 
         <div className="boxText_home">
           <h1 className="titleHome " >

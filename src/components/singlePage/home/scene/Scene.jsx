@@ -1,6 +1,11 @@
 import React from 'react'
 import { useEffect } from 'react'
 import * as THREE from "three"
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import sceneArco from "./aca.glb"
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+
 
 const Scene = () => {
 
@@ -28,19 +33,42 @@ const Scene = () => {
             })
         
             const camera = new THREE.PerspectiveCamera(75 , sizes.width / sizes.height )
-            camera.position.z = 3
-            camera.position.x = -1
+            camera.rotation.reorder("YXZ")
+            camera.position.set(0, 0, 4.5)
+            camera.rotation.set(0, 0,0)
 
         
+
+            
             scene.add(camera)
         
+            /* scene gltf */
+            let roomScene
+            const dracoLoader = new DRACOLoader()
+            dracoLoader.setDecoderPath('/draco/')
+
+            const gltfLoader = new GLTFLoader()
+            gltfLoader.setDRACOLoader(dracoLoader)
+            
+            gltfLoader.load(sceneArco, (gltf) => {
+                    roomScene= gltf.scene
+                    scene.add(roomScene)
+                    roomScene.position.set(1,-.8,-0.5)
+                   /*  roomScene.rotation.set( 0 , -.2 , 0) */
+                    roomScene.scale.set(1,1,1)
+                /*     roomScene.lookAt(camera.position) */
+
+                }
+            )
+
+              /* Orbit Controls */
+            const controls = new OrbitControls(camera, canvas)
+            controls.enableDamping= true
+
+
         
-        
-            const geometry = new THREE.BoxGeometry(1,1,1 ,10 , 10 ,10)
-            const material = new THREE.MeshBasicMaterial({color:"#00ffff" , wireframe:true})
-            const mesh = new THREE.Mesh(geometry, material)
-            scene.add(mesh)
-        
+            const ambientLight = new THREE.AmbientLight(0xffffff, 3)
+            scene.add(ambientLight)
         
             /*   renderer  */
         
@@ -50,8 +78,10 @@ const Scene = () => {
             })
             renderer.setSize(sizes.width , sizes.height)
             renderer.setPixelRatio(Math.min(window.devicePixelRatio,2))
-        
-        
+            renderer.physicallyCorrectLights = true;
+
+            
+
         
             let clock = new THREE.Clock()
         
@@ -59,10 +89,8 @@ const Scene = () => {
         
                const elapsedTime = clock.getElapsedTime()
         
-        
-                mesh.rotation.y = elapsedTime
-                mesh.position.x = Math.sin(elapsedTime) 
-                mesh.position.y = Math.cos(elapsedTime) 
+                controls.update()
+          
                 /* camera.lookAt(Mesh.position) */
         
                 renderer.render(scene, camera)

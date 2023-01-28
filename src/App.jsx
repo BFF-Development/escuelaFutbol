@@ -16,10 +16,11 @@ function App() {
       <Suspense fallback={<Loader/>}>
         <div className="App">
             <PreLoader/>
-            <SvgLine/>
             <AudioLoader/>
             <Nav/>
             <SinglePage/>
+            <SvgLine/>
+
         </div>
       </Suspense>
 
