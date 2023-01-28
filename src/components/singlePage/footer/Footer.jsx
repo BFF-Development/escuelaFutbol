@@ -3,13 +3,28 @@ import "./footer.css"
 import telIcon from "../../assets/src/icons/tel.png"
 import emailIcon from "../../assets/src/icons/email.png"
 import ubiIcon from "../../assets/src/icons/ubi.png"
-
+import axios from 'axios'
+import { useEffect } from 'react'
 
 const Footer = () => {
 
+
   const submitHandler= e =>{
     e.preventDefault()
-  }
+
+    const email = e.target.email.value
+
+
+    axios
+        .post(`https://arcoacademia.co/api/guardarEmail.php`,{email})
+        .then(res => {
+            
+            console.log(res.resultado)
+        })
+}
+
+  
+
 
   return (
     <div className="footer">
@@ -45,11 +60,12 @@ const Footer = () => {
           <p>Suscribete </p>
 
           <form onSubmit={(submitHandler)}>
-            <input type="email" placeholder='Email' required/>
+            <input id='email' name='email' type="email" placeholder='Email' required/>
             <button type='submit'>
                 Suscribete
             </button>
           </form>
+          
         </div>
       </div>
 

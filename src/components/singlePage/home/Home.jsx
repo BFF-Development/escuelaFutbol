@@ -37,8 +37,8 @@ const Home = () => {
   
   return (
     <div className="home" id="home" >
-        <Scene/>
-
+      {/*   <Scene/>
+ */}
       <div className="containerHome">
 
         <div className="boxText_home">
