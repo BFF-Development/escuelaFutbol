@@ -13,17 +13,11 @@ const Footer = () => {
     e.preventDefault()
 
     const email = e.target.email.value
+    console.log(email)
 
 
-    axios
-        .post(`https://arcoacademia.co/api/guardarEmail.php`,{email})
-        .then(res => {
-            
-            console.log(res.response.data)
-        })
-}
+  }
 
-  
 
 
   return (
