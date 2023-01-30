@@ -82,9 +82,9 @@ const Nav = () => {
       duration: .1,  
       color: "black",
       scrollTrigger: {
-        trigger: ".panel",
-        start: "top top",
-        scrub: 2,
+        trigger: ".container_services",
+        start: "bottom top",
+        scrub: 1,
       }
     });
 
