@@ -7,13 +7,9 @@ const ServicesScroll = () => {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
-
-
         let sections = gsap.utils.toArray(".panel");
 
         const handleResize = () => {
-
-    
 
               /* section antimation */
               const tl = gsap.timeline({
@@ -23,7 +19,8 @@ const ServicesScroll = () => {
                   end:"100% 100%",
                 }
               })
-
+              
+   
               tl.to(sections, {
                 xPercent: -100 * (sections.length - 1),
                 ease: "none",
@@ -37,8 +34,6 @@ const ServicesScroll = () => {
               });
 
 
-
-
               /* titles animation */
               let titlesService = gsap.utils.toArray(".strong_title-panel1");
 
@@ -50,17 +45,17 @@ const ServicesScroll = () => {
                 }
               })
 
+
               tl_titles.to(".e", {
                 duration: .1,  
                 stroke: "#fffb29",
                 scrollTrigger: {
                   trigger: ".container_services",
-                  true: "-300px top",
+                  start: "-300px top",
                   end: "100% 100%",
                   scrub: true,
                 }
               });
-
 
               tl_titles.from(".boxCuadro",{
                 opacity: 0,
@@ -113,9 +108,6 @@ const ServicesScroll = () => {
                 opacity:1, 
                 border:0,
               });
-
-
-        
 
         }
 
