@@ -25,7 +25,7 @@ const Footer = () => {
         .post(`api/guardarEmail.php`, { email: email })
         .then(res => {            
             const dataBd = res.data
-            setMsjUser(dataBd.resultado.descripcion)
+            setMsjUser(dataBd.descripcion)
             
             if(dataBd.resultado === true){
               setResult(true)

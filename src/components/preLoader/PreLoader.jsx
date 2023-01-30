@@ -29,6 +29,9 @@ const PreLoader = () => {
     <div className="preloader">
         <img width="300" height="300" src={logo} alt="logo" />
     </div>
+
+
+
   )
 }
 

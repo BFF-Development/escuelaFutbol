@@ -22,7 +22,7 @@ function App() {
   return (
       <Suspense fallback={<Loader/>}>
         <div className="App">
-            <PreLoader/>
+           {/*  <PreLoader/> */}
             <AudioLoader/>
             <Nav/>
             <SinglePage/>

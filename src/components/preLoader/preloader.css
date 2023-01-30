@@ -15,7 +15,7 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: .5rem;
+    height: 1rem;
     background-color: #36aeff;
     background: linear-gradient(90deg, rgba(54,174,255,1) 0%, rgba(255,255,255,1) 50%, rgba(54,174,255,1) 100%);
     z-index: -1;
@@ -25,6 +25,7 @@
     object-fit: contain;
     width: 27rem;
     height: 27rem;
+    border-radius: 100%;
     filter: contrast(110%) brightness(110%) drop-shadow( 0 0 10px rgb(0, 0, 0));
     animation: rotateLogo 3s linear infinite ;
     background-color: black;
