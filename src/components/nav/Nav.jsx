@@ -8,6 +8,9 @@ const Nav = () => {
 
 
   const [isActive, setActive] = useState(false);
+  gsap.registerPlugin(ScrollTrigger);
+
+
 
   const handleToggle = () => {
     setActive(!isActive);
@@ -39,12 +42,21 @@ const Nav = () => {
           duration:.6,
           ease: Power4.easeInOut
         })
+        
+      gsap.to(".lineActive", {
+        duration: .1,  
+        color: "black",
+        scrollTrigger: {
+          trigger: ".panel",
+          start: "top top",
+          scrub: 2,
+        }
+      });
     }
   };
 
   useEffect(() =>{
 
-    gsap.registerPlugin(ScrollTrigger);
     
     gsap.to(".circle_nav", {
       duration: .1,  
@@ -76,15 +88,6 @@ const Nav = () => {
       }
     });
 
-    gsap.to(".lineActive", {
-      duration: .1,  
-      color: "black",
-      scrollTrigger: {
-        trigger: ".panel",
-        start: "top top",
-        scrub: 2,
-      }
-    });
   },[])
 
 

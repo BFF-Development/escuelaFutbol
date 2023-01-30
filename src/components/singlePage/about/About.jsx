@@ -58,7 +58,6 @@ const About = () => {
 
         tl_logo.to(".box_text_about",{  duration:.1,  opacity:1})
 
-        tl_logo.from( ".textComplete_about",{  opacity:0,  stagger: 1,  duration: 1})
 
 
 
@@ -174,13 +173,6 @@ const About = () => {
         
       </div>
 
- {/*      <div className="academia_vertical">
-          {
-            cadenaAcademia.map((index, key) => {
-              return <p key={key} className='aca_str'>{index} </p>
-            })
-          }
-      </div> */}
     </div>
   )
 }

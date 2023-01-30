@@ -256,6 +256,18 @@ a{
     padding-left: 9rem;
 }
 
+@media screen and (max-width:1440px ){
+    .list_link_nav{
+        font-size: 7rem;
+        letter-spacing: 2.4px;
+        height: 12rem;
+    }
+
+    .list_nav_mobile {
+        gap: 2rem;
+    }
+}
+
 @media screen and (max-width:950px) {
 
     .titleNav_mobile{
@@ -265,6 +277,16 @@ a{
     .titleNav_mobile-active {
         left: 5rem;
     }
+
+    .list_mobile {
+        top: 0.5rem;
+        padding: 1rem 0;
+        padding-left: 5rem;
+    }
+    .titleNav_mobile-active {
+        left: 5rem;
+        top: 2.5rem;
+    }
     
 }
 
@@ -273,11 +295,86 @@ a{
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
+
+    .list_mobile {
+        top: 0.5rem;
+        padding: 1rem 0;
+        padding-left: 3rem;
+    }
+
+    .list_link_nav{
+        font-size: 6rem;
+        letter-spacing: 2.4px;
+        height: 10rem;
+    }
+    
+    .list_nav_mobile {
+        gap: 3rem;
+    }
+
+    .toggle_active::after{
+        width: 5.5rem;
+        height: 5.5rem;
+        top: 52%;
+        left: 52%;
+        border: 3px solid rgb(255, 255, 255);
+    }
+    
+    .toggle_active:hover{
+        scale: 1.1;
+    }
+    .line{
+        margin-right: -.5rem;
+    }
+
+    .line1{
+        width: 45%;
+    }
+    
+    .line2{
+        width: 75%;
+    }
+    
+    .line3{
+        width: 100%;
+    }
+
+ 
+    
+    .circle_nav {
+        width: 13rem;
+        height: 13rem;
+        right: -2.5rem;
+    }
 }
 
 
-@media screen and (max-width:380px) {
-    .list_nav_mobile li{
-        font-size: 2rem;
+@media screen and (max-width:400px) {
+ 
+    .list_link_nav{
+        font-size: 5rem;
+        letter-spacing: 2.4px;
+        height: 9rem;
+    }
+
+    .list_mobile {
+        top: 0.5rem;
+        padding: 1rem 0;
+        padding-left: 2rem;
+    }
+
+
+}
+
+@media screen and (max-width:350px) {
+ 
+    .list_link_nav{
+        font-size: 4rem;
+        letter-spacing: 2.4px;
+        height: 8rem;
+    }
+
+    .list_nav_mobile {
+        gap: 2rem;
     }
 }

@@ -27,7 +27,7 @@ const ServicesTitle = () => {
 
         const tl_title = gsap.timeline({  scrollTrigger:{    trigger:".container_titulo_line_service",    start:"-10px top",  }})
         
-        tl_title.from( ".service_title",{ duration: .7, x: -26, opacity:.9,  stagger: .08})
+        tl_title.from( ".service_title",{ duration: .7,  opacity:.9,  stagger: .08})
 
         tl_title.to( ".service_title",{  duration: .4,  color:"rgb(125, 186, 255)",  stagger: .1})
 

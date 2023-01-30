@@ -441,6 +441,7 @@
   .containerAbout {
     flex-direction: column;
   }
+  
 
   .box_text_about{
     display: flex;
@@ -469,7 +470,7 @@
   .containerTitle_about {
     width: 100%;
     min-height: 100%;
-    gap: 16rem;
+    gap: 10rem;
     z-index: 10;
   }
     
@@ -505,13 +506,18 @@
     align-items: center;
   }
 
+  
+
   .container_titulo_line {
     left: 0rem;
   }
 
   .logo_about_bottom {
     left: 0rem;
+    width: 23rem;
   }
+
+
 }
   
   
@@ -528,7 +534,10 @@
     padding: 0;
     padding-right: 0rem;
     opacity: 0;
+    gap: 6rem;
   }
+
+
 
   .about_title {
     font-size: 9rem;
@@ -554,7 +563,9 @@
     align-items: center;
   }
 
-
+  .containerAbout {
+    gap: 15rem;
+  }
 
 }
   
@@ -572,7 +583,14 @@
     width: 85%;
   }
 
+  .logo_about_bottom {
+    width: 20rem;
+    left: 0rem;
+  }
 
+  .containerAbout {
+    gap: 5rem;
+  }
 }
 
   
@@ -593,6 +611,9 @@
   .text_about {
     min-height: 120vh;
   }
+
+
+ 
 }
 
 
