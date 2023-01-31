@@ -15,6 +15,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 0rem;
+    opacity: 1;
     padding: 5rem 0;
 }
 
@@ -61,7 +62,7 @@
   position: relative;
   width: 50%;
   height: 100%;
-  top: 12rem;
+  top: 10rem;
 }
 
 
@@ -83,7 +84,7 @@
   width: .5rem;
   height: 28rem;
   background-color: rgb(108, 189, 255);
-  top: 11rem;
+  top: 10rem;
   position: relative;
   left: 3.5rem;
 }
@@ -95,28 +96,28 @@
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
-    opacity: 1;
-    color: rgb(244, 250, 253);
+    color: rgb(255, 255, 255);
     z-index: 300;
 } 
 
 /* logo bottom */
 
 
-
-
 .logo_about_top{
   position: absolute;
   object-fit: contain;
-  top: 6rem;
-  left: 6rem;
-  width: 60rem;
+  top: 15rem;
+  left: 14rem;
+  width: 38rem;
+  height: 38rem;
 }
+
 
 .logo_about_bottom{
   position: relative;
   object-fit: contain;
-  width: 33rem;
+  width: 24rem;
+  height: 24rem;
   left: 7rem;
 }
 
@@ -124,6 +125,57 @@
 
 /* text about */
 
+
+
+.subtites_about{
+  width: 32rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  margin-left: 2rem;
+}
+
+.subtites_about2{
+  width: 13rem;
+}
+
+.marco1{
+  position: absolute;
+  width: 3rem;
+  height: 100%;
+  border:3px solid rgb(165, 222, 255);
+  border-right: none;
+  left: -1.5rem;
+  transform: skewY(-1deg) !important;
+  top: -1.3rem;
+}
+
+.marco2{
+  position: absolute;
+  width: 3rem;
+  height: 100%;
+  border:3px solid rgb(165, 222, 255);
+  border-left: none;
+  right:  -1rem;
+  transform: skewY(-1deg) !important;
+  top: -1.3rem;
+}
+
+.cadenaAbout h3{
+  font-size: 3rem;
+  font-family: "Mongoose-bold";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  color: rgb(255, 255, 255);
+  z-index: 300;
+  margin-bottom:2rem;
+}
 
 
 .text_about{
@@ -138,11 +190,12 @@
   width: 92%;
   position: absolute;
   display: flex;
-  top:90vh;
+  top:95vh;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 5rem 0;  
+  gap: 4rem;
 }
 
 .cadenaAbout{
@@ -150,6 +203,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   padding: 2rem 0;
+  gap: 2rem;
   color: rgb(34, 34, 34);
 }
 
@@ -170,36 +224,39 @@
   }
 
   .logo_about_top {
-    top: 6rem;
-    left: 6rem;
-    width:50rem;
+    top: 10rem;
+    left: 15rem;
+    width:30rem;
+    height: 30rem;
   }
 
   .box_text_about {
-    top: 105vh;
+    top: 108vh;
     width: 100%;
     padding-right: 3rem;
+    gap: 1.5rem;
   }
+  
 
   .box_title_about {
     position: relative;
     width: 50%;
     height: 100%;
-    top: 12rem;
+    top: 8rem;
   }
   
   .p_text_about {
-    font-size: 1.8rem;
-    line-height: 3.4rem;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
   }
 
   .about_title {
-    font-size: 10rem;
+    font-size: 8rem;
   }
 
   .containerTitle_about {
     width: 80%;
-    gap: 12rem;
+    gap: 10rem;
   }
 
   .container_titulo_line {
@@ -208,19 +265,55 @@
   } 
 
   .quienes, .somos {
-    line-height: 12rem;
+    line-height: 9rem;
   }
 
   .line_title_abut {
-    left: 0rem;
+    left: 1rem;
+    height: 20rem;
+    top: 7rem;
   }
 
   .logo_about_bottom {
     position: relative;
     object-fit: contain;
-    width: 33rem;
+    width: 17rem;
+    height: 20rem;
     left: 3rem;
   }
+
+
+  /* text about */
+
+
+  .subtites_about{
+    width: 32rem;
+    height: 100%;
+    margin-left: 0rem;
+  }
+
+  .subtites_about2{
+    width: 15rem;
+  }
+
+  .marco1{
+    width: 3rem;
+    left: .5rem;
+    top: -.7rem;
+  }
+
+  .marco2{
+    width: 3rem;
+    right:  1rem;
+    top: -.7rem;
+  }
+
+  .cadenaAbout h3{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom:1rem;
+  }
+
 }
 
 @media screen and (max-width:1270px) {
@@ -348,6 +441,7 @@
   .containerAbout {
     flex-direction: column;
   }
+  
 
   .box_text_about{
     display: flex;
@@ -376,7 +470,7 @@
   .containerTitle_about {
     width: 100%;
     min-height: 100%;
-    gap: 16rem;
+    gap: 10rem;
     z-index: 10;
   }
     
@@ -412,13 +506,18 @@
     align-items: center;
   }
 
+  
+
   .container_titulo_line {
     left: 0rem;
   }
 
   .logo_about_bottom {
     left: 0rem;
+    width: 23rem;
   }
+
+
 }
   
   
@@ -435,7 +534,10 @@
     padding: 0;
     padding-right: 0rem;
     opacity: 0;
+    gap: 6rem;
   }
+
+
 
   .about_title {
     font-size: 9rem;
@@ -461,7 +563,9 @@
     align-items: center;
   }
 
-
+  .containerAbout {
+    gap: 15rem;
+  }
 
 }
   
@@ -479,7 +583,14 @@
     width: 85%;
   }
 
+  .logo_about_bottom {
+    width: 20rem;
+    left: 0rem;
+  }
 
+  .containerAbout {
+    gap: 5rem;
+  }
 }
 
   
@@ -500,6 +611,9 @@
   .text_about {
     min-height: 120vh;
   }
+
+
+ 
 }
 
 

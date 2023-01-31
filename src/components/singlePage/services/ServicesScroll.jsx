@@ -7,13 +7,9 @@ const ServicesScroll = () => {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
-
-
         let sections = gsap.utils.toArray(".panel");
 
         const handleResize = () => {
-
-    
 
               /* section antimation */
               const tl = gsap.timeline({
@@ -23,7 +19,8 @@ const ServicesScroll = () => {
                   end:"100% 100%",
                 }
               })
-
+              
+   
               tl.to(sections, {
                 xPercent: -100 * (sections.length - 1),
                 ease: "none",
@@ -37,8 +34,6 @@ const ServicesScroll = () => {
               });
 
 
-
-
               /* titles animation */
               let titlesService = gsap.utils.toArray(".strong_title-panel1");
 
@@ -46,39 +41,39 @@ const ServicesScroll = () => {
                 scrollTrigger: {
                   trigger: ".container_services",
                   start:"-450px top",
+                  end:"+=500"
                 }
               })
+
 
               tl_titles.to(".e", {
                 duration: .1,  
                 stroke: "#fffb29",
                 scrollTrigger: {
                   trigger: ".container_services",
-                  true: "-300px top",
+                  start: "-300px top",
                   end: "100% 100%",
                   scrub: true,
                 }
               });
 
-
               tl_titles.from(".boxCuadro",{
                 opacity: 0,
-                duration: .4,
+                duration: .2,
                 x: -20,
-                stagger: .2,
               })
 
 
               tl_titles.from(titlesService,{
                 opacity: 0,
-                duration: 1,
+                duration: .7,
                 stagger: .2,
               })
 
               tl_titles.from(".textPanel",{
                 opacity: 0,
                 y: -20,
-                duration: 1,
+                duration: .7,
                 stagger: .2,
               })
 
@@ -113,9 +108,6 @@ const ServicesScroll = () => {
                 opacity:1, 
                 border:0,
               });
-
-
-        
 
         }
 

@@ -1,13 +1,29 @@
 import React, {useEffect, useState, useRef} from 'react'
 import "./audioLoader.css"
 import muchachosAudio from "../assets/audio/muchachos.mp3"
+import ReactGA from 'react-ga4'
+
 
 const AudioLoader = () => {
     const [activeSound , setActiveSound] = useState(false)
 
-
     const handlerActiveSound = () => {
         setActiveSound(!activeSound)
+        if(!activeSound){          
+          ReactGA.event({
+            category: "Interaccion",
+            action: "Musica Encendida",
+            label: "Un usuario encendio la musica",
+            nonInteraction: false
+          });
+        }else{
+          ReactGA.event({
+            category: "Interaccion",
+            action: "Musica Apagada",
+            label: "Un usuario apago la musica",
+            nonInteraction: false
+          });
+        }
     }
 
 

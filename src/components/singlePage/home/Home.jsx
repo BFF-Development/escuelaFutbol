@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import "./home.css"
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
+import Scene from './scene/Scene'
 
 const Home = () => {
 
@@ -36,7 +37,10 @@ const Home = () => {
   
   return (
     <div className="home" id="home" >
+      {/*   <Scene/>
+ */}
       <div className="containerHome">
+
         <div className="boxText_home">
           <h1 className="titleHome " >
             Academia de Futbol 

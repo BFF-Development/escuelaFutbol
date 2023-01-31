@@ -132,7 +132,7 @@
     position: relative;
 }
 
-.box_email p{
+.suscTitle{
     color: white;
     font-size: 2.7rem;
     line-height: 2.5rem;
@@ -192,6 +192,27 @@
 .box_email button:active {
     box-shadow: #ffe498 0 3px 7px inset;
     transform: translateY(2px);
+}
+
+.msjUser_email_succ{
+    color: rgb(0, 248, 103);
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-family: "Mongoose-bold";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+
+}
+
+.msjUser_email_denn{
+    color: rgb(255, 73, 49);
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-family: "Mongoose-bold";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all .5s ease;
 }
 
 

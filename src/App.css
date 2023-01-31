@@ -169,7 +169,7 @@ html{
 }
 
 .ar{
-  color: rgb(54, 174, 255);
+  color: #36aeff;
 }
 .co{
   color:#fffb29;
@@ -185,6 +185,7 @@ html{
   background-size: 400%;
   color: #fff;
   animation: titleEffect 5.5s linear infinite;
+  filter: drop-shadow( 0 0 4px rgb(61, 61, 61));
   transform: matrix(1, 0, 0, 1, 0, 0); 
 }
 
@@ -196,6 +197,7 @@ html{
   background-image: linear-gradient(90deg,#ffeb94 16.66666%,#ffeb94 33.33333%,#fffb29 50%,#fffb29 66.66666%,#ffeb94 83.33333%,#ffeb94);
   background-size: 400%;
   color: #fff;
+  filter: drop-shadow( 0 0 4px rgb(61, 61, 61));
   animation: titleEffect 5.5s linear infinite;
   transform: matrix(1, 0, 0, 1, 0, 0); 
 }

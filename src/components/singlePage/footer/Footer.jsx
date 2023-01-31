@@ -3,13 +3,55 @@ import "./footer.css"
 import telIcon from "../../assets/src/icons/tel.png"
 import emailIcon from "../../assets/src/icons/email.png"
 import ubiIcon from "../../assets/src/icons/ubi.png"
-
+import axios from 'axios'
+import { useEffect } from 'react'
+import { useState } from 'react'
 
 const Footer = () => {
 
+
+  const [msjUser , setMsjUser] = useState("")
+  const [result , setResult] = useState()
+
+
+
   const submitHandler= e =>{
     e.preventDefault()
+
+    const email = e.target.email.value
+
+
+    axios
+        .post(`api/guardarEmail.php`, { email: email })
+        .then(res => {            
+            const dataBd = res.data
+            setMsjUser(dataBd.descripcion)
+            
+            if(dataBd.resultado === true){
+              setResult(true)
+              e.target.email.value =""
+
+              setTimeout(() => {
+                setResult()
+              }, 5000);
+          
+
+            }else{
+                setResult(false)
+                setTimeout(() => {
+                  setResult()
+                }, 5000);
+            
+            }
+
+
+            console.log(dataBd)
+        })
+        .catch(error => {
+          console.log(error)
+        })
   }
+
 
   return (
     <div className="footer">
@@ -42,14 +84,22 @@ const Footer = () => {
 
 
         <div className="box_email">
-          <p>Suscribete </p>
+          <p className='suscTitle'>Suscribete </p>
 
           <form onSubmit={(submitHandler)}>
-            <input type="email" placeholder='Email' required/>
-            <button type='submit'>
+            <input id='email' name='email' type="email" placeholder='Email' required/>
+            {
+              result ? <p className={'msjUser_email_succ'}>{msjUser}</p> 
+              :
+              result === false ? <p className={'msjUser_email_denn' }>{msjUser}</p>
+              : 
+              null
+            }
+            <button type='submit' >
                 Suscribete
             </button>
           </form>
+          
         </div>
       </div>
 

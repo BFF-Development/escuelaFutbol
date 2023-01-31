@@ -4,30 +4,38 @@
     left: 0;
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     z-index: 99999999999 ;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.preloader::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: .5rem;
-    background-color: #36aeff;
-    background: linear-gradient(90deg, rgba(54,174,255,1) 0%, rgba(255,255,255,1) 50%, rgba(54,174,255,1) 100%);
-    z-index: -1;
-}
-
 .preloader img{
     object-fit: contain;
-    width: 30rem;
-    hei
+    width: 27rem;
+    height: 27rem;
+    border-radius: 100%;
     filter: contrast(110%) brightness(110%) drop-shadow( 0 0 10px rgb(0, 0, 0));
     animation: rotateLogo 3s linear infinite ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
+
+
+.line_preload{
+    position: relative;
+    width: 30rem;
+    height: 100vh;
+    background-color: rgb(3, 163, 255);
+    background-image: url("../assets/src/backgrounds/arcoRepeat.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
 
 
 @keyframes rotateLogo {
