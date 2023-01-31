@@ -24,7 +24,7 @@
 .preloader img{
     object-fit: contain;
     width: 30rem;
-    height: 30rem;
+    hei
     filter: contrast(110%) brightness(110%) drop-shadow( 0 0 10px rgb(0, 0, 0));
     animation: rotateLogo 3s linear infinite ;
 }
