@@ -12,8 +12,7 @@ const PreLoader = () => {
         const tl = gsap.timeline()
 
         tl.to(".line_preload",{
-            delay: .7,
-            duration: 3, 
+            duration: 2.5, 
             stagger: .1,
             y: "100%",
             ease: Power4.easeInOut

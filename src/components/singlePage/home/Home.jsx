@@ -33,12 +33,15 @@ const Home = () => {
 
     const movementHome = () => {
       const image = document.querySelector('.backgroundPrincipal');
+      const anda = document.querySelector('.anda');
+
 
       document.addEventListener('mousemove', (event) => {
         const x = event.clientX / window.innerWidth - 0.2;
         const y = -event.clientY / window.innerHeight - 0.2;
         
         image.style.transform = `translate(${x * 11}px, ${y * 11}px)`;
+        anda.style.transform = `translate(${-x * 5}px, ${-y * 5}px)`;
       });
 
 
@@ -90,7 +93,7 @@ const Home = () => {
       </div>
 
       <div className="anda">
-        <p>ANDá PA ALLA</p>
+        <p>ANDÁ PA ALLÁ</p>
         <svg width="893" height="46" viewBox="0 0 893 46" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M5 29.6443C290.5 13.311 865.5 -9.55565 881.5 29.6443" stroke="#00B2FF" stroke-width="20"/>
         </svg>

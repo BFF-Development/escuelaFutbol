@@ -48,6 +48,7 @@
     left: 0;
     z-index: 9991  ;
     transition: all .1s ease;
+    filter: brightness(110%) contrast(30%);
 
 }
 

@@ -14,7 +14,7 @@ const Home = lazy(() => import('./home/Home'))
 const SinglePage = () => {
 
   return (
-    <Suspense fallback={<Loader/>}>
+    <Suspense fallback={""}>
         <Home/>
         <About/>
         <Services/>
