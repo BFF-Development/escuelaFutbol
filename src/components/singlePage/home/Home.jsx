@@ -76,7 +76,7 @@ const Home = () => {
         <Scene/>
 
       <div className="containerHome">
-        <img className='backgroundPrincipal' src={backPrincipal} alt="background principal" />
+        <img className='backgroundPrincipal' width="1320" height="1300" src={backPrincipal} alt="background principal" />
         <div className="boxText_home">
           <h1 className="titleHome " >
             Academia de Futbol 
@@ -92,13 +92,15 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="scrollIcon">
+        <a href="#" ></a>
+      </div>
+
       <div className="anda">
         <p>ANDÁ PA ALLÁ</p>
         <svg width="893" height="46" viewBox="0 0 893 46" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M5 29.6443C290.5 13.311 865.5 -9.55565 881.5 29.6443" stroke="#00B2FF" strokeWidth="20"/>
         </svg>
-
-
       </div>
 
     </div>

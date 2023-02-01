@@ -10,9 +10,7 @@
     align-items: center;
     transition: all 1s ease-in-out;
     background-color: rgb(3, 163, 255);
-    background-image: url("../src/backgrounds/arcoRepeat.png");
-    background-repeat: repeat;
-    background-size: contain;
+
     overflow-y: scroll;
 }
 

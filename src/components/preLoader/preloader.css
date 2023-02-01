@@ -9,19 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.preloader img{
-    object-fit: contain;
-    width: 27rem;
-    height: 27rem;
-    border-radius: 100%;
-    filter: contrast(110%) brightness(110%) drop-shadow( 0 0 10px rgb(0, 0, 0));
-    animation: rotateLogo 3s linear infinite ;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
+    transition: all 1s ease;
 }
 
 
@@ -34,6 +22,7 @@
     background-repeat: repeat;
     background-size: contain;
     overflow: hidden;
+    border-top-left-radius: 10px;
 }
 
 

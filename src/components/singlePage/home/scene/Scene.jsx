@@ -5,7 +5,7 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import sceneArco from "./aca.glb"
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import backRoom from "../../../assets/src/backgrounds/effectVidrio.png"
+import backRoom from "../../../assets/src/backgrounds/effectVidrio1.png"
 
 
 const Scene = () => {
@@ -90,8 +90,7 @@ const Scene = () => {
         
                camera.position.y = cursor.y * .5
                camera.position.x = cursor.x * .5
-       
-          
+   
                 /* camera.lookAt(Mesh.position) */
         
                 renderer.render(scene, camera)
