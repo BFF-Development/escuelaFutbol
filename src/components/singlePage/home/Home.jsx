@@ -95,7 +95,7 @@ const Home = () => {
       <div className="anda">
         <p>ANDÁ PA ALLÁ</p>
         <svg width="893" height="46" viewBox="0 0 893 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M5 29.6443C290.5 13.311 865.5 -9.55565 881.5 29.6443" stroke="#00B2FF" stroke-width="20"/>
+          <path d="M5 29.6443C290.5 13.311 865.5 -9.55565 881.5 29.6443" stroke="#00B2FF" strokeWidth="20"/>
         </svg>
 
 

@@ -31,7 +31,7 @@
     height: 100vh;
     background-color: rgb(3, 163, 255);
     background-image: url("../assets/src/backgrounds/arcoRepeat.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: contain;
     overflow: hidden;
 }
@@ -60,6 +60,30 @@
     .preloader img{
         width: 27rem;
     }
+
+    .line_preload-2 , .line_preload-3{
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .preloader img{
+        width: 27rem;
+    }
+
+    .line_preload-2, .line_preload-3, .line_preload-4 , .line_preload-5 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .preloader img{
+        width: 22rem;
+    }
+
+    .line_preload-6{
+        display: none;
+    }
 }
 
 
@@ -67,4 +91,6 @@
     .preloader img{
         width: 22rem;
     }
+
+ 
 }
