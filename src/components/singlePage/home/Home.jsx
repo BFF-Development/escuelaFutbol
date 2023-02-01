@@ -3,6 +3,8 @@ import "./home.css"
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
 import Scene from './scene/Scene'
+import backPrincipal from "../../assets/src/backgrounds/backPrincipal.jpg"
+import { Power4 } from 'gsap/src/all'
 
 const Home = () => {
 
@@ -29,18 +31,49 @@ const Home = () => {
 
     homeEffect()
 
+    const movementHome = () => {
+      const image = document.querySelector('.backgroundPrincipal');
+
+      document.addEventListener('mousemove', (event) => {
+        const x = event.clientX / window.innerWidth - 0.2;
+        const y = -event.clientY / window.innerHeight - 0.2;
+        
+        image.style.transform = `translate(${x * 11}px, ${y * 11}px)`;
+      });
+
+
+      gsap.from(".boxText_home",{
+        delay:1,
+        duration: 2, 
+        opacity:0,
+        scale:.9,
+        ease: Power4.easeInOut
+      })
+
+      gsap.from(".backgroundPrincipal",{
+        delay:1.2,
+        duration: 2.5, 
+        opacity:0,
+        y: "100px",
+        ease: Power4.easeInOut
+      })
+    }
+
+    movementHome()
+
    return () => {
     homeEffect()
+    movementHome()
    }
    
   },[])
   
   return (
     <div className="home" id="home" >
-      {/*   <Scene/>
- */}
-      <div className="containerHome">
+        <Scene/>
 
+      <div className="containerHome">
+        <img className='backgroundPrincipal' src={backPrincipal} alt="background principal" />
         <div className="boxText_home">
           <h1 className="titleHome " >
             Academia de Futbol 
@@ -56,9 +89,20 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="anda">
+        <p>ANDá PA ALLA</p>
+        <svg width="893" height="46" viewBox="0 0 893 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 29.6443C290.5 13.311 865.5 -9.55565 881.5 29.6443" stroke="#00B2FF" stroke-width="20"/>
+        </svg>
+
+
+      </div>
+
     </div>
   )
 }
 
 
 export default Home
+
+

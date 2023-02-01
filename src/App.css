@@ -67,6 +67,15 @@ html{
   font-display: swap;
 }
 
+/* Anda pa alla */
+
+@font-face {
+  font-family: 'reenie';
+  src: url('./components/assets/fonts/creativ/ReenieBeanie-Regular.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 
 

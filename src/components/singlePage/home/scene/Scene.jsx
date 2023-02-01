@@ -5,6 +5,7 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import sceneArco from "./aca.glb"
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import backRoom from "../../../assets/src/backgrounds/effectVidrio.png"
 
 
 const Scene = () => {
@@ -37,33 +38,19 @@ const Scene = () => {
             camera.position.set(0, 0, 4.5)
             camera.rotation.set(0, 0,0)
 
-        
-
-            
             scene.add(camera)
-        
-            /* scene gltf */
-            let roomScene
-            const dracoLoader = new DRACOLoader()
-            dracoLoader.setDecoderPath('/draco/')
 
-            const gltfLoader = new GLTFLoader()
-            gltfLoader.setDRACOLoader(dracoLoader)
-            
-            gltfLoader.load(sceneArco, (gltf) => {
-                    roomScene= gltf.scene
-                    scene.add(roomScene)
-                    roomScene.position.set(1,-.8,-0.5)
-                   /*  roomScene.rotation.set( 0 , -.2 , 0) */
-                    roomScene.scale.set(1,1,1)
-                /*     roomScene.lookAt(camera.position) */
 
-                }
-            )
+            const textureLoader = new THREE.TextureLoader()
+            const texturePlane = textureLoader.load(backRoom)
+ 
 
-              /* Orbit Controls */
-            const controls = new OrbitControls(camera, canvas)
-            controls.enableDamping= true
+            const plane = new THREE.PlaneGeometry(15,7)
+            const planeMaterial = new THREE.MeshBasicMaterial({ map: texturePlane, transparent:true, opacity:.9})
+            const MeshPlane = new THREE.Mesh(plane,planeMaterial)
+
+            scene.add(MeshPlane)
+
 
 
         
@@ -78,18 +65,32 @@ const Scene = () => {
             })
             renderer.setSize(sizes.width , sizes.height)
             renderer.setPixelRatio(Math.min(window.devicePixelRatio,2))
-            renderer.physicallyCorrectLights = true;
+            /* renderer.physicallyCorrectLights = true; */
 
             
 
+
+            const cursor = {
+                x: 0,
+                y: 0
+            }
         
+            window.addEventListener("mousemove", ( e ) => {
+                cursor.x = e.x / sizes.width * 0.5
+                cursor.y = - (e.y / sizes.height * 0.5)
+            } )
+
+        
+
             let clock = new THREE.Clock()
         
             const tick = () => {
         
                const elapsedTime = clock.getElapsedTime()
         
-                controls.update()
+               camera.position.y = cursor.y * .5
+               camera.position.x = cursor.x * .5
+       
           
                 /* camera.lookAt(Mesh.position) */
         
