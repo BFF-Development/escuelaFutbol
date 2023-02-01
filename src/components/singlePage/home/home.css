@@ -127,6 +127,18 @@
     top: -1.5rem;
 }
 
+.subtitle_home{
+    width: 100%;
+    line-height: 4rem;
+    font-size:3.5rem;
+    padding: 0 1rem;
+    letter-spacing: 1.5px;
+    color: rgb(0, 174, 255);
+    font-weight: bold;
+    font-family: reenie;
+}
+
+
 .description_hero{
     position: relative;
     font-size: 1.4rem;
@@ -154,7 +166,10 @@
         gap: 1.2rem;
         padding: 2rem;
         margin-left: 5%;
-        margin-top:-13%;
+        width: 95%;
+        margin-top:-20%;
+        filter: drop-shadow( 0 0 30px black);
+        text-shadow:  0 0 20px black;
     }
 
     .titleHome{
@@ -168,6 +183,21 @@
         min-height: 100vh;
         background-size: cover;
         background-position: 0% 0%;
+        
+    }
+
+    .subtitle_home{
+        line-height: 3.4rem;
+        font-size:3.5rem;
+        padding: 0 1rem;
+        letter-spacing: 1.2px;
+    }
+
+
+    .backgroundPrincipal{
+        right: -3rem;
+        width: 100rem;
+        top: 4rem;
     }
 }
 
@@ -176,13 +206,22 @@
     
     /* title */
 
+    .backgroundPrincipal{
+        display: none;
+    }
+
     .boxText_home{
-        gap: 1.2rem;
+        gap: 2rem;
         padding: 2rem;
         margin-left: 0%;
-        margin-top:-13%;
-        width: 95%;
+        width: 100%;
+        text-align: center;
+
+        min-height: 100vh;
+        justify-content: flex-start;
+        margin-top:16rem;
     }
+
 
     .titleHome{
         font-size: 8rem;
@@ -191,17 +230,13 @@
     }
 
 
-    .subtitle_home{
-        font-size: 2.2rem;
-        letter-spacing: 1px;
-        top: -1.5rem;
-    }
 
     .description_hero{
         font-size: 1.4rem;
         letter-spacing: .5px;
-        width: 60%;
+        width: 100%;
         line-height: 3rem;
+        padding: 0 4rem;
     }
 
 
@@ -209,6 +244,177 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+}
+
+
+
+@media screen and (max-width:640px ) {
+
+    .boxText_home{
+        gap: 2rem;
+        justify-content: flex-start;
+        margin-top:16rem;
+    }
+
+    .titleHome{
+        font-size: 6.5rem;
+        letter-spacing: 2px;
+        width: 100%;
+    }
+
+
+    .subtitle_home{
+        text-align: center;
+        width: 100%;
+        line-height: 3.4rem;
+        font-size:3.2rem;
+        padding: 0 0rem;
+        letter-spacing: 1.2px;
+    }
+
+    .description_hero{
+        font-size: 1.4rem;
+        letter-spacing: .5px;
+        width: 100%;
+        line-height: 3rem;
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width:540px ) {
+
+
+    .titleHome{
+        font-size: 5.5rem;
+        letter-spacing: 2px;
+        width: 100%;
+    }
+
+
+    .description_hero{
+        font-size: 1.4rem;
+        letter-spacing: .5px;
+        width: 100%;
+        line-height: 3rem;
+        padding: 0 1rem;
+    }
+
+    .anda{
+        bottom: 3rem;
+        right: 3rem;
+    }
+    
+    .anda p{
+        line-height: 1.8rem;
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+    
+    .anda svg{
+        width: 17.5rem;
+    }
+}
+
+@media screen and (max-width:460px ) {
+
+    .titleHome{
+        font-size: 4.5rem;
+    }
+
+
+    .subtitle_home{
+        text-align: center;
+        width: 100%;
+        line-height: 3.3rem;
+        font-size:3.1rem;
+        padding: 0 0rem;
+        letter-spacing: 1.1px;
+    }
+
+    .description_hero{
+        font-size: 1.4rem;
+        line-height: 2.9rem;
+        padding: 0 1rem;
+    }
+
+
+}
+
+@media screen and (max-width:390px ) {
+
+    .boxText_home{
+        gap: 3rem;
+        justify-content: flex-start;
+        margin-top:14rem;
+    }
+
+    .titleHome{
+        font-size: 6rem;
+    }
+
+
+    .subtitle_home{
+        line-height: 2.8rem;
+        font-size: 2.8rem;
+    }
+
+    .description_hero{
+        font-size: 1.4rem;
+        line-height: 2.9rem;
+        padding: 0 .5rem;
+        top: -1rem;
+    }
+
+    .anda{
+        bottom: 3rem;
+        right: 2rem;
+    }
+    
+    .anda p{
+        line-height: 0rem;
+        font-size: 2.3rem;
+        letter-spacing: 1px;
+    }
+    
+    .anda svg{
+        width: 13.5rem;
+    }
+}
+
+@media screen and (max-width:320px ) {
+    .boxText_home{
+        gap: 2rem;
+        justify-content: flex-start;
+        margin-top:12rem;
+    }
+
+    .anda{
+        bottom: 3rem;
+        right: 1rem;
+    }
+    
+    .anda p{
+        line-height: 0rem;
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+    
+    .anda svg{
+        width: 11.5rem;
+    }
+
+    
+    .description_hero{
+        text-align: initial;
+        font-size: 1.3rem;
+    }
+
+     
+    .description_hero span{
+        text-align: initial;
+        font-size: 1.3rem;
     }
 
 }
