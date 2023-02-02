@@ -69,7 +69,7 @@ const AudioLoader = () => {
                     <textPath 
                               xlinkHref="#textcircle" 
                               aria-label="SOUND ON" 
-                              textLength="942">  • ARCO • SOUND ON • ARCO • SOUND ON  &nbsp;
+                              textLength="942">  • PRENDER MUSICA • PRENDER MUSICA &nbsp;
                     </textPath>
                   </text>
                 </g>
@@ -81,7 +81,7 @@ const AudioLoader = () => {
                   <textPath 
                             xlinkHref="#textcircle" 
                             aria-label="SOUND ON" 
-                            textLength="942">  • ARCO • SOUND OFF • ARCO • SOUND OFF  &nbsp;
+                            textLength="942">  • APAGAR MUSICA • APAGAR MUSICA  &nbsp;
                   </textPath>
                 </text>
               </g>

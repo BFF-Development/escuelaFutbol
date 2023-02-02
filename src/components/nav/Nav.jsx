@@ -57,36 +57,6 @@ const Nav = () => {
 
   useEffect(() =>{
 
-    
-    gsap.to(".circle_nav", {
-      duration: .1,  
-      background: "#fffb29",
-      scrollTrigger: {
-        trigger: ".panel",
-        start: "top top",
-        scrub: 2,
-      }
-    });
-
-    gsap.to(".line", {
-      duration: .1,  
-      background: "black",
-      scrollTrigger: {
-        trigger: ".panel",
-        start: "top top",
-        scrub: 2,
-      }
-    });
-
-    gsap.to(".list_link_nav", {
-      duration: .1,  
-      color: "black",
-      scrollTrigger: {
-        trigger: ".container_services",
-        start: "bottom top",
-        scrub: 1,
-      }
-    });
 
   },[])
 

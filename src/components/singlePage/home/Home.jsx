@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect ,useState} from 'react'
 import "./home.css"
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
@@ -7,6 +7,14 @@ import backPrincipal from "../../assets/src/backgrounds/backPrincipal.jpg"
 import { Power4 } from 'gsap/src/all'
 
 const Home = () => {
+  
+  const [isMobile, setIsMobile] = useState(false);
+
+  function isMobileOrTablet() {
+    // Verificamos si el tamaño de la pantalla es menor a 800px (teléfono móvil) o mayor a 800px (tableta)
+    const mobileOrTabletRegex = /(iphone|ipod|ipad|android|iemobile|blackberry|bada|nokia|samsung|webos|palm|windows ce)/i;
+    return window.matchMedia("(max-width: 800px)").matches || mobileOrTabletRegex.test(navigator.userAgent);
+  }
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -63,17 +71,22 @@ const Home = () => {
     }
 
     movementHome()
+    setIsMobile(isMobileOrTablet());
 
    return () => {
     homeEffect()
     movementHome()
    }
    
-  },[])
+  },[setIsMobile])
   
   return (
     <div className="home" id="home" >
-        <Scene/>
+
+      {
+        !isMobile ? <Scene/> : <div className="effectVidrioMobile"></div>
+      }
+       
 
       <div className="containerHome">
         <img className='backgroundPrincipal' width="1320" height="1300" src={backPrincipal} alt="background principal" />

@@ -75,9 +75,9 @@ const Footer = () => {
           <p>Contacto</p>
 
           <ul>
-            <li><img className='icon_footer' src={telIcon} alt="tel icon" />:  000-000-000</li>
-            <li><img className='icon_footer' src={emailIcon} alt="email icon" />: emailExample@gmail.com</li>
-            <li><img className='icon_footer' src={ubiIcon} alt="ubicacion icon" />: ubicacion example</li>
+            <li><img className='icon_footer' src={telIcon} alt="tel icon" />: +54 9 221 593 5034</li>
+            <li><img className='icon_footer' src={emailIcon} alt="email icon" />: info@arcoacademia.co</li>
+            <li><img className='icon_footer' src={ubiIcon} alt="ubicacion icon" />: -</li>
           </ul>
 
         </div>

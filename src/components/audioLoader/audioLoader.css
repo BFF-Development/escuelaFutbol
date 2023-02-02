@@ -3,12 +3,12 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom: 2rem;
+  bottom: 0rem;
   left: 2rem;
   cursor: pointer;
   width: 11rem;
   height: 8rem;
-  z-index: 9999999 ;
+  z-index: 999999 ;
   transition: all 1s ease;
 }
 
@@ -25,7 +25,6 @@
   left: 8.5rem;
   bottom: 11.2rem;
   position: absolute;
-  filter: drop-shadow( 0 0 2px black);
   scale: 1.2;
   filter: contrast(120%) brightness(110%);
 }
@@ -110,12 +109,12 @@
 .circleBlur{
   backdrop-filter: blur(7px);
   border-radius: 120%;
-  width: 16rem;
-  height: 16rem;
+  width: 15.5rem;
+  height: 15.5rem;
   position: absolute;
   z-index: -1;
-  left: 3rem;
-  bottom: 3.3rem;
+  left: 3.2rem;
+  bottom: 3.4rem;
   transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
@@ -145,7 +144,7 @@
   text-transform: uppercase;
   font-variant-ligatures: none;
   fill: rgb(255, 255, 255);
-  letter-spacing: 6px;
+  letter-spacing: 2px;
   animation: rotate 25s linear infinite;
   transform-origin: 250px 250px;
   filter: drop-shadow( 0 0 10px rgb(0, 0, 0));

@@ -17,8 +17,6 @@ const Contact = () => {
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
     
-    
-
           const tl = gsap.timeline({
             ease: Power4.easeOut,
             scrollTrigger:{
@@ -27,8 +25,7 @@ const Contact = () => {
               }
           })
       
-       
-
+    
           if(window.innerWidth > 670){
             tl.to( ".line_title_contact",{
               width: "60rem",
@@ -61,6 +58,7 @@ const Contact = () => {
             y:20,
           })
       
+          
 
     },[])
 
@@ -82,7 +80,7 @@ const Contact = () => {
                     </div>
                     <div className="boxTitleContact">
                       <h2>Telefono</h2>
-                      <p>000-000-000</p>
+                      <p>+54 9 221 593 5034</p>
                     </div>
                 </div>
 
@@ -94,7 +92,7 @@ const Contact = () => {
                     </div>
                     <div className="boxTitleContact">
                       <h2>Email</h2>
-                      <p>emailExample@gmail.com</p>
+                      <p>info@arcoacademia.co</p>
                     </div>
                 </div>
 
@@ -106,7 +104,7 @@ const Contact = () => {
                     </div>
                     <div className="boxTitleContact">
                       <h2>Ubicacion</h2>
-                      <p>ubi example</p>
+                      <p>-</p>
                     </div>
                 </div>
 
