@@ -48,7 +48,16 @@ const Footer = () => {
             console.log(dataBd)
         })
         .catch(error => {
-          console.log(error)
+
+          const dataBd = error.data
+          setMsjUser(dataBd.descripcion)
+
+
+          setResult(false)
+          setTimeout(() => {
+            setResult()
+          }, 5000);
+      
         })
   }
 
