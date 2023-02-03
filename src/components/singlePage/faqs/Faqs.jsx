@@ -38,13 +38,19 @@ const Faqs = () => {
                 end:"-=500",
               }
           })
-      
-          tl.to( ".line_title_faqs",{
-            width: "85%",
-            duration: .5,
-            x: -100,
-          })
-      
+
+          if(window.innerWidth > 670){
+            tl.to( ".line_title_faqs",{
+              width: "60rem",
+              x: -100,
+            })
+          }else{
+            tl.to( ".line_title_faqs",{
+              width: "90%",
+              x: -100,
+            })
+          }
+
          
           tl.from( ".faqsTitle",{
             opacity:0,

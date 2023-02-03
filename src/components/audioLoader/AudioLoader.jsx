@@ -1,6 +1,6 @@
 import React, {useEffect, useState, useRef} from 'react'
 import "./audioLoader.css"
-import muchachosAudio from "../assets/audio/muchachos.mp3"
+import muchachosAudio from "../assets/audio/muchachosInstru.mp3"
 import ReactGA from 'react-ga4'
 
 
@@ -34,7 +34,7 @@ const AudioLoader = () => {
         const playAudio = () => {
             if (activeSound){
                 audioAmbiente.current.play()
-                audioAmbiente.current.volume= 0.08
+                audioAmbiente.current.volume= 0.1
               }else{
                 audioAmbiente.current.pause()
               }

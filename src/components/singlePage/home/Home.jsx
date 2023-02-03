@@ -1,6 +1,6 @@
 import React, { useEffect ,useState} from 'react'
 import "./home.css"
-import gsap from 'gsap'
+import gsap, { Elastic } from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
 import Scene from './scene/Scene'
 import backPrincipal from "../../assets/src/backgrounds/backPrincipal.jpg"
@@ -53,21 +53,18 @@ const Home = () => {
       });
 
 
-      gsap.from(".boxText_home",{
-        delay:1,
-        duration: 2, 
-        opacity:0,
-        scale:.9,
-        ease: Power4.easeInOut
-      })
+      gsap.from(".boxText_home",{  delay:.5,  duration: 3,   opacity:0,  scale:.7,  ease: Power4.easeInOut})
 
-      gsap.from(".backgroundPrincipal",{
-        delay:1.2,
-        duration: 2.5, 
-        opacity:0,
-        y: "100px",
-        ease: Power4.easeInOut
-      })
+      gsap.from(".backgroundPrincipal",{  delay:.6,  duration: 3,   opacity:0,  scale:.7,  /* y: "100px", */  ease: Power4.easeInOut})
+
+      gsap.from(".anda",{  delay:.5,  duration: 3,   opacity:0,  scale:.5,  y: "100px",  ease: Elastic.easeInOut})
+
+      gsap.from(".loaderBox",{  delay:.34,  duration: 3,   opacity:0,    y: "100px",  ease: Elastic.easeInOut})
+
+      gsap.from(".circle_nav",{  delay:.6,  duration: 3,   opacity:0,  scale:.5,  x: "100px",  ease: Elastic.easeInOut})
+      
+      gsap.from(".scrollIcon",{  delay:1,  duration: 3,   opacity:0, y: "100px",  ease: Elastic.easeInOut})
+
     }
 
     movementHome()

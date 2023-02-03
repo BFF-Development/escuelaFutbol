@@ -245,11 +245,10 @@
     .boxTitleContact p{
         font-size: 1.5rem;
         letter-spacing: 1.3px;
+
     }
 
-    .boxTitleContact {
-        width: 25rem;
-    }
+
     .boxiconInstagram {
         left: 5rem;
     }
@@ -266,10 +265,26 @@
     }
 
     
-.map iframe{
-    border: 5px ridge rgb(37, 37, 37);
+    .map iframe{
+        border: 5px ridge rgb(37, 37, 37);
+    }
+
 }
 
+
+@media screen and (max-width:450px) {
+    .boxTitleContact {
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width:390px) {
+    .boxTitleContact {
+        width: 25rem;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }
   
 @media screen and (max-width:357px) {

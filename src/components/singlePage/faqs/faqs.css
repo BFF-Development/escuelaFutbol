@@ -349,15 +349,17 @@
   }
 
   .container_Faqs h2{
-    font-size: 2.7rem;
+    font-size: 5.7rem;
     letter-spacing: 2px;
+    text-align: center;
+    line-height: 5.8rem;
   }
 
     
   .line_title_faqs {
     width: 0%;
-    height: 9rem;
-    top: 7rem;
+    height: 16rem;
+    top: 7.4rem;
   }
   .box_faq {
     width: 85vw;

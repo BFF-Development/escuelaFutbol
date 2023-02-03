@@ -21,6 +21,7 @@
 .backgroundPrincipal{
     object-fit: contain;
     position: absolute;
+    object-fit: contain;
     right: -3rem;
     width: 82%;
 }
@@ -58,7 +59,7 @@
 
 
 .anda{
-    position: absolute;
+    position: fixed;
     bottom: 3rem;
     right: 5rem;
     text-transform: uppercase;
@@ -237,13 +238,25 @@
         padding: 0 1rem;
         letter-spacing: 1.2px;
     }
+    
 
 
     .backgroundPrincipal{
         right: -3rem;
         width: 100rem;
-        top: 4rem;
+        top: 0rem;
     }
+
+    .backgroundPrincipal{
+        object-fit: contain;
+        position: absolute;
+        object-fit: contain;
+        right: -3rem;
+        top: -30%;
+        width: 87%;
+    }
+    
+    
 }
 
 
@@ -290,7 +303,10 @@
         justify-content: center;
         align-items: center;
     }
-
+    
+    .scrollIcon {
+        display: none;
+    }
 }
 
 
@@ -347,7 +363,7 @@
     }
 
     .anda{
-        bottom: 3rem;
+        bottom: 5rem;
         right: 3rem;
     }
     
@@ -412,10 +428,6 @@
         top: -1rem;
     }
 
-    .anda{
-        bottom: 3rem;
-        right: 2rem;
-    }
     
     .anda p{
         line-height: 0rem;
