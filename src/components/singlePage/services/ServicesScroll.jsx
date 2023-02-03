@@ -79,14 +79,28 @@ const ServicesScroll = () => {
 
 
               /* circle animation */
-              const tl_punt = gsap.timeline({
-                scrollTrigger: {
-                  trigger: ".contact",
-                  start:"-900px top",
-                  end:"+=1000",
-                  scrub:2
-                }
-              })
+              let tl_punt
+
+              if(window.innerWidth > 1440){
+                 tl_punt = gsap.timeline({
+                  scrollTrigger: {
+                    trigger: ".contact",
+                    start:"-900px top",
+                    end:"+=1000",
+                    scrub:2
+                  }
+                })
+              }else{
+                 tl_punt = gsap.timeline({
+                  scrollTrigger: {
+                    trigger: ".contact",
+                    start:"-700px top",
+                    end:"+=1000",
+                    scrub:2
+                  }
+                })
+              }
+
 
 
               tl_punt.to(".e", {

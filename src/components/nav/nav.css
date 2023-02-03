@@ -262,11 +262,11 @@ a{
     .list_link_nav{
         font-size: 7rem;
         letter-spacing: 2.4px;
-        height: 12rem;
+        height: 11rem;
     }
 
     .list_nav_mobile {
-        gap: 2rem;
+        gap: .4rem;
     }
 }
 
