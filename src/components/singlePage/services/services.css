@@ -4,11 +4,9 @@
     width: 100%;
     min-height: 100vh;
     background-color: rgb(0, 0, 0);
+    margin-top: -.4rem;
 }
 
-
-
-/* container title */
 
 /* title que ofrecemos */
 
@@ -23,10 +21,9 @@
     flex-direction: column;
     gap: 6rem;
     margin-bottom: 20rem;
-
 }
   
-  
+
 .container_titulo_line_service{
     position: relative;
     display: flex;

@@ -19,19 +19,11 @@ const PreLoader = () => {
         })
 
         tl.to(".preloader",{
-            duration: .5, 
+            duration: .1, 
             z: -1,
             opacity:0,
+            display:"none"
         })
-
-        tl.to(".preloader",{
-            visibility:"hidden"
-        })
-
-  
-        
-
-
     },[])
   
     return (

@@ -94,7 +94,7 @@ const ServicesScroll = () => {
                  tl_punt = gsap.timeline({
                   scrollTrigger: {
                     trigger: ".contact",
-                    start:"-700px top",
+                    start:"-800px top",
                     end:"+=1000",
                     scrub:2
                   }
