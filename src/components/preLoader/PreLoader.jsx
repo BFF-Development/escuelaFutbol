@@ -1,7 +1,6 @@
 import React , { useEffect } from 'react'
 import "./preloader.css"
-import logo from "../assets/src/backgrounds/logo.png"
-import gsap from 'gsap'
+ import gsap from 'gsap'
 import { Power4 } from 'gsap/src/all'
 
 
@@ -28,10 +27,6 @@ const PreLoader = () => {
             visibility:"hidden"
         })
 
-  
-        
-
-
     },[])
   
     return (
@@ -53,4 +48,4 @@ const PreLoader = () => {
   )
 }
 
-export default PreLoader
+export default React.memo(PreLoader)
