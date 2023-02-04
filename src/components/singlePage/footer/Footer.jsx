@@ -7,6 +7,8 @@ import axios from 'axios'
 import { useEffect } from 'react'
 import { useState } from 'react'
 
+import ReactGA from 'react-ga4'
+
 const Footer = () => {
 
 
@@ -17,6 +19,14 @@ const Footer = () => {
 
   const submitHandler= e =>{
     e.preventDefault()
+
+    ReactGA.event({
+      category: "Interaccion",
+      action: "Click Suscribirse",
+      label: "El Usuario cliqueo el boton Suscribirse",
+      nonInteraction: false
+    });
+
 
     const email = e.target.email.value
 

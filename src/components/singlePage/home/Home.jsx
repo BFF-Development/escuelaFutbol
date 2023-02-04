@@ -40,17 +40,21 @@ const Home = () => {
     homeEffect()
 
     const movementHome = () => {
-      const image = document.querySelector('.backgroundPrincipal');
-      const anda = document.querySelector('.anda');
 
+      if( !isMobile ){
+        const image = document.querySelector('.backgroundPrincipal');
+        const anda = document.querySelector('.anda');
+  
+  
+        document.addEventListener('mousemove', (event) => {
+          const x = event.clientX / window.innerWidth - 0.2;
+          const y = -event.clientY / window.innerHeight - 0.2;
+          
+          image.style.transform = `translate(${x * 11}px, ${y * 11}px)`;
+          anda.style.transform = `translate(${-x * 5}px, ${-y * 5}px)`;
+        });
+      }
 
-      document.addEventListener('mousemove', (event) => {
-        const x = event.clientX / window.innerWidth - 0.2;
-        const y = -event.clientY / window.innerHeight - 0.2;
-        
-        image.style.transform = `translate(${x * 11}px, ${y * 11}px)`;
-        anda.style.transform = `translate(${-x * 5}px, ${-y * 5}px)`;
-      });
 
 
       gsap.from(".boxText_home",{  delay:.5,  duration: 3,   opacity:0,  scale:.7,  ease: Power4.easeInOut})

@@ -18,13 +18,10 @@ const PreLoader = () => {
         })
 
         tl.to(".preloader",{
-            duration: .5, 
+            duration: .1, 
             z: -1,
             opacity:0,
-        })
-
-        tl.to(".preloader",{
-            visibility:"hidden"
+            display:"none"
         })
 
     },[])
@@ -48,4 +45,4 @@ const PreLoader = () => {
   )
 }
 
-export default React.memo(PreLoader)
+export default PreLoader
