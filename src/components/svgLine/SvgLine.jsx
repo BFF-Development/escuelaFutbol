@@ -22,7 +22,7 @@ const SvgLine = () => {
         })
 
 
-    })
+    },[])
 
 
   return (

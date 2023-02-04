@@ -2,7 +2,7 @@ import React, { useEffect  } from 'react'
 import "./about.css"
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
-import logo from "../../assets/src/backgrounds/logo.png"
+import logo from "../../assets/src/backgrounds/logo3.png"
 
 
 const About = () => {
@@ -57,8 +57,6 @@ const About = () => {
         tl_logo.from(".logo_about_bottom",{ duration:2, opacity:0, rotateZ:360, x: -800})
 
         tl_logo.to(".box_text_about",{  duration:.1,  opacity:1})
-
-
 
 
         const tl_title = gsap.timeline({scrollTrigger:{  trigger:".containerAbout",  start:"top top",}})

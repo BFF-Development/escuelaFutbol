@@ -1,20 +1,16 @@
-import React  from 'react'
+import React ,{ useState }  from 'react'
 import "./footer.css"
 import telIcon from "../../assets/src/icons/tel.png"
 import emailIcon from "../../assets/src/icons/email.png"
 import ubiIcon from "../../assets/src/icons/ubi.png"
 import axios from 'axios'
-import { useEffect } from 'react'
-import { useState } from 'react'
-
 import ReactGA from 'react-ga4'
+
 
 const Footer = () => {
 
-
   const [msjUser , setMsjUser] = useState("")
   const [result , setResult] = useState()
-
 
 
   const submitHandler= e =>{

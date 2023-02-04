@@ -12,127 +12,53 @@ const ServicesScroll = () => {
         const handleResize = () => {
 
               /* section antimation */
-              const tl = gsap.timeline({
-                scrollTrigger: {
-                  trigger: ".container_services",
-                  start:"top top",
-                  end:"100% 100%",
-                }
-              })
-              
+              const tl = gsap.timeline({  scrollTrigger: { trigger: ".container_services",  start:"top top",  end:"100% 100%",  }})
    
-              tl.to(sections, {
-                xPercent: -100 * (sections.length - 1),
-                ease: "none",
-                scrollTrigger: {
-                  trigger: ".container_services",
-                  pin: true,
-                  scrub:1.5,
-                  snap: 1 / (sections.length - 1) ,
-                  end: () => "+=" + document.querySelector(".container_services").offsetWidth 
-                }
-              });
+              tl.to(sections, {  xPercent: -100 * (sections.length - 1),  ease: "none",  scrollTrigger: {  trigger: ".container_services",  pin: true,  scrub:1.5,  snap: 1 / (sections.length - 1) ,    end: () => "+=" + document.querySelector(".container_services").offsetWidth   }});
+
 
 
               /* titles animation */
               let titlesService = gsap.utils.toArray(".strong_title-panel1");
 
-              const tl_titles = gsap.timeline({
-                scrollTrigger: {
-                  trigger: ".container_services",
-                  start:"-450px top",
-                  end:"+=500"
-                }
-              })
+              const tl_titles = gsap.timeline({ scrollTrigger: { trigger: ".container_services", start:"-450px top", end:"+=500"  }})
+
+              tl_titles.to(".e", {  duration: .1,   stroke: "#fffb29",  scrollTrigger: {  trigger: ".container_services", start: "-300px top",  end: "100% 100%",  scrub: true,  }});
+
+              tl_titles.from(".boxCuadro",{  opacity: 0,  duration: .2,  x: -20,})
 
 
-              tl_titles.to(".e", {
-                duration: .1,  
-                stroke: "#fffb29",
-                scrollTrigger: {
-                  trigger: ".container_services",
-                  start: "-300px top",
-                  end: "100% 100%",
-                  scrub: true,
-                }
-              });
+              tl_titles.from(titlesService,{  opacity: 0,  duration: .7,  stagger: .2,})
 
-              tl_titles.from(".boxCuadro",{
-                opacity: 0,
-                duration: .2,
-                x: -20,
-              })
+              tl_titles.from(".textPanel",{  opacity: 0,  y: -20,  duration: .7,  stagger: .2,})
 
-
-              tl_titles.from(titlesService,{
-                opacity: 0,
-                duration: .7,
-                stagger: .2,
-              })
-
-              tl_titles.from(".textPanel",{
-                opacity: 0,
-                y: -20,
-                duration: .7,
-                stagger: .2,
-              })
 
 
               /* circle animation */
               let tl_punt
 
               if(window.innerWidth > 1440){
-                 tl_punt = gsap.timeline({
-                  scrollTrigger: {
-                    trigger: ".contact",
-                    start:"-900px top",
-                    end:"+=1000",
-                    scrub:2
-                  }
-                })
+                  tl_punt = gsap.timeline({  scrollTrigger: {  trigger: ".contact",  start:"-900px top",  end:"+=1000",  scrub:2  }})
+
               }else{
-                 tl_punt = gsap.timeline({
-                  scrollTrigger: {
-                    trigger: ".contact",
-                    start:"-800px top",
-                    end:"+=1000",
-                    scrub:2
-                  }
-                })
+                  tl_punt = gsap.timeline({scrollTrigger: {  trigger: ".contact",  start:"-800px top",  end:"+=1000",  scrub:2} })
               }
 
 
 
-              tl_punt.to(".e", {
-                duration: .1,  
-                opacity:0,
-              });
+              tl_punt.to(".e", {  duration: .1,   opacity:0,});
 
+              tl_punt.to(".line-container", {  display:"none",  duration: 0});
 
-              tl_punt.to(".line-container", {
-                display:"none",
-                duration: 0
-              });
-
-
-              tl_punt.from(".circle-wrapper", {
-                duration: 1,  
-                height: "0vh", 
-                width: "0vw", 
-                opacity:1, 
-                border:0,
-              });
+              tl_punt.from(".circle-wrapper", {  duration: 1,    height: "0vh",   width: "0vw",   opacity:1,   border:0,});
 
         }
 
-
         handleResize()
-
 
         return () => {
           handleResize()
         }
-       
 
     },[])
 
