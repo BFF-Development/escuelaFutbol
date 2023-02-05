@@ -56,7 +56,8 @@ const About = () => {
   
         tl_logo.from(".logo_about_bottom",{ duration:2, opacity:0, rotateZ:360, x: -800})
 
-        tl_logo.to(".box_text_about",{  duration:.1,  opacity:1})
+        tl_logo.from(".box_text_about",{  duration:1,  opacity:0})
+
 
 
         const tl_title = gsap.timeline({scrollTrigger:{  trigger:".containerAbout",  start:"top top",}})
@@ -64,6 +65,8 @@ const About = () => {
         tl_title.to( ".about_title",{  duration: .4,  color:"rgb(125, 186, 255)",  stagger: .1})
 
         tl_title.to( ".about_title",{  duration: .5,  color:"rgb(255, 255, 255)",  stagger: .1})
+
+        
 
       }
   }

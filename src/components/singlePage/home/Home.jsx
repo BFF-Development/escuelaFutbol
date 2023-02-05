@@ -1,4 +1,4 @@
-import React, { useEffect ,useState} from 'react'
+import React, { useCallback, useEffect ,useState} from 'react'
 import "./home.css"
 import gsap, { Elastic } from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
@@ -6,88 +6,78 @@ import Scene from './scene/Scene'
 import backPrincipal from "../../assets/src/backgrounds/backPrincipal.jpg"
 import { Power4 } from 'gsap/src/all'
 
+function isMobileOrTablet() {
+  // Verificamos si el tamaño de la pantalla es menor a 800px (teléfono móvil) o mayor a 800px (tableta)
+  const mobileOrTabletRegex = /(iphone|ipod|ipad|android|iemobile|blackberry|bada|nokia|samsung|webos|palm|windows ce)/i;
+  return window.matchMedia("(max-width: 800px)").matches || mobileOrTabletRegex.test(navigator.userAgent);
+}
+
+
 const Home = () => {
   
   const [isMobile, setIsMobile] = useState(false);
 
-  function isMobileOrTablet() {
-    // Verificamos si el tamaño de la pantalla es menor a 800px (teléfono móvil) o mayor a 800px (tableta)
-    const mobileOrTabletRegex = /(iphone|ipod|ipad|android|iemobile|blackberry|bada|nokia|samsung|webos|palm|windows ce)/i;
-    return window.matchMedia("(max-width: 800px)").matches || mobileOrTabletRegex.test(navigator.userAgent);
-  }
+  const movementHome = useCallback(() => {
+
+    if( !isMobile ){
+      const image = document.querySelector('.backgroundPrincipal');
+      const anda = document.querySelector('.anda');
+
+      if(window.innerWidth > 600){
+
+      document.addEventListener('mousemove', (event) => {
+        const x = event.clientX / window.innerWidth - 0.2;
+        const y = -event.clientY / window.innerHeight - 0.2;
+        
+        image.style.transform = `translate(${x * 11}px, ${y * 11}px)`;
+        anda.style.transform = `translate(${-x * 5}px, ${-y * 5}px)`;
+      });
+      
+
+      gsap.from(".boxText_home",{  delay:.5,  duration: 3,   opacity:0,  scale:.7,  ease: Power4.easeInOut})
+      gsap.from(".backgroundPrincipal",{  delay:.6,  duration: 3,   opacity:0,  scale:.7,  /* y: "100px", */  ease: Power4.easeInOut})
+      gsap.from(".anda",{  delay:.5,  duration: 3,   opacity:0,  scale:.5,  y: "100px",  ease: Elastic.easeInOut})
+      gsap.from(".loaderBox",{  delay:.34,  duration: 3,   opacity:0,    y: "100px",  ease: Elastic.easeInOut})
+      gsap.from(".circle_nav",{  delay:.6,  duration: 3,   opacity:0,  scale:.5,  x: "100px",  ease: Elastic.easeInOut})
+      gsap.from(".scrollIcon",{  delay:1,  duration: 3,   opacity:0, y: "100px",  ease: Elastic.easeInOut})
+    }else{
+      gsap.from(".home",{  delay:1.5,  duration: 2,   opacity:0,  scale:.8,  ease: Power4.easeInOut})
+    }
+    }
+
+
+
+  }, [])
+
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     const homeEffect = () => {
-      
       if (window.innerWidth > 900) {
-        gsap.to( ".home",{
-          opacity:0,
-          duration: .1,
-          filter:"blur(20px)",
-          scrollTrigger:{
-            trigger:".containerHome",
-            start: "center center",
-            scrub:true,
-            snap: 3,
-          }
-        },)
+        gsap.to( ".home",{  opacity:0,  duration: .1,  filter:"blur(20px)",  scrollTrigger:{  trigger:".containerHome",  start: "center center",  scrub:true,  snap: 3,  }},)
       }
     }
-
 
     homeEffect()
-
-    const movementHome = () => {
-
-      if( !isMobile ){
-        const image = document.querySelector('.backgroundPrincipal');
-        const anda = document.querySelector('.anda');
-  
-  
-        document.addEventListener('mousemove', (event) => {
-          const x = event.clientX / window.innerWidth - 0.2;
-          const y = -event.clientY / window.innerHeight - 0.2;
-          
-          image.style.transform = `translate(${x * 11}px, ${y * 11}px)`;
-          anda.style.transform = `translate(${-x * 5}px, ${-y * 5}px)`;
-        });
-      }
-
-
-
-      gsap.from(".boxText_home",{  delay:.5,  duration: 3,   opacity:0,  scale:.7,  ease: Power4.easeInOut})
-
-      gsap.from(".backgroundPrincipal",{  delay:.6,  duration: 3,   opacity:0,  scale:.7,  /* y: "100px", */  ease: Power4.easeInOut})
-
-      gsap.from(".anda",{  delay:.5,  duration: 3,   opacity:0,  scale:.5,  y: "100px",  ease: Elastic.easeInOut})
-
-      gsap.from(".loaderBox",{  delay:.34,  duration: 3,   opacity:0,    y: "100px",  ease: Elastic.easeInOut})
-
-      gsap.from(".circle_nav",{  delay:.6,  duration: 3,   opacity:0,  scale:.5,  x: "100px",  ease: Elastic.easeInOut})
-      
-      gsap.from(".scrollIcon",{  delay:1,  duration: 3,   opacity:0, y: "100px",  ease: Elastic.easeInOut})
-
-    }
-
-    movementHome()
     setIsMobile(isMobileOrTablet());
+    movementHome()
 
    return () => {
     homeEffect()
+    setIsMobile(isMobileOrTablet());
     movementHome()
    }
    
   },[setIsMobile])
-  
+
+
+
   return (
     <div className="home" id="home" >
-
       {
         !isMobile ? <Scene/> : <div className="effectVidrioMobile"></div>
       }
-       
 
       <div className="containerHome">
         <img className='backgroundPrincipal' width="1320" height="1300" src={backPrincipal} alt="background principal" />

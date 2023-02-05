@@ -322,7 +322,7 @@
   }
 
   .box_text_about {
-    top: 110vh;
+    top: 105vh;
     width: 90%;
     padding-right: 0rem;
   }
@@ -354,14 +354,14 @@
 
 
 
-@media screen and (max-width:1070px) {
+@media screen and (max-width:1140px) {
   .line_title_abut {
     left: -4rem;
   }
 
   .box_text_about {
-    top: 117vh;
-    width: 90%;
+    top: 110vh;
+    width: 95%;
     padding-right: 0rem;
   }
 
@@ -372,6 +372,13 @@
 
   .containerAbout {
     gap: 3rem;
+  }
+
+  .logo_about_top {
+    top: 12rem;
+    left: 8rem;
+    width: 30rem;
+    height: 30rem;
   }
 
 
@@ -385,7 +392,7 @@
 
   .text_about {
     width: 100%;
-    min-height: 80vh;
+    min-height: 110vh;
     padding-top: 5rem;
   }
 
@@ -442,6 +449,11 @@
     flex-direction: column;
   }
   
+  .text_about {
+    width: 100%;
+    min-height: 90vh;
+    padding-top: 5rem;
+  }
 
   .box_text_about{
     display: flex;

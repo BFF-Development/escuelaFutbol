@@ -1,7 +1,7 @@
 import React , { useEffect } from 'react'
 import "./preloader.css"
  import gsap from 'gsap'
-import { Power4 } from 'gsap/src/all'
+import { Power4, Linear } from 'gsap/src/all'
 
 
 const PreLoader = () => {
@@ -10,19 +10,47 @@ const PreLoader = () => {
 
         const tl = gsap.timeline()
 
-        tl.to(".line_preload",{
-            duration: 2, 
-            stagger: .1,
-            y: "100%",
-            ease: Power4.easeInOut
-        })
+      const animatePreload = () => {
 
-        tl.to(".preloader",{
-            duration: .1, 
-            z: -1,
-            opacity:0,
-            display:"none"
-        })
+        if ( window.innerWidth > 600){
+            tl.to(".line_preload",{
+              duration: 2, 
+              stagger: .1,
+              y: "100%",
+              ease: Power4.easeInOut
+            })
+
+            tl.to(".preloader",{
+                duration: .1, 
+                z: -1,
+                opacity:0,
+                display:"none"
+            })
+        }else{
+
+            tl.to(".line_preload",{
+              duration: 3, 
+              stagger: .1,
+              y: "100%",
+              ease: Power4.easeInOut
+            })
+
+            tl.to(".preloader",{
+                duration: .1, 
+                z: -1,
+                opacity:0,
+                display:"none"
+            })
+
+        }
+
+      }
+
+      animatePreload()
+
+      return (() => {
+        animatePreload()
+      })
 
     },[])
   

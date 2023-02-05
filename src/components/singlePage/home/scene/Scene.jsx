@@ -80,18 +80,11 @@ const Scene = () => {
                 cursor.y = - (e.y / sizes.height * 0.5)
             } )
 
-        
 
-            let clock = new THREE.Clock()
-        
             const tick = () => {
-        
-               const elapsedTime = clock.getElapsedTime()
         
                camera.position.y = cursor.y * .5
                camera.position.x = cursor.x * .5
-   
-                /* camera.lookAt(Mesh.position) */
         
                 renderer.render(scene, camera)
                 window.requestAnimationFrame(tick)

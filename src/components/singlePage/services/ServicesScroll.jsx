@@ -45,7 +45,7 @@ const ServicesScroll = () => {
               }
 
 
-
+              
               tl_punt.to(".e", {  duration: .1,   opacity:0,});
 
               tl_punt.to(".line-container", {  display:"none",  duration: 0});
