@@ -46,7 +46,7 @@ const Scene = () => {
  
 
             const plane = new THREE.PlaneGeometry(15,7)
-            const planeMaterial = new THREE.MeshBasicMaterial({ map: texturePlane, transparent:true, opacity:.9})
+            const planeMaterial = new THREE.MeshBasicMaterial({ map: texturePlane, transparent:true, opacity:1})
             const MeshPlane = new THREE.Mesh(plane,planeMaterial)
 
             scene.add(MeshPlane)
@@ -104,3 +104,5 @@ const Scene = () => {
 }
 
 export default Scene
+
+

@@ -212,6 +212,8 @@ html{
   transform: matrix(1, 0, 0, 1, 0, 0); 
 }
 
+
+
 @keyframes titleEffect {
   0%{background-position: left;} /*por defecto*/
   50%{background-position: right;}

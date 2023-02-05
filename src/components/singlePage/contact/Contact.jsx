@@ -5,6 +5,8 @@ import emailIcon from "../../assets/src/icons/email.svg"
 import ubiIcon from "../../assets/src/icons/ubi.svg"
 import followIcon from "../../assets/src/icons/follow.svg"
 import instaIcon from "../../assets/src/icons/insta.svg"
+import faceIcon from "../../assets/src/icons/facebook.svg"
+
 
 
 import gsap from 'gsap'
@@ -115,11 +117,18 @@ const Contact = () => {
                     </div>
                     <div className="boxTitleContact">
                       <h2>Seguinos en</h2>
-                      <a href="http://" target="_blank" rel="noopener noreferrer">
-                        <div className="boxiconInstagram">
-                            <img className='iconInsta' src={instaIcon} width="60" height="60"  alt="icon insta" />
-                        </div>
-                      </a>
+                      <div className="redes">
+                        <a href="https://www.instagram.com/arcoacademia/" target="_blank" rel="noopener noreferrer">
+                          <div className="boxiconInstagram">
+                              <img className='iconInsta' src={instaIcon} width="60" height="60"  alt="icon insta" />
+                          </div>
+                        </a>
+                        <a href="https://www.facebook.com/arcoacademia.co" target="_blank" rel="noopener noreferrer">
+                          <div className="boxiconInstagram">
+                              <img className='iconInsta' src={faceIcon} width="60" height="60"  alt="icon insta" />
+                          </div>
+                        </a>
+                      </div>
                     </div>
                     <hr className="hr_contact"/>
 

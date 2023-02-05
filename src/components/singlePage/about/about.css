@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-color: black;
+  background-color: rgb(7, 7, 7);
 }
 
 
@@ -17,6 +17,7 @@
     gap: 0rem;
     opacity: 1;
     padding: 5rem 0;
+    
 }
 
 
@@ -42,6 +43,7 @@
   align-items: center;
   flex-direction: column;
   gap: 17rem;
+  
 }
 
 
@@ -63,6 +65,7 @@
   width: 50%;
   height: 100%;
   top: 10rem;
+  
 }
 
 
@@ -98,6 +101,8 @@
     position: relative;
     color: rgb(255, 255, 255);
     z-index: 300;
+    z-index: 99999;
+
 } 
 
 /* logo bottom */
@@ -136,7 +141,8 @@
   flex-direction: row;
   flex-wrap: nowrap;
   position: relative;
-  margin-left: 2rem;
+  margin-left:3.5rem;
+  
 }
 
 .subtites_about2{
@@ -183,6 +189,7 @@
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+  
 }
 
 
@@ -190,12 +197,13 @@
   width: 92%;
   position: absolute;
   display: flex;
-  top:95vh;
+  top:90vh;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 5rem 0;  
   gap: 4rem;
+  
 }
 
 .cadenaAbout{
@@ -205,6 +213,7 @@
   padding: 2rem 0;
   gap: 2rem;
   color: rgb(34, 34, 34);
+  
 }
 
 .p_text_about{
@@ -213,6 +222,7 @@
     font-size: 1.8rem;
     line-height: 3.5rem;
     /* text-transform: uppercase; */
+    
 }
 
 

@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 99999;
 }
 
 
@@ -97,7 +98,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    left: 7.5rem;
+    left: 5rem;
     transition: all 1s ease;
 }
 
@@ -170,6 +171,12 @@
     filter:drop-shadow(0 0 5px rgba(255, 244, 141, 0.788));
 }
 
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
 
 /* .............................. */
 
@@ -194,7 +201,10 @@
         height: 40rem;
     }
     
-
+    .boxiconInstagram{
+        left: 4rem;
+    }
+    
 }
 
   
@@ -204,6 +214,11 @@
         width: 60rem;
         height: 35rem;
     }
+
+    .boxiconInstagram{
+        left: 3.5rem;
+    }
+    
 }
   
 
@@ -220,8 +235,6 @@
 
   
 }
-
-
 
 
 @media screen and (max-width:570px) {
@@ -248,9 +261,8 @@
 
     }
 
-
-    .boxiconInstagram {
-        left: 5rem;
+    .boxiconInstagram{
+        left: 2rem;
     }
 
     .iconContac img {
@@ -285,6 +297,11 @@
         flex-direction: column;
         align-items: center;
     }
+
+    .boxiconInstagram{
+        left: 0rem;
+    }
+
 }
   
 @media screen and (max-width:357px) {
@@ -294,10 +311,6 @@
         justify-content: center;
         align-items: center;
         gap: 2rem;
-    }
-
-    .boxiconInstagram {
-        left: 0rem;
     }
 
     .boxTitleContact h2{

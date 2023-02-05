@@ -2,7 +2,7 @@
     position: relative;
     height: 100vh;
     width: 100%;
-    background-color: black;
+
 }
 
 .effectVidrioMobile{
@@ -14,6 +14,7 @@
     background-image: url("../../assets/src/backgrounds/effectVidrio1.png");
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 
@@ -68,6 +69,7 @@
     flex-direction: column;
     animation: animAnd 3500ms linear infinite;
     opacity: .4;
+    
 }
 
 .anda p{
@@ -76,10 +78,12 @@
     font-family: "reenie";
     font-size: 4rem;
     letter-spacing: 1px;
+    transform: matrix(1, -.05, .1, 1.1, 0, 0); 
 }
 
 .anda svg{
     width: 23.5rem;
+    transform: matrix(1, -.05, .1, 1.1, 0, 0); 
 }
 
 @keyframes animAnd {
@@ -170,6 +174,7 @@
     letter-spacing: 1px;
     font-family: "ArticulatCF-bold";
     top: -1.5rem;
+
 }
 
 .subtitle_home{

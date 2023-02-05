@@ -1,4 +1,5 @@
 .arcoContainer {
+    position: relative;
     transform-origin: top right;
     transform: skewY(-5deg);
     width: 100%;
@@ -10,6 +11,8 @@
     align-items: center;
     flex-direction: row;
     padding:15rem 0;
+    z-index: 99999 !important;
+    
 }
 
 .arcoContainer span{
@@ -21,6 +24,7 @@
     position: relative;
     opacity: 1;
     z-index: 300;
+    
 }
 
 
