@@ -242,6 +242,10 @@
   .loaderBox:hover .circleBlur{
     transform:none;
   }
+
+  .loader:hover{
+    filter: none;
+  }
   
 }
 
@@ -282,7 +286,5 @@
     animation: sound 0ms -800ms linear infinite alternate;
   }
   
-  .loader:hover{
-    filter: none;
-  }
+  
 }

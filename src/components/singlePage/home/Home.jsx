@@ -89,7 +89,7 @@ const Home = () => {
 
           <p className='description_hero'>
               Enseñamos a nuestros estudiantes a jugar al fútbol con pasión y a desarrollar valores fundamentales que los ayudarán a tener éxito tanto en lo deportivo como en la vida.  
-              <span> ¡Ven y descubre cómo podemos ayudar a tu hijo a alcanzar sus sueños!</span> 
+             <br /> <span> ¡Ven y descubre cómo podemos ayudar a tu hijo a alcanzar sus sueños!</span> 
           </p>
         </div>
       </div>
