@@ -54,7 +54,7 @@ const About = () => {
   
         const tl_logo = gsap.timeline({ scrollTrigger:{  trigger:".containerAbout",  start:"top top", }})
   
-        tl_logo.from(".logo_about_bottom",{ duration:1, opacity:0, rotateZ:360, x: -300})
+        tl_logo.from(".logo_about_bottom",{ duration:1, rotateZ:360, x: -300})
 
         tl_logo.from(".box_text_about",{  duration:1,  opacity:0})
 
