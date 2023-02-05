@@ -40,8 +40,6 @@ const Home = () => {
       gsap.from(".loaderBox",{  delay:.34,  duration: 3,   opacity:0,    y: "100px",  ease: Elastic.easeInOut})
       gsap.from(".circle_nav",{  delay:.6,  duration: 3,   opacity:0,  scale:.5,  x: "100px",  ease: Elastic.easeInOut})
       gsap.from(".scrollIcon",{  delay:1,  duration: 3,   opacity:0, y: "100px",  ease: Elastic.easeInOut})
-    }else{
-      gsap.from(".home",{  delay:1.5,  duration: 2,   opacity:0,  scale:.8,  ease: Power4.easeInOut})
     }
     }
 

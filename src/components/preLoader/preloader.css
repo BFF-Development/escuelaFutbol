@@ -59,7 +59,7 @@
         width: 27rem;
     }
 
-    .line_preload-2 , .line_preload-3{
+    .line_preload-1 , .line_preload-3{
         display: none;
     }
 }
@@ -71,7 +71,7 @@
         width: 27rem;
     }
 
-    .line_preload-2, .line_preload-3, .line_preload-4 , .line_preload-5 {
+    .line_preload-4 , .line_preload-5 {
         display: none;
     }
 }
@@ -79,10 +79,6 @@
 @media screen and (max-width:600px) {
     .preloader img{
         width: 22rem;
-    }
-
-    .line_preload-6{
-        display: none;
     }
 }
 
