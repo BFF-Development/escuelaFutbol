@@ -311,6 +311,8 @@
 
 
 
+
+
 @media screen and (max-width:640px ) {
 
     .boxText_home{
@@ -343,6 +345,7 @@
         padding: 0 2rem;
     }
 }
+
 
 @media screen and (max-width:540px ) {
 
@@ -474,4 +477,37 @@
         font-size: 1.3rem;
     }
 
+}
+
+
+@media (max-height: 700px) {
+    .boxText_home{
+        margin-top:11rem;
+        gap: 2rem;
+    }
+
+    .titleHome{
+        font-size: 4rem;
+    }
+
+    .subtitle_home{
+        line-height: 2.8rem;
+        font-size: 2.6rem;
+    }
+
+    .description_hero{
+        font-size: 1.3rem;
+        line-height: 2.9rem;
+        padding: 0 .5rem;
+        top: -1rem;
+    }
+
+    .description_hero span{
+        font-size: 1.1rem;
+    }
+
+    .anda {
+        bottom: 4rem;
+    }
+    
 }

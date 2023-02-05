@@ -15,7 +15,6 @@
 .loader:hover{
   filter: drop-shadow( 0 0 1px rgba(218, 240, 255, 0.774));
   transition: all 1s ease;
-  
 }
 
 /* desactive */
@@ -227,14 +226,63 @@
 
 @media screen and (max-width: 600px) {
   .circleBlur{
-    background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: blur(2px);
+    background-color: rgba(12, 12, 12, 0.959);
+    backdrop-filter: blur(12px);
   }
-
 
   .loaderBox{
     width: 17rem;
     bottom: 0rem;
   }
+
+  .circle:hover .textcircle {
+    transform:none;
+  }
+
+  .loaderBox:hover .circleBlur{
+    transform:none;
+  }
   
+}
+
+
+@media (max-height: 700px) {
+
+  .circle {
+      width: 17rem;
+  }
+  .circleBlur {
+      width: 11.9rem;
+      height: 11.9rem;
+      z-index: -1;
+      left: 2.6rem;
+      bottom: 2.75rem;
+      backdrop-filter: blur(7px);
+      border-radius: 120%;
+  }
+
+  #bar_line {
+      left: 6.2rem;
+      bottom: 9rem;
+      scale: 1.1;
+  }
+
+  #bars {
+    left: 6.2rem;
+    bottom: 8rem;
+    scale: 1.1;
+  }
+  
+  .bars {
+    background: #0f0c0c;
+    bottom: 1px;
+    height: 3px;
+    position: absolute;
+    width: 2px;      
+    animation: sound 0ms -800ms linear infinite alternate;
+  }
+  
+  .loader:hover{
+    filter: none;
+  }
 }
