@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cd dist && scp -P 5462 -r . root@vps-3088731-x.dattaweb.com:/home/arco/public_html && cd ..",
     "preview": "vite preview"
   },
   "dependencies": {
