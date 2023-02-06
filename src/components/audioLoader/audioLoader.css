@@ -96,6 +96,36 @@
 .bar_out:nth-child(11) { left: 40px; background: rgb(112, 162, 255);}
 
 
+/* Click  */
+
+.clickRipple {
+  position: fixed;
+  border-style: solid;
+  border-radius: 50%;
+  z-index: 999999999 !important;
+  animation: ripple 0.25s ease-out;
+}
+
+@keyframes ripple {
+  from{
+    opacity: 1;
+    width: 15px;
+    height: 15px;
+    border-width: 5px;
+    margin-left: -8px;
+    margin-top: -8px;
+    
+  }
+  
+  to{
+    opacity: 0.35;
+    width: 30px;
+    height: 30px;
+    border-width: 2px;
+    margin-left: -15px;
+    margin-top: -15px;
+  }
+}
 
 /* CIRCLE */
 

@@ -30,7 +30,7 @@ const Services = () => {
         });
     
         gsap.to(line , {
-          background: "black",
+          background: "rgba(25, 25, 25 )",
           scrollTrigger: {
             trigger: ".services",
             start: "top top",
@@ -40,7 +40,7 @@ const Services = () => {
         });
     
         gsap.to(".list_link_nav", {
-          color: "black",
+          color: "rgba(25, 25, 25 )",
           scrollTrigger: {
             trigger: ".services",
             start: "top top",

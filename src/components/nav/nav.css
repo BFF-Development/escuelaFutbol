@@ -51,6 +51,7 @@ a{
     z-index: -1;
     border-radius: 100%;
     background: rgb(3, 163, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 

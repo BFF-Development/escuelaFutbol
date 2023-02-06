@@ -10,6 +10,7 @@ const SinglePage = lazy(() => import('./components/singlePage/SinglePage'))
 const SvgLine = lazy(() => import('./components/svgLine/SvgLine'))
 
 import ReactGA from 'react-ga4'
+import ClickAudio from './components/audioLoader/ClickAudio';
 
 const GOOGLE_ANALYTICS_ID = "G-S708FDQT0H";
 
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <>
-
+      <ClickAudio/>
       <Suspense fallback={<Loader/>}>
         <div className="App">
             <PreLoader/>

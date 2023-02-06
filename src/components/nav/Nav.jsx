@@ -18,7 +18,7 @@ const Nav = () => {
     if(!isActive){
 
       gsap.to(".circle_nav", {
-        scale: 30,
+        scale: 34,
         duration:.6,
         ease: Power4.easeInOut
       })
