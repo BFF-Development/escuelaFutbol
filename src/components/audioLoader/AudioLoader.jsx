@@ -57,7 +57,7 @@ const AudioLoader = () => {
     <div className="loader" onClick={handlerActiveSound}>
       <div className="loaderBox">
           <div className="circleBlur"></div>
-          <svg className='circle' xmlns="http://www.w3.org/2000/svg" xmlLang="en" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" onClick={handlerSound}>
+          <svg className='circle' xmlns="https://www.w3.org/2000/svg" xmlLang="en" xmlnsXlink="https://www.w3.org/1999/xlink" viewBox="0 0 500 500" onClick={handlerSound}>
             <defs>
               <path id="textcircle" d="M250,400
                           a150,150 0 0,1 0,-300a150,150 0 0,1 0,300Z" transform="rotate(12,250,250)" />
