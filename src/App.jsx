@@ -19,6 +19,7 @@ ReactGA.initialize(GOOGLE_ANALYTICS_ID);
 ReactGA.send({ hitType: "pageview", page: "arcoacademia.co" });
 
 
+
 function App() {
 
   return (

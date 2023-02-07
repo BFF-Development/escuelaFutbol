@@ -1,11 +1,10 @@
-import React ,{ useState }  from 'react'
+import React ,{ useEffect, useState }  from 'react'
 import "./footer.css"
 import telIcon from "../../assets/src/icons/tel.png"
 import emailIcon from "../../assets/src/icons/email.png"
 import ubiIcon from "../../assets/src/icons/ubi.png"
 import axios from 'axios'
 import ReactGA from 'react-ga4'
-
 
 const Footer = () => {
 
@@ -68,6 +67,18 @@ const Footer = () => {
   }
 
 
+  const trust = () => {
+    let s = document.createElement("script")
+    let t = document.createTextNode('TrustLogo("https://micuenta.donweb.com/img/sectigo_positive_md.png", "CL1", "none");')
+    s.appendChild(t)
+    s.setAttribute("type","text/javascript")
+    s.setAttribute("languaje","JavaScript")
+
+    let boxTrust = document.getElementById("boxTrust")
+    boxTrust.appendChild(s)
+    
+  }
+  
   return (
     <div className="footer">
       <div className="box_contains_footer">
@@ -120,7 +131,12 @@ const Footer = () => {
 
       <div className="box_copyRight">
         <hr className='hr_footer' />
-        <script language="JavaScript" type="text/javascript">TrustLogo("https://micuenta.donweb.com/img/sectigo_positive_sm.png", "CL1", "none");</script><a href="https://donweb.com/es-ar/certificados-ssl" id="comodoTL" title="Certificados SSL Argentina">Certificados SSL Argentina</a>
+
+        <div id="boxTrust" onLoad={trust}>
+          <p>Certificados SSL Argentina</p>
+        </div>
+        
+
         <div className="copyright">
           <p>@Copyright ARCO. All rights reserved.</p>
         </div>
