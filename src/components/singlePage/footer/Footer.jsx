@@ -120,7 +120,7 @@ const Footer = () => {
 
       <div className="box_copyRight">
         <hr className='hr_footer' />
-        <script language="JavaScript" type="text/javascript">TrustLogo("https://micuenta.donweb.com/img/sectigo_positive_sm.png", "CL1", "none");</script><a href="https://donweb.com/es-ar/certificados-ssl" id="comodoTL" title="Certificados SSL Argentina">Certificados SSL Argentina</a>
+        <ScriptTag language="JavaScript" type="text/javascript">TrustLogo("https://micuenta.donweb.com/img/sectigo_positive_sm.png", "CL1", "none");</ScriptTag><a href="https://donweb.com/es-ar/certificados-ssl" id="comodoTL" title="Certificados SSL Argentina">Certificados SSL Argentina</a>
         <div className="copyright">
           <p>@Copyright ARCO. All rights reserved.</p>
         </div>
