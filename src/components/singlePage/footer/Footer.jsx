@@ -135,7 +135,6 @@ const Footer = () => {
         <div id="boxTrust" onLoad={trust}>
           <p>Certificados SSL Argentina</p>
         </div>
-        
 
         <div className="copyright">
           <p>@Copyright ARCO. All rights reserved.</p>
