@@ -132,10 +132,10 @@ const Footer = () => {
       <div className="box_copyRight">
         <hr className='hr_footer' />
 
-        <div id="boxTrust" onLoad={trust}>
+  {/*       <div id="boxTrust" onLoad={trust}>
           <p>Certificados SSL Argentina</p>
         </div>
-
+ */}
         <div className="copyright">
           <p>@Copyright ARCO. All rights reserved.</p>
         </div>
