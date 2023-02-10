@@ -560,8 +560,6 @@
     gap: 6rem;
   }
 
-
-
   .about_title {
     font-size: 9rem;
   }
@@ -599,7 +597,7 @@
   }
 
   .text_about {
-    min-height: 120vh;
+    min-height: 105vh;
   }
 
   .p_text_about {
@@ -617,7 +615,7 @@
 
   .subtites_about {
     margin-left: 0rem;
-}
+  }
 }
 
   
@@ -636,7 +634,7 @@
   }
 
   .text_about {
-    min-height: 105vh;
+    min-height: 100vh;
   }
 
  
@@ -655,7 +653,7 @@
   }
 
   .text_about {
-    min-height: 113vh;
+    min-height: 110vh;
   }
 }
 

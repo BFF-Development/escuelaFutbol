@@ -418,7 +418,7 @@
 
     .container_titulo_line_service{
         right: 0;
-        padding-top:12rem;
+        padding-top:0rem;
     }
 
     .containerTitle_service {
@@ -558,7 +558,8 @@
 
     .boxCuadro1, .boxCuadro2 {
         border-width: 3px;
-        top: -.2rem;
+        top: .2rem;
+        height: 6rem;
         width: 4rem;
     }
     
