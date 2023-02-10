@@ -39,32 +39,31 @@ const Faqs = () => {
               }
           })
 
-          if(window.innerWidth > 670){
+          if(window.innerWidth > 671){
                 tl.to( ".line_title_faqs",{
                     width: "95rem",
                     x: -100,
                 })
+
+                tl.from( ".faqsTitle",{
+                    opacity:0,
+                    duration: .5,
+                    y:20,
+                  })
+        
+                  tl.from( ".box_faq-item",{
+                    opacity:0,
+                    duration: .8,
+                    stagger: .4,
+                    y:20,
+                  })
+        
           }else{
-                tl.to( ".line_title_faqs",{
-                    width: "90%",
-                    x: -100,
-                })
+            
           }
 
          
-          tl.from( ".faqsTitle",{
-            opacity:0,
-            duration: .5,
-            y:20,
-          })
-
-          tl.from( ".box_faq-item",{
-            opacity:0,
-            duration: .8,
-            stagger: .4,
-            y:20,
-          })
-
+       
 
 
         return () => {

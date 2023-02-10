@@ -5,7 +5,6 @@
     min-height: 100vh;
     background-color: rgb(7, 7, 7);
     margin-top: -.4rem;
-    
 }
 
 
@@ -22,7 +21,7 @@
     flex-direction: column;
     gap: 6rem;
     margin-bottom: 20rem;
-    z-index: 99999;
+    z-index: 99999 ;
 }
   
 
@@ -123,6 +122,7 @@
     scroll-behavior:auto !important;
     position: relative;
     z-index: 99999;
+    
 }
 
 
@@ -246,6 +246,16 @@
     background-color: rgb(255, 251, 41);
     
 }
+
+/* .boxDisf{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500vh;
+    background-color: rgb(7, 7, 7);
+    z-index: -1 !important;
+} */
 
 
 
@@ -490,10 +500,68 @@
      }
 
      .containerTitle_service {
-     
         margin-bottom: 5rem;
     }
 
+ 
+
+}
+
+@media screen and (max-width : 670px) {
+    .container_services{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .titlePanel1 {
+        margin-right: 0%;
+        font-size: 2.7rem;
+    }
+
+    .textPanel {
+        margin-right: 0%;
+        width: 80%;
+        font-size: 2rem;
+    }
+    
+    .panel {
+        width: 100%;
+        position: relative;
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 6rem;
+        top: 5rem;
+    }
+        
+    .panel3 {
+        min-height: 70vh;
+    }
+
+
+    .container_services{
+        margin-bottom: 10rem;
+    }
+    
+    /* punt */
+    .circle-wrapper {
+        position: absolute;
+        top: 50vh;
+        border-radius: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .boxCuadro1, .boxCuadro2 {
+        border-width: 3px;
+        top: -.2rem;
+        width: 4rem;
+    }
+    
 }
 
 
@@ -519,22 +587,6 @@
         padding: 2rem;
         width: 98%;
     }
-    
-    .titlePanel1{
-        font-size: 3.5rem;
-        line-height: 7rem;
-        letter-spacing: 2px;
-        margin-right: 24.5%;
-    }
-
-    /* punt */
-/*     .circle-wrapper {
-        top: 55vh;
-    }
-
-    .punt1::before {
-        left: -24%;
-    } */
 
     .punt1 {
         position: absolute;
@@ -542,7 +594,6 @@
         width: 100%;
         height: 100%;
         border-radius: 100%;
-    
     }
     
     .punt1::before{
@@ -561,28 +612,10 @@
     }
 }
 
-@media screen and (max-width:480px) {
-
-    .panel {
-        gap: 3rem;
-        top: 16rem;
-    }
-
-    .titlePanel1{
-        font-size: 3rem;
-        line-height: 7rem;
-        letter-spacing: 2px;
-        margin-right: 24.5%;
-    }
-}
 
 @media screen and (max-width:440px) {
 
-    .panel {
-        gap: 5rem;
-        top: 16rem;
-    }
-
+ 
 
     .service_title{
         font-size: 6.7rem;
@@ -602,7 +635,6 @@
         font-size: 2.7rem;
         line-height: 7rem;
         letter-spacing: 2.2px;
-        margin-right: 24.5%;
     }
 
     .boxCuadro2{
@@ -620,12 +652,9 @@
     /* text panel */
     
     .textPanel{
-        font-size: 2rem;
+        font-size: 1.7rem;
         text-align: center;
-        width: 60%;
         padding: 1rem;
-        letter-spacing: .4;
-        width: 66%;
     }
 
     .titlePanel1 {
@@ -658,7 +687,7 @@
     
 
     .titlePanel1{
-        font-size: 2.6rem;
+        font-size: 2.4rem;
         letter-spacing: 1.1px;
     }
 

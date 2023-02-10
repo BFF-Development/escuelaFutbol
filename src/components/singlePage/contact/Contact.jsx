@@ -28,38 +28,34 @@ const Contact = () => {
           })
       
     
-          if(window.innerWidth > 670){
+          if(window.innerWidth > 671){
             tl.to( ".line_title_contact",{
               width: "60rem",
               x: -100,
             })
-          }else{
-            tl.to( ".line_title_contact",{
-              width: "90%",
-              x: -100,
-            })
-          }
-      
-         
-          tl.from( ".contactTitle",{
-            opacity:0,
-            duration: .5,
-            y:20,
-          })
 
-          tl.from( ".cont",{
-            opacity:0,
-            duration: .5,
-            stagger: .4,
-            y:20,
-          })
-      
-          tl.from( ".map",{
-            opacity:0,
-            duration: .5,
-            y:20,
-          })
-      
+            tl.from( ".contactTitle",{
+              opacity:0,
+              duration: .5,
+              y:20,
+            })
+  
+            tl.from( ".cont",{
+              opacity:0,
+              duration: .5,
+              stagger: .4,
+              y:20,
+            })
+        
+            tl.from( ".map",{
+              opacity:0,
+              duration: .5,
+              y:20,
+            })
+        
+          }
+         
+         
 
     },[])
 
@@ -105,7 +101,7 @@ const Contact = () => {
                     </div>
                     <div className="boxTitleContact">
                       <h2>Ubicacion</h2>
-                      <p>-</p>
+                      <p>Cl. 68 #1416, Bogotá, Colombia <br /> <br />(Wembley Estadio Futbol 5)  </p>
                     </div>
                 </div>
 
@@ -139,7 +135,7 @@ const Contact = () => {
             <div className="map">
                 <iframe 
                   title='map' 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63458.359608653605!2d-75.61623098680522!3d6.244287615728209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428dfb80fad05%3A0x42137cfcc7b53b56!2sMedell%C3%ADn%2C%20Antioquia%2C%20Colombia!5e0!3m2!1ses-419!2sar!4v1673103712439!5m2!1ses-419!2sar"  
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.759331677659!2d-74.09780119999999!3d4.6369709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b64c2a6885b%3A0xac84df75fe3c72bf!2sWembley%20Estadio%20Futbol%205!5e0!3m2!1ses-419!2sar!4v1676063246703!5m2!1ses-419!2sar" width="900" height="430" 
                   referrerPolicy="no-referrer-when-downgrade" 
                   loading="lazy" 
                   allowFullScreen 

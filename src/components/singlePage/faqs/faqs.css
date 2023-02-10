@@ -308,10 +308,10 @@
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:670px) {
     .container_Faqs {
         width: 95%;
-    }
+    }    
 
     .container_Faqs h2{
       font-size: 4rem;
@@ -319,13 +319,14 @@
     }
   
     .line_title_faqs {
-      width: 0%;
+      width: 93%;
       height: 10rem;
       top: 7.5rem;
+      background-color: black;
     }
 
     .box_faq {
-      width: 78vw;
+      width: 85vw;
     }
 
     .box_faq button {
@@ -359,10 +360,10 @@
 
     
   .line_title_faqs {
-    width: 0%;
     height: 16rem;
     top: 7.4rem;
   }
+
   .box_faq {
     width: 85vw;
   }
@@ -400,7 +401,6 @@
 
     
   .line_title_faqs {
-    width: 0%;
     height: 12rem;
     top: 7.3rem;
   }

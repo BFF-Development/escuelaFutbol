@@ -66,18 +66,6 @@ const Footer = () => {
         })
   }
 
-
-  const trust = () => {
-    let s = document.createElement("script")
-    let t = document.createTextNode('TrustLogo("https://micuenta.donweb.com/img/sectigo_positive_md.png", "CL1", "none");')
-    s.appendChild(t)
-    s.setAttribute("type","text/javascript")
-    s.setAttribute("languaje","JavaScript")
-
-    let boxTrust = document.getElementById("boxTrust")
-    boxTrust.appendChild(s)
-    
-  }
   
   return (
     <div className="footer">
@@ -132,8 +120,8 @@ const Footer = () => {
       <div className="box_copyRight">
         <hr className='hr_footer' />
 
-        <div id="boxTrust" onLoad={trust}>
-          <p>Certificados SSL Argentina</p>
+        <div id="boxTrust"  >    
+          <p > Certificados SSL Argentina</p>
         </div>
 
         <div className="copyright">
