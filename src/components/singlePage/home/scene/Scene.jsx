@@ -1,11 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react'
 import * as THREE from "three"
-import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
-import sceneArco from "./aca.glb"
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import backRoom from "../../../assets/src/backgrounds/effectVidrio1.png"
+import backRoom from "../../../assets/src/backgrounds/effectVidrio1.webp"
 
 
 const Scene = () => {

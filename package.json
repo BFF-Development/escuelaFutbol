@@ -15,8 +15,7 @@
     "react-dom": "^18.2.0",
     "react-ga4": "^2.0.0",
     "react-router-dom": "^6.8.0",
-    "three": "^0.148.0",
-    "vite-plugin-gltf": "^3.0.1"
+    "three": "^0.148.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

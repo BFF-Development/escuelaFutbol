@@ -3,7 +3,7 @@ import "./home.css"
 import gsap, { Elastic } from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
 import Scene from './scene/Scene'
-import backPrincipal from "../../assets/src/backgrounds/backPrincipal.jpg"
+import backPrincipal from "../../assets/src/backgrounds/backPrincipal.webp"
 import { Power4 } from 'gsap/src/all'
 
 function isMobileOrTablet() {

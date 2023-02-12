@@ -1,7 +1,7 @@
 import React , { useEffect } from 'react'
 import "./preloader.css"
  import gsap from 'gsap'
-import { Power4, Linear } from 'gsap/src/all'
+import { Power4 } from 'gsap/src/all'
 
 
 const PreLoader = () => {

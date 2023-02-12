@@ -60,7 +60,7 @@ a{
     position: absolute;
     left: 0;
     top: 0;
-    background: transparent url("../assets/src/backgrounds/noise.png") repeat 0 0;
+    background: transparent url("../assets/src/backgrounds/noise.webp") repeat 0 0;
     background-repeat: repeat;
     opacity: .6;
     border-radius: 100%;
