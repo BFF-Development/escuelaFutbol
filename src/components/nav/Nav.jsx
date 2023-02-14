@@ -1,4 +1,4 @@
-import React, {useState,  useEffect } from 'react'
+import React, {useState,  useEffect , useCallback } from 'react'
 import "./nav.css"
 import gsap from 'gsap';
 import { Power4 } from 'gsap/src/all';
@@ -12,7 +12,7 @@ const Nav = () => {
 
 
 
-  const handleToggle = () => {
+  const handleToggle =  useCallback(() => {
     setActive(!isActive);
 
     if(!isActive){
@@ -53,12 +53,7 @@ const Nav = () => {
         }
       });
     }
-  };
-
-  useEffect(() =>{
-
-
-  },[])
+  }, [isActive])
 
 
   return (

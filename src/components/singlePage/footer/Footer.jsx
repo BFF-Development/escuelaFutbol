@@ -91,7 +91,7 @@ const Footer = () => {
           <ul>
             <li><img className='icon_footer' src={telIcon} alt="tel icon" />: +54 9 221 593 5034</li>
             <li><img className='icon_footer' src={emailIcon} alt="email icon" />: info@arcoacademia.co</li>
-            <li><img className='icon_footer' src={ubiIcon} alt="ubicacion icon" />: Ac 24 #48-53 Bogotá</li>
+            <li><img className='icon_footer' src={ubiIcon} alt="ubicacion icon" />: Ac 24 #48-53 Bogotá, Colombia.</li>
           </ul>
 
         </div>
@@ -119,14 +119,6 @@ const Footer = () => {
 
       <div className="box_copyRight">
         <hr className='hr_footer' />
-<<<<<<< HEAD
-=======
-
-  {/*       <div id="boxTrust" onLoad={trust}>
-          <p>Certificados SSL Argentina</p>
-        </div>
- */}
->>>>>>> 6af985e892e12baeea0bb73a0dfeffec5ab5acf4
         <div className="copyright">
           <p>@Copyright ARCO. All rights reserved.</p>
         </div>

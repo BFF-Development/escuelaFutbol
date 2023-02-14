@@ -41,7 +41,7 @@ const Faqs = () => {
 
           if(window.innerWidth > 671){
                 tl.to( ".line_title_faqs",{
-                    width: "95rem",
+                    width: "85%",
                     x: -100,
                 })
 
@@ -58,12 +58,7 @@ const Faqs = () => {
                     y:20,
                   })
         
-          }else{
-            
           }
-
-         
-       
 
 
         return () => {
