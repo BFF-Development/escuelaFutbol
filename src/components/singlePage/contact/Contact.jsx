@@ -101,7 +101,7 @@ const Contact = () => {
                     </div>
                     <div className="boxTitleContact">
                       <h2>Ubicacion</h2>
-                      <p>Cl. 68 #1416, Bogotá, Colombia <br /> <br />(Wembley Estadio Futbol 5)  </p>
+                      <p>Ac 24 #48-53 Bogotá, Colombia <br /> <br />(Wembley Estadio Futbol 5)  </p>
                     </div>
                 </div>
 

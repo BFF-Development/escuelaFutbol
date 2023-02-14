@@ -52,7 +52,7 @@ html{
 
 @font-face {
   font-family: 'shentox-bold';
-  src: url('./components/assets/fonts/benton/Shentox-bold.otf') format("truetype");
+  src: url('./components/assets/fonts/Shentox-bold.otf') format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -62,7 +62,7 @@ html{
 
 @font-face {
   font-family: 'Mongoose-bold';
-  src: url('./components/assets/fonts/creativ/PPFormula.woff') format("truetype");
+  src: url('./components/assets/fonts/PPFormula.woff') format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -72,7 +72,7 @@ html{
 
 @font-face {
   font-family: 'reenie';
-  src: url('./components/assets/fonts/creativ/ReenieBeanie-Regular.ttf') format("truetype");
+  src: url('./components/assets/fonts/ReenieBeanie-Regular.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

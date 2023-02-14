@@ -104,6 +104,8 @@
   border-radius: 50%;
   z-index: 999999999 !important;
   animation: ripple 0.25s ease-out;
+  bottom: 0;
+  right: 0;
 }
 
 @keyframes ripple {

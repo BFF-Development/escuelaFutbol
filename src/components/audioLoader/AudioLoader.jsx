@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from 'react'
+import React, {useEffect, useState, useRef, useCallback} from 'react'
 import "./audioLoader.css"
 import muchachosAudio from "../assets/audio/muchachosInstru.mp3"
 import ReactGA from 'react-ga4'
@@ -10,47 +10,43 @@ const AudioLoader = () => {
     const handlerActiveSound = () => {
         setActiveSound(!activeSound)
         if(!activeSound){          
-          ReactGA.event({
-            category: "Interaccion",
-            action: "Musica Encendida",
-            label: "Un usuario encendio la musica",
-            nonInteraction: false
-          });
+            ReactGA.event({
+                category: "Interaccion",
+                action: "Musica Encendida",
+                label: "Un usuario encendio la musica",
+                nonInteraction: false
+            });
         }else{
-          ReactGA.event({
-            category: "Interaccion",
-            action: "Musica Apagada",
-            label: "Un usuario apago la musica",
-            nonInteraction: false
-          });
+            ReactGA.event({
+                category: "Interaccion",
+                action: "Musica Apagada",
+                label: "Un usuario apago la musica",
+                nonInteraction: false
+            });
         }
     }
 
-
     const audioAmbiente = useRef(null)
 
+    const playAudio = useCallback(() => {
+        if (activeSound){
+            audioAmbiente.current.play()
+            audioAmbiente.current.volume= 0.1
+        }else{
+            audioAmbiente.current.pause()
+        }
+    }, [activeSound, audioAmbiente])
 
     useEffect(() => {
-        const playAudio = () => {
-            if (activeSound){
-                audioAmbiente.current.play()
-                audioAmbiente.current.volume= 0.1
-              }else{
-                audioAmbiente.current.pause()
-              }
-          }
-    
-          
-          playAudio()
-    },[activeSound])
+        playAudio()
+    }, [playAudio])
 
 
     const [soundOff, setSoundOff] = useState(true)
 
     const handlerSound = () => {
-      setSoundOff(!soundOff)
+        setSoundOff(!soundOff)
     }
-
 
 
   return (

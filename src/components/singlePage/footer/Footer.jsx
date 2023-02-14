@@ -1,8 +1,8 @@
 import React ,{ useEffect, useState }  from 'react'
 import "./footer.css"
-import telIcon from "../../assets/src/icons/tel.png"
-import emailIcon from "../../assets/src/icons/email.png"
-import ubiIcon from "../../assets/src/icons/ubi.png"
+import telIcon from "../../assets/src/icons/tel.webp"
+import emailIcon from "../../assets/src/icons/email.webp"
+import ubiIcon from "../../assets/src/icons/ubi.webp"
 import axios from 'axios'
 import ReactGA from 'react-ga4'
 
@@ -91,7 +91,7 @@ const Footer = () => {
           <ul>
             <li><img className='icon_footer' src={telIcon} alt="tel icon" />: +54 9 221 593 5034</li>
             <li><img className='icon_footer' src={emailIcon} alt="email icon" />: info@arcoacademia.co</li>
-            <li><img className='icon_footer' src={ubiIcon} alt="ubicacion icon" />: -</li>
+            <li><img className='icon_footer' src={ubiIcon} alt="ubicacion icon" />: Ac 24 #48-53 Bogotá</li>
           </ul>
 
         </div>

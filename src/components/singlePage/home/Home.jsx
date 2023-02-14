@@ -74,7 +74,7 @@ const Home = () => {
   return (
     <div className="home" id="home" >
       {
-        !isMobile ? <Scene/> : <div className="effectVidrioMobile"></div>
+        isMobile ?   <div className="effectVidrioMobile"></div> : <Scene/>
       }
 
       <div className="containerHome">
@@ -94,9 +94,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="scrollIcon">
-        <a href="#" ></a>
-      </div>
+      <div className="scrollIcon"></div>
 
       <div className="anda">
         <p>ANDÁ PA ALLÁ</p>
