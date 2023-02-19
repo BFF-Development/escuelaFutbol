@@ -207,6 +207,7 @@
 
 
 
+
 @media screen and (max-width:1440px) {
     
     /* title */
@@ -216,9 +217,9 @@
         padding: 2rem;
         margin-left: 5%;
         width: 95%;
-        margin-top:-5%;
         filter: drop-shadow( 0 0 30px black);
         text-shadow:  0 0 20px black;
+        margin-top: -8rem;
     }
 
     .titleHome{
@@ -240,14 +241,6 @@
         font-size:3.5rem;
         padding: 0 1rem;
         letter-spacing: 1.2px;
-    }
-    
-
-
-    .backgroundPrincipal{
-        right: -3rem;
-        width: 100rem;
-        top: 0rem;
     }
 
     .backgroundPrincipal{
@@ -483,7 +476,7 @@
 }
 
 
-@media (max-height: 700px) {
+@media (max-height: 600px) {
     .boxText_home{
         margin-top:11rem;
         gap: 2rem;
