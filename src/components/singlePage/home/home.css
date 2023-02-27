@@ -382,7 +382,9 @@
     .titleHome{
         font-size: 4.5rem;
     }
-
+    .boxText_home {
+        margin-top: 12rem;
+    }
 
     .subtitle_home{
         text-align: center;
@@ -407,30 +409,31 @@
     .boxText_home{
         gap: 3rem;
         justify-content: flex-start;
-        margin-top:14rem;
+        margin-top: 12rem;
     }
 
     .titleHome{
-        font-size: 6rem;
+        font-size: 3.5rem;
     }
 
 
     .subtitle_home{
         line-height: 2.8rem;
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
 
     .description_hero{
-        font-size: 1.4rem;
-        line-height: 2.9rem;
+        font-size: 1.3rem;
+        line-height: 2.7rem;
         padding: 0 .5rem;
         top: -1rem;
+        text-align: initial;
     }
 
     
     .anda p{
         line-height: 0rem;
-        font-size: 2.3rem;
+        font-size: 2.2rem;
         letter-spacing: 1px;
     }
     
@@ -442,8 +445,6 @@
 @media screen and (max-width:320px ) {
     .boxText_home{
         gap: 2rem;
-        justify-content: flex-start;
-        margin-top:12rem;
     }
 
     .anda{
@@ -460,23 +461,30 @@
     .anda svg{
         width: 11.5rem;
     }
+    .titleHome{
+        font-size: 3rem;
+    }
 
+    .subtitle_home{
+        line-height: 2.5rem;
+        font-size: 2.2rem;
+    }
     
     .description_hero{
         text-align: initial;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
      
     .description_hero span{
         text-align: initial;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
 }
 
 
-@media (max-height: 600px) {
+@media (max-height: 670px) {
     .boxText_home{
         margin-top:11rem;
         gap: 2rem;

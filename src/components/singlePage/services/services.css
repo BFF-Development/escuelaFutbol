@@ -160,8 +160,8 @@
     border:5px solid rgb(255, 255, 255);
     border-right: none;
     left: -2.5rem;
-    top: -1rem;
-    transform: skewY(-1deg)  !important;
+    top: -.8rem;
+    transform: skewY(.5deg)  !important;
 
 }
 
@@ -172,8 +172,8 @@
     border:5px solid rgb(255, 255, 255);
     border-left: none;
     right:  -2.1rem;
-    top: -1rem;
-    transform: skewY(-1deg)  !important;
+    top: -.8rem;
+    transform: skewY(.5deg)  !important;
     
 }
 
@@ -409,6 +409,9 @@
 
   
 @media screen and (max-width:900px) {
+    .panel {
+        gap: 4.5rem;
+    }
 
     .circle-wrapper {
         width: 550vw;
@@ -641,13 +644,15 @@
     .boxCuadro2{
         border:3px solid rgb(255, 255, 255);
         border-left: none;
-        top: -.2rem;
+        top: .4rem;
+        height: 80%;
     }
 
     .boxCuadro1 {
         border:3px solid rgb(255, 255, 255);
         border-right: none;
-        top: -.2rem;
+        top: .4rem;
+        height: 80%;
     }
         
     /* text panel */

@@ -30,18 +30,16 @@ const ServicesTitle = () => {
 
       }else{
         
-          const tl_service = gsap.timeline({  scrollTrigger:{ trigger:".containerTitle_service",  start:"-10px top",  end:"+=800"  }})
-
-          tl_service.to(".p_text_service",{  opacity:1,  stagger: .007,  y: -10,  duration:1.5,})}
 
 
 
-          const tl_titleBox = gsap.timeline({  scrollTrigger:{    trigger:".container_titulo_line_service",  start:"-140px top",  }})
+
+          const tl_titleBox = gsap.timeline({  scrollTrigger:{    trigger:".container_titulo_line_service",  start:"-260px top",  }})
 
           tl_titleBox.from( ".container_titulo_line_service",{  duration: .4,  opacity:0 })
 
 
-          const tl_title = gsap.timeline({  scrollTrigger:{    trigger:".container_titulo_line_service",  start:"-10px top",  }})
+          const tl_title = gsap.timeline({  scrollTrigger:{    trigger:".container_titulo_line_service",  start:"-60px top",  }})
 
           
           tl_title.to( ".service_title",{  duration: .4,  color:"rgb(125, 186, 255)",  stagger: .1})
@@ -49,6 +47,10 @@ const ServicesTitle = () => {
           tl_title.to( ".service_title",{  duration: .5,  color:"rgb(255, 255, 255)",  stagger: .1})
 
           tl_title.to( ".p_text_about",{  duration: .6,  opacity:1,  y: -10,  stagger: .006})
+
+          const tl_service = gsap.timeline({  scrollTrigger:{ trigger:".containerTitle_service",  start:"-50px top",  end:"+=800"  }})
+
+          tl_service.to(".p_text_service",{  opacity:1,  stagger: .007,  y: -10,  duration:1.5,})}
       }
 
     titleService_effect()

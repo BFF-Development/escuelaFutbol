@@ -308,14 +308,16 @@
 
   .marco1{
     width: 3rem;
-    left: .5rem;
-    top: -.7rem;
+    height: 120%;
+    left: 0rem;
+    top: -1.2rem;
   }
 
   .marco2{
     width: 3rem;
-    right:  1rem;
-    top: -.7rem;
+    height: 120%;
+    right:  0rem;
+    top: -1.2rem;
   }
 
   .cadenaAbout h3{
@@ -575,6 +577,8 @@
   .logo_about_bottom {
     width: 27rem;
     left: 0rem;
+    opacity: 1;
+    display: flex;
   }
 
   .cadenaAbout {
@@ -646,6 +650,13 @@
   .line_title_abut {
     left: -5rem;
   }
+
+  .cadenaAbout h3 {
+    font-size: 2.4rem;
+    letter-spacing: 1.8px;
+    margin-bottom: 1rem;
+  }
+
 
   .cadenaAbout {
     justify-content: flex-start;
