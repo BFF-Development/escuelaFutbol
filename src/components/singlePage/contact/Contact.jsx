@@ -101,7 +101,7 @@ const Contact = () => {
                     </div>
                     <div className="boxTitleContact">
                       <h2>Ubicacion</h2>
-                      <p>Ac 24 #48-53 Bogotá, Colombia <br /> <br />(Wembley Estadio Futbol 5)  </p>
+                      <p>Ac 24 #48-53 Bogotá, Colombia <br /> <br />(Gimnasio William Mackinley)  </p>
                     </div>
                 </div>
 
@@ -135,7 +135,7 @@ const Contact = () => {
             <div className="map">
                 <iframe 
                   title='map' 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.759331677659!2d-74.09780119999999!3d4.6369709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b64c2a6885b%3A0xac84df75fe3c72bf!2sWembley%20Estadio%20Futbol%205!5e0!3m2!1ses-419!2sar!4v1676063246703!5m2!1ses-419!2sar" width="900" height="430" 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7587065606735!2d-74.09992912423394!3d4.637081942204161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bdcd45fc811%3A0x24b35cccef48b660!2sGimnasio%20William%20Mackinley!5e0!3m2!1ses-419!2sar!4v1691074154178!5m2!1ses-419!2sar" width="900" height="430"
                   referrerPolicy="no-referrer-when-downgrade" 
                   loading="lazy" 
                   allowFullScreen 

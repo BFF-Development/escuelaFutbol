@@ -19,7 +19,7 @@ const SinglePage = () => {
         <About/>
         <Services/>
         <Contact/>
-        <Faqs/>
+        {/* <Faqs/> */}
         <Arco/>
         <Footer/>
     </Suspense>
